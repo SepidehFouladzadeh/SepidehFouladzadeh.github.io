@@ -20,8 +20,7 @@ title: Home
 
 Let's connect!  
 
-email: fouladzadeh.s@northeastern.edu  
-linkedin_username: sepideh-fouladzadeh  
+
 </div>
 
 </div>
