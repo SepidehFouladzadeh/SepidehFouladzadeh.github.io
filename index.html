@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sepideh Fouladzadeh</title>
+
+  <style>
+
+    html {
+  scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #a9c9b8;
+      color: #1f2f29;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      z-index: 10;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1f2f29;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    /* .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+
+        background-image:
+            linear-gradient(rgba(169, 201, 184, 0.85), rgba(169, 201, 184, 0.85)),
+            url("assets/images/hero.png");
+
+        background-size: cover;
+        background-position: center;
+        } */
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .name {
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #40564c;
+    }
+
+    .scroll {
+      display: inline-block;
+      margin-top: 3rem;
+      opacity: 0.55;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #1f2f29;
+    }
+
+    section.content-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 7rem 2rem;
+    }
+
+    .section-label {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      opacity: 0.65;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .section-text {
+      font-size: 1.15rem;
+      color: #40564c;
+      max-width: 720px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(31, 47, 41, 0.12);
+      border-radius: 18px;
+      padding: 1.5rem;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-weight: 500;
+    }
+
+    .card p {
+      color: #40564c;
+    }
+
+    /* .writing-list {
+  margin-top: 2.5rem;
+} */
+
+    .writing-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(31, 47, 41, 0.18);
+      text-decoration: none;
+      color: #1f2f29;
+    }
+
+    .writing-item h3 {
+      margin: 0 0 0.4rem 0;
+      font-weight: 500;
+    }
+
+    .writing-item p {
+      margin: 0;
+      color: #40564c;
+    }
+
+    .writing-item span {
+      white-space: nowrap;
+      color: #40564c;
+      font-size: 0.95rem;
+    }
+
+    .writing-item:hover {
+      opacity: 0.65;
+    }
+    /* .about-image {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      opacity: 0.75;
+    } */
+     .contact-buttons {
+  margin-top: 2rem;
+}
+
+    .button {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 20px;
+      border: 1px solid #1f2f29;
+      /* border: 1px solid rgba(31, 47, 41, 0.4); */
+      border-radius: 25px;
+      text-decoration: none;
+      color: #1f2f29;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: #1f2f29;
+      color: #a9c9b8;
+    }
+    .about-image {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      opacity: 0.9;
+
+      mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+                  linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+
+      -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+                          linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+
+      mask-composite: intersect;
+      -webkit-mask-composite: destination-in;
+    }
+    /* .about-image img {
+      max-width: 100%;
+      opacity: 0.9;
+
+      mask-image: radial-gradient(circle, black 65%, transparent 100%);
+      -webkit-mask-image: radial-gradient(circle, black 65%, transparent 100%);
+    } */
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: #40564c;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        position: static;
+        text-align: center;
+        padding-top: 1.5rem;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#research">Research</a>
+    <a href="#writing">Writing</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="name">SEPIDEH FOULADZADEH</div>
+
+      <h1>Understanding and shaping complex systems</h1>
+
+      <div class="subtitle">
+        Control Theory, from Mechanical Engineering to Bioengineering.
+      </div>
+
+      <a href="#research" class="scroll">↓</a>
+    </div>
+  </section>
+
+  <section id="research" class="content-section">
+    <div class="section-label">Research</div>
+    <h2>Control, dynamics, and biology</h2>
+    <p class="section-text">
+      Still building my understanding through many failed attempts—each one a step toward understanding how complex systems behave.
+      A rough but rewarding transition from systems like autonomous vehicles to proteins and biological networks.
+      All revolving around dynamical systems—anything that changes over time, where we aim to understand and eventually shape outcomes.
+      Broad explorations from mechanistic modeling to data-driven approaches, and most recently the integration of prior knowledge with multimodal data, bringing together elements of feedback control, math, statistics, engineering, computer science, and, of course, biology.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Control and Dynamical Systems</h3>
+        <p>Thinking about feedback control, stability, robustness, and how systems respond to inputs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Computational, Systems, and Synthetic Biology</h3>
+        <p>Thinking about high-dimensional, noisy, and often partial measurements—combining statistical analysis, predictive modeling, and mechanistic insight to better understand complex biological systems.</p>
+      </div>
+
+      <!-- <div class="card">
+        <h3>Systems & Synthetic Biology</h3>
+        <p>Exploring how biological systems can be understood, modeled, and eventually guided by design principles.</p>
+      </div> -->
+    </div>
+  </section>
+
+  <section id="writing" class="content-section">
+    <div class="section-label">Writing</div>
+
+    <h2>Thoughts and reflections</h2>
+
+    <p class="section-text">
+      Articles and reflections on science, personal and professional development,
+      and moving between fields, languages, cultures.
+    </p>
+
+    <div class="writing-list">
+
+      <a href="https://www.linkedin.com/pulse/belonging-interrupted-sepideh-fouladzadeh-pscae" target="_blank" class="writing-item">
+        <div>
+          <h3>Belonging, Interrupted</h3>
+          <p>On the Fragility of Belonging.</p>
+        </div>
+        <span>May 2026</span>
+      </a>
+
+      <a href="https://www.linkedin.com/pulse/depth-reaching-saturation-return-wandering-sepideh-fouladzadeh-fkhpe" target="_blank" class="writing-item">
+        <div>
+          <h3>Depth Reaching Saturation: The Return of Wandering</h3>
+          <p>A rethinking of seemingly late bloomers — not all who wander are lost?</p>
+        </div>
+        <span>February 2026</span>
+      </a>
+
+      <a href="https://www.linkedin.com/pulse/professional-attachment-styles-sepideh-fouladzadeh-zbvde" target="_blank" class="writing-item">
+        <div>
+          <h3>Professional attachment styles?</h3>
+          <p>On the lingering footprints of early influence.</p>
+        </div>
+        <span>January 2026</span>
+      </a>
+
+      <a href="https://www.linkedin.com/pulse/quiet-struggle-accepting-care-does-always-translate-fouladzadeh-pzize" target="_blank" class="writing-item">
+        <div>
+          <h3>The quiet struggle of accepting that care does not always translate into action</h3>
+          <p>A humbling realization that our care has limits.</p>
+        </div>
+        <span>January 2026</span>
+      </a>
+
+      <a href="https://www.linkedin.com/pulse/ego-biggest-barrier-scientific-progress-solving-sepideh-fouladzadeh-bfwne" target="_blank" class="writing-item">
+        <div>
+          <h3>Ego, the biggest barrier to scientific progress and solving complex problems?</h3>
+          <p>Some thoughts on academia.</p>
+        </div>
+        <span>January 2026</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="about" class="content-section about-section">
+  <!-- <section id="about" class="content-section"> -->
+    <div class="section-label">About</div>
+    <h2>Moving across borders and disciplines</h2>
+    <p class="section-text">
+      My academic journey began in Mechanical Engineering in Tabriz, Iran, where I explored a broad range of topics, from solid mechanics to fluid dynamics and classical control.
+      I continued my studies in Tehran with a Master’s in Mechanical Engineering and a concentration in control and dynamical systems. There, my appreciation for control theory and its elegance in shaping system behavior deepened. Around that time, I came across research applying control-theoretic ideas to molecular networks—an intersection that shifted my direction and led me to Boston, MA, where I am now doing my PhD in Bioengineering, focusing on computational, systems, and synthetic biology.
+    </p>
+    <p class="section-text">
+      My core research interest remains grounded in control and dynamical systems, with a growing curiosity about how these principles extend across domains—from biological systems to, more recently, questions in psychology, sociology, and bio-inspired robotics.
+    </p>
+    <div class="about-image">
+      <img src="assets/images/hero.png" alt="Trajectory visualization">
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <div class="section-label">Contact</div>
+
+    <h2>Let’s connect</h2>
+
+    <p class="section-text">
+      Always happy to connect around research, multidisciplinary collaboration, and creative ideas.
+    </p>
+
+    <div class="contact-buttons">
+      <a href="mailto:sepideh.fouladzadeh@gmail.com" class="button">Email</a>
+      <a href="https://www.linkedin.com/in/sepideh-fouladzadeh/" target="_blank" class="button">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=9bEWnxwAAAAJ&view_op=list_works&sortby=pubdate" class="button">Google Scholar</a>
+      <a href="https://substack.com/@sepidehfouladzadeh" class="button">Substack</a>
+      <a href="https://x.com/SFouladzadeh" class="button">Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Sepideh Fouladzadeh
+  </footer>
+
+</body>
+</html>
