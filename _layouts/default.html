@@ -156,8 +156,22 @@
   </style>
 </head>
 <body>
-  {% include nav.html %}
+  <!-- {% include nav.html %}
   {{ content }}
-  {% include footer.html %}
+  {% include footer.html %} -->
+
+  <nav>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/#research' | relative_url }}">Research</a>
+  <a href="{{ '/#writing' | relative_url }}">Writing</a>
+  <a href="{{ '/#about' | relative_url }}">About</a>
+  <a href="{{ '/#contact' | relative_url }}">Contact</a>
+</nav>
+
+{{ content }}
+
+<footer>
+  © 2026 Sepideh Fouladzadeh
+</footer>
 </body>
 </html>
