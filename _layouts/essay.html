@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<main class="essay-page">
+  <a href="{{ '/#writing' | relative_url }}" class="back-link">← Back to writing</a>
+
+  <article>
+    <header class="essay-header">
+      <div class="section-label">Essay</div>
+      <h1>{{ page.title }}</h1>
+
+      {% if page.description %}
+        <p class="essay-description">{{ page.description }}</p>
+      {% endif %}
+
+      <p class="essay-meta">
+        {% if page.reading_time %}{{ page.reading_time }} · {% endif %}
+        {{ page.date | date: "%B %Y" }}
+      </p>
+    </header>
+
+    <div class="essay-content">
+      {{ content }}
+    </div>
+
+    <section class="essay-footer">
+      <h2>Continue the conversation</h2>
+
+      <div class="essay-actions">
+        {% if page.linkedin_url %}
+          <a href="{{ page.linkedin_url }}" target="_blank" rel="noopener noreferrer">
+            Discussion on LinkedIn →
+          </a>
+        {% endif %}
+
+        <a href="mailto:sepideh.fouladzadeh@gmail.com?subject={{ 'Feedback on ' | append: page.title | url_encode }}">
+          Share your thoughts →
+        </a>
+      </div>
+    </section>
+  </article>
+</main>
