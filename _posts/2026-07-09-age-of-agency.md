@@ -4,7 +4,7 @@ title: "The Age of Agency"
 description: "Titles stopped working? Have they ever really worked?"
 date: 2026-07-09
 reading_time: "1 min read"
-linkedin_url: "https://lnkd.in/p/g6kTW9c6"
+linkedin_url: "https://www.linkedin.com/pulse/age-agency-sepideh-fouladzadeh-7pgqc?trackingId=%2FoSUIq2LTOWGh43w9U58LQ%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BQhHW47nRSFSFD5M9F6GhOw%3D%3D"
 permalink: /writing/age-of-agency/
 ---
 
