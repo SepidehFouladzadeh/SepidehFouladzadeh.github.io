@@ -5,7 +5,7 @@ description: "Titles stopped working? Have they ever really worked?"
 date: 2026-07-09
 reading_time: "1 min read"
 linkedin_url: "https://lnkd.in/p/g6kTW9c6"
-permalink: /essays/age-of-agency/
+permalink: /Writing/age-of-agency/
 ---
 
 Our familiar promise of a linear path toward independence, and the implicit bargain of following another’s lead long enough to finally become independent. 

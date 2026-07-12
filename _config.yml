@@ -74,4 +74,4 @@ description: Understanding and shaping complex systems
 
 markdown: kramdown
 
-permalink: /essays/:title/
+permalink: /Writing/:title/
