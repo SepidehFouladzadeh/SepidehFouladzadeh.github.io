@@ -125,6 +125,34 @@
       color: #40564c;
     }
 
+    .author-break {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 5rem 0 1rem;
+    }
+
+    .author-line {
+        flex: 1;
+        height: 1px;
+        background: rgba(31, 47, 41, 0.18);
+    }
+
+    .author-photo {
+        width: 84px;
+        height: 84px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+
+    .author-name {
+        text-align: center;
+        font-size: 1.15rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+
     .essay-footer {
       margin-top: 5rem;
       padding-top: 2rem;
@@ -202,7 +230,7 @@
 
     <article>
       <header class="essay-header">
-        <div class="section-label">Essay</div>
+        <div class="section-label">Sepideh Fouladzadeh</div>
 
         <h1>{{ page.title }}</h1>
 
@@ -224,9 +252,21 @@
       <div class="essay-content">
         {{ content }}
       </div>
+      <div class="author-break">
+        <div class="author-line"></div>
 
+        <img
+            src="/assets/images/author.png"
+            alt="Sepideh Fouladzadeh"
+            class="author-photo"
+        >
+
+        <div class="author-line"></div>
+        </div>
+
+      
       <section class="essay-footer">
-        <h2>Continue the conversation</h2>
+        <h2>Would love to hear your thoughts</h2>
 
         <div class="essay-actions">
 
@@ -236,14 +276,14 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              Discussion on LinkedIn →
+              Join the conversation on LinkedIn →
             </a>
           {% endif %}
 
           <a
             href="mailto:sepideh.fouladzadeh@gmail.com?subject=Essay%20feedback"
           >
-            Share your thoughts →
+            Send me your thoughts on this →
           </a>
 
         </div>
