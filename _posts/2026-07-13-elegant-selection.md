@@ -2,7 +2,7 @@
 layout: essay
 title: "Subscribing to the Practice of Elegant Selection"
 description: "Perhaps our new favorite luxury!"
-date: 2026-07-013
+date: 2026-07-13
 reading_time: "1 min read"
 linkedin_url: "https://www.linkedin.com/pulse/subscribing-practice-elegant-selection-sepideh-fouladzadeh-nswec?trackingId=BENcp6klRBSWK3VOcDJNJA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BG%2FDsz6OdTUe7mol3aQ5yzw%3D%3D"
 permalink: /writing/elegant-selection/
