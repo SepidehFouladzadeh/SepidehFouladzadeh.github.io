@@ -20,7 +20,7 @@ Leaving behind an unsettling question. What might even be left to matter?
 
 Artifacts, once served as the evidence of labor, of articulation, and of execution, now, increasingly facilitated.
 
-Perhaps a migration of scarcity. From producing solutions, to recognizing what deserves one. From creating, to discerning what remains worthy of creation.
+Perhaps a migration of scarcity—from creation, to discerning what remains worthy of creation.
 
 An undeniable transition, and perhaps a renewed appreciation for the lineage of thought from which all arise.
 
@@ -28,10 +28,12 @@ Perhaps a new measure of elegance.
 
 Perhaps taste. The selection of what is worth dwelling on. The discernment of what deserves another fraction of humanity's finite attention. 
 
-Perhaps intellectual courage. Not to decorate assumptions, but to illuminate what has been overlooked.
+Perhaps intellectual courage, not to decorate assumptions, but to illuminate what has been overlooked.
 
-Or perhaps responding to genuine curiosity. Not curating for applause, not catering to expectation. Not of adding another signal to an already noisy landscape, but of bringing into existence something that deserves existence.
+Or perhaps responding to genuine curiosity. Not curating for applause, not catering to expectation. 
 
-A conceptual elegance that cannot be rushed. A fragile creativity that cannot be scaled. And perhaps a new angle of appreciation.
+Not of adding another signal to an already noisy landscape, but of bringing into existence something that deserves existence.
+
+A conceptual elegance that cannot be rushed. A fragile creativity that cannot be scaled. And perhaps, a new angle of appreciation.
 
 Not merely for what is created, but for how it transforms its creator.
