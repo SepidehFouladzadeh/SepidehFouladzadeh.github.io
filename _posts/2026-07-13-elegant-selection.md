@@ -8,27 +8,19 @@ linkedin_url: "https://www.linkedin.com/pulse/subscribing-practice-elegant-selec
 permalink: /writing/elegant-selection/
 ---
 
-A remarkable acceleration. 
-
-Exhilarating for the imaginative mind, and unsettling for the conscious one.
+A remarkable acceleration. Exhilarating for the imaginative mind, and unsettling for the conscious one.
 
 An increasingly unpredictable trajectory. Uncertainty around the attractor.
 
 Perhaps ultimately settling into a calm destination. Or perhaps trapped in the limit cycle of perpetual evolution.
 
-A propitious moment for the polarity of optimism and pessimism.
-
-An expansion of possibilities. Or a shrinkage of significance. A fading of relevance.
+A propitious moment for the polarity of optimism and pessimism. An expansion of possibilities. Or a shrinkage of significance, a fading of relevance.
 
 Leaving behind an unsettling question. What might even be left to matter?
 
-Artifacts, once the evidence. Of labor. Of articulation. Of execution. Now, increasingly facilitated.
+Artifacts, once served as the evidence of labor, of articulation, and of execution, now, increasingly facilitated.
 
-A migration of scarcity.
-
-From producing solutions, to recognizing what deserves one. 
-
-From creating, to discerning what remains worthy of creation.
+Perhaps a migration of scarcity. From producing solutions, to recognizing what deserves one. From creating, to discerning what remains worthy of creation.
 
 An undeniable transition, and perhaps a renewed appreciation for the lineage of thought from which all arise.
 
@@ -38,14 +30,8 @@ Perhaps taste. The selection of what is worth dwelling on. The discernment of wh
 
 Perhaps intellectual courage. Not to decorate assumptions, but to illuminate what has been overlooked.
 
-Perhaps responding to genuine curiosity. Not curating for applause, not catering to expectation.
+Or perhaps responding to genuine curiosity. Not curating for applause, not catering to expectation. Not of adding another signal to an already noisy landscape, but of bringing into existence something that deserves existence.
 
-Not of adding another signal to an already noisy landscape, but of bringing into existence something that deserves to exist.
-
-A conceptual elegance that cannot be rushed. 
-
-A fragile creativity that cannot be scaled.
-
-And perhaps a new angle of appreciation.
+A conceptual elegance that cannot be rushed. A fragile creativity that cannot be scaled. And perhaps a new angle of appreciation.
 
 Not merely for what is created, but for how it transforms its creator.
