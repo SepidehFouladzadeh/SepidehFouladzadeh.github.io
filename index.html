@@ -146,39 +146,50 @@
       color: #40564c;
     }
 
-    /* .writing-list {
-  margin-top: 2.5rem;
-} */
-
-    /* .writing-item {
-      display: flex;
-      justify-content: space-between;
-      gap: 2rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid rgba(31, 47, 41, 0.18);
-      text-decoration: none;
-      color: #1f2f29;
+    .curiosity-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .writing-item h3 {
-      margin: 0 0 0.4rem 0;
-      font-weight: 500;
+    .curiosity-item {
+        border-bottom: 1px solid rgba(31,47,41,0.15);
+        padding-bottom: 2rem;
     }
 
-    .writing-item p {
-      margin: 0;
-      color: #40564c;
+    .curiosity-item:last-child {
+        border-bottom: none;
     }
 
-    .writing-item span {
-      white-space: nowrap;
-      color: #40564c;
-      font-size: 0.95rem;
+    .curiosity-item h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: 500;
     }
 
-    .writing-item:hover {
-      opacity: 0.65;
-    } */
+    .curiosity-description {
+        margin-top: .6rem;
+        color: #44524c;
+        line-height: 1.6;
+    }
+
+    .curiosity-meta {
+        margin-top: .8rem;
+        font-size: .9rem;
+        color: #7b827d;
+    }
+
+    .read-link {
+        display: inline-block;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+
+    .read-link:hover {
+        opacity: .7;
+    }
     .writing-item {
         padding: 1.8rem 0;
         border-bottom: 1px solid rgba(31,47,41,0.18);
@@ -344,7 +355,7 @@
       <!-- Broad explorations so far— from mechanistic modeling to data-driven approaches, and most recently the integration of prior knowledge with multimodal data, bringing together elements of feedback control, math, statistics, engineering, computer science, and, of course, biology. -->
     </p>
 
-    <div class="cards">
+    <!-- <div class="cards">
       <div class="card">
         <h3>Control and Dynamical Systems</h3>
         <p>Thinking about feedback control, stability, robustness, and how systems respond to inputs.</p>
@@ -355,11 +366,29 @@
         <p>Thinking about high-dimensional, noisy, and often partial measurements—combining statistical analysis, predictive modeling, and mechanistic insight to better understand complex biological systems.</p>
       </div>
 
-      <!-- <div class="card">
-        <h3>Systems & Synthetic Biology</h3>
-        <p>Exploring how biological systems can be understood, modeled, and eventually guided by design principles.</p>
-      </div> -->
+    </div> -->
+
+    <div class="curiosity-list">
+
+      <div class="curiosity-item">
+        <h3>Understanding Reinforcement Learning Through the lense of Control Theory</h3>
+
+        <p class="curiosity-description">
+          Reinforcement learning seems to have similar concept as control theory.
+          Curious where they overlap and where they fundamentally differ.
+        </p>
+
+        <div class="curiosity-meta">
+          Active · July 2026
+        </div>
+
+        <a href="/research/rl-vs-control/" class="read-link">
+          See my train of thought →
+        </a>
+      </div>
+
     </div>
+
   </section>
 
   <section id="writing" class="content-section">
