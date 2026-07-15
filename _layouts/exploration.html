@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>{{ page.title }} | Sepideh Fouladzadeh</title>
+
+  <meta
+    name="description"
+    content="{{ page.description | escape }}"
+  >
+
+  <meta name="author" content="Sepideh Fouladzadeh">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #a9c9b8;
+      color: #1f2f29;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      z-index: 10;
+    }
+
+    nav a,
+    nav a:visited {
+      margin-left: 20px;
+      color: #1f2f29;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    .essay-page {
+      width: min(760px, calc(100% - 4rem));
+      margin: 0 auto;
+      padding: 8rem 0 5rem;
+    }
+
+    .back-link,
+    .back-link:visited {
+      display: inline-block;
+      margin-bottom: 4rem;
+      color: #1f2f29;
+      font-size: 0.95rem;
+      text-decoration: none;
+      opacity: 0.7;
+    }
+
+    .back-link:hover {
+      opacity: 0.5;
+    }
+
+    .section-label {
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      opacity: 0.65;
+    }
+
+    .essay-header {
+      margin-bottom: 4rem;
+    }
+
+    .essay-header h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .essay-description {
+      max-width: 680px;
+      margin: 0 0 1.5rem;
+      color: #40564c;
+      font-size: 1.2rem;
+    }
+
+    .essay-meta {
+      margin: 0;
+      color: #40564c;
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
+    .essay-content {
+      font-size: 1.1rem;
+      line-height: 1.85;
+    }
+
+    .essay-content p {
+      margin: 0 0 1.65rem;
+    }
+
+    .essay-content h2 {
+      margin: 3.5rem 0 1.2rem;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    .essay-content blockquote {
+      margin: 2rem 0;
+      padding-left: 1.5rem;
+      border-left: 1px solid rgba(31, 47, 41, 0.35);
+      color: #40564c;
+    }
+
+    .author-break {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 5rem 0 1rem;
+    }
+
+    .author-line {
+        flex: 1;
+        height: 1px;
+        background: rgba(31, 47, 41, 0.18);
+    }
+
+    .author-photo {
+        width: 84px;
+        height: 84px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+
+    /* .author-name {
+        text-align: center;
+        font-size: 1.15rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    } */
+    .author-name {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: normal;
+    color: #1f2f29;
+    opacity: 0.65;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    }
+
+    .essay-footer {
+      margin-top: 0rem;
+      padding-top: 0rem;
+      /* border-top: 1px solid rgba(31, 47, 41, 0.18); */
+    }
+
+    .essay-footer h2 {
+      margin: 0 0 1.5rem;
+      font-size: 1.35rem;
+      font-weight: 500;
+    }
+
+    .essay-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+
+    .essay-actions a,
+    .essay-actions a:visited {
+      color: #1f2f29;
+      text-decoration: none;
+    }
+
+    .essay-actions a:hover {
+      opacity: 0.6;
+    }
+
+    .site-footer {
+      padding: 3rem 2rem;
+      color: #40564c;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        position: static;
+        padding-top: 1.5rem;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .essay-page {
+        width: min(100% - 2.5rem, 760px);
+        padding-top: 4rem;
+      }
+
+      .back-link {
+        margin-bottom: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/#research">Research</a>
+    <a href="/#writing">Writing</a>
+    <a href="/#about">About</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+
+  <main class="essay-page">
+
+    <a href="/#writing" class="back-link">
+      ← Back to research
+    </a>
+
+    <article>
+      <header class="essay-header">
+        <div class="section-label">Sepideh Fouladzadeh</div>
+
+        <h1>{{ page.title }}</h1>
+
+        {% if page.description %}
+          <p class="essay-description">
+            {{ page.description }}
+          </p>
+        {% endif %}
+
+        <p class="essay-meta">
+          {% if page.reading_time %}
+            {{ page.reading_time }} ·
+          {% endif %}
+
+          {{ page.date | date: "%B %Y" }}
+        </p>
+      </header>
+
+      <div class="essay-content">
+        {{ content }}
+      </div>
+      <div class="author-break">
+        <div class="author-line"></div>
+
+        <img
+            src="/assets/images/author.png"
+            alt="Sepideh Fouladzadeh"
+            class="author-photo"
+        >
+
+        <div class="author-line"></div>
+        </div>
+
+        <div class="author-name">
+        Sepideh Fouladzadeh
+        </div>
+
+      
+      <section class="essay-footer">
+        <h2>Would love to hear from you</h2>
+
+        <div class="essay-actions">
+
+          {% if page.linkedin_url %}
+            <a
+              href="{{ page.linkedin_url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See more of my background and interests on LinkedIn →
+            </a>
+          {% endif %}
+
+          <a
+            href="mailto:sepideh.fouladzadeh@gmail.com?subject=Collaboration%20idea"
+          >
+            Let me know if you're interested in exploring more together →
+          </a>
+
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Sepideh Fouladzadeh
+  </footer>
+
+</body>
+</html>
