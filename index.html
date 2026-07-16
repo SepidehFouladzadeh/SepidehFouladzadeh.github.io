@@ -195,6 +195,65 @@
   margin-top: 2rem;
 }
 
+    .flow{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin:4rem auto;
+        max-width:700px;
+    }
+
+    .flow-node{
+        max-width:420px;
+        padding:1.4rem 1.8rem;
+        border:1px solid rgba(31,47,41,.15);
+        border-radius:18px;
+        background:rgba(255,255,255,.12);
+        text-align:center;
+    }
+
+    .flow-node h3{
+        margin:0;
+        font-size:1.15rem;
+        font-weight:500;
+    }
+
+    .flow-node p{
+        margin:.6rem 0 0;
+        color:#40564c;
+    }
+
+    .flow-arrow{
+        font-size:1.8rem;
+        margin:.8rem 0;
+        opacity:.45;
+    }
+
+    .flow-split{
+        display:flex;
+        justify-content:space-between;
+        width:100%;
+        margin:2rem 0;
+        gap:3rem;
+    }
+
+    .branch{
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .flow-diagonal{
+        font-size:1.6rem;
+        opacity:.45;
+        margin-bottom:1rem;
+    }
+
+    .flow-merge{
+        margin-top:2rem;
+    }
+
     .button {
       display: inline-block;
       margin-right: 15px;
@@ -323,6 +382,77 @@
       </div>
 
     </div> -->
+
+    <div class="flow">
+
+      <div class="flow-node">
+        <h3>A question that caught my attention
+or an unfamiliar field I wanted to understand better</h3>
+      </div>
+
+      <div class="flow-arrow">↓</div>
+
+      <div class="flow-node">
+        <h3>An initial round of exploration</h3>
+        <p>Building a high-level understanding of the key concepts and learning the language of the field.</p>
+      </div>
+
+      <div class="flow-arrow">↓</div>
+
+      <div class="flow-node">
+        <h3>An initial round of implementation</h3>
+        <p>Just enough to build an intuition for how the ideas work.</p>
+      </div>
+
+      <div class="flow-arrow">↓</div>
+
+      <div class="flow-node">
+        <h3>Following the chain of curiosities</h3>
+      </div>
+
+      <div class="flow-arrow">↓</div>
+
+      <div class="flow-node">
+        <h3>Noticing where my attention goes</h3>
+        <p>Recognizing which questions I'm personally curious about, and which the field currently values.</p>
+      </div>
+
+      <div class="flow-split">
+
+        <div class="branch">
+
+          <div class="flow-diagonal">↙</div>
+
+          <div class="flow-node">
+            <h3>Dig deeper</h3>
+            <p>Continue within the field.</p>
+          </div>
+
+        </div>
+
+        <div class="branch">
+
+          <div class="flow-diagonal">↘</div>
+
+          <div class="flow-node">
+            <h3>Borrow the idea</h3>
+            <p>Carry the perspective into another domain.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="flow-merge">
+
+          <div class="flow-node large">
+              <h3>Gradually filling in a coherent picture</h3>
+              <p>Understanding how different perspectives relate to, complement, and enrich one another.</p>
+          </div>
+
+      </div>
+
+    </div>
 
     <div class="writing-list">
 
