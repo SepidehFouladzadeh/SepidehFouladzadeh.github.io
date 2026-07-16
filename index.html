@@ -195,63 +195,269 @@
   margin-top: 2rem;
 }
 
-    .flow{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        margin:4rem auto;
-        max-width:700px;
+    .flow {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 700px;
+      margin: 2.5rem auto;
+      padding: 0 3rem;
     }
 
-    .flow-node{
-        max-width:420px;
-        padding:1.4rem 1.8rem;
-        border:1px solid rgba(31,47,41,.15);
-        border-radius:18px;
-        background:rgba(255,255,255,.12);
-        text-align:center;
+    .flow-node {
+      box-sizing: border-box;
+      width: min(100%, 420px);
+      padding: 1.1rem 1.5rem;
+      border: 1px solid rgba(31, 47, 41, 0.15);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.12);
+      text-align: center;
+      position: relative;
+      z-index: 2;
     }
 
-    .flow-node h3{
-        margin:0;
-        font-size:1.15rem;
-        font-weight:500;
+    .flow-node h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.45;
     }
 
-    .flow-node p{
-        margin:.6rem 0 0;
-        color:#40564c;
+    .flow-node p {
+      margin: 0.45rem 0 0;
+      color: #40564c;
+      line-height: 1.55;
     }
 
-    .flow-arrow{
-        font-size:1.8rem;
-        margin:.8rem 0;
-        opacity:.45;
+    /* Straight vertical arrows */
+
+    .flow-arrow {
+      position: relative;
+      width: 1px;
+      height: 24px;
+      margin: 5px 0;
+      background: rgba(31, 47, 41, 0.38);
     }
 
-    .flow-split{
-        display:flex;
-        justify-content:space-between;
-        width:100%;
-        margin:2rem 0;
-        gap:3rem;
+    .flow-arrow::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      border-right: 1px solid rgba(31, 47, 41, 0.55);
+      border-bottom: 1px solid rgba(31, 47, 41, 0.55);
+      transform: translateX(-50%) rotate(45deg);
     }
 
-    .branch{
-        flex:1;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+    /* Split from one path into two branches */
+
+    .split-connector {
+      position: relative;
+      width: 72%;
+      height: 30px;
+      margin-top: 5px;
+      border-top: none;
     }
 
-    .flow-diagonal{
-        font-size:1.6rem;
-        opacity:.45;
-        margin-bottom:1rem;
+    .split-connector::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 15px;
+      background: rgba(31, 47, 41, 0.38);
     }
 
-    .flow-merge{
-        margin-top:2rem;
+    .split-horizontal {
+      position: absolute;
+      top: 15px;
+      left: 25%;
+      width: 50%;
+      height: 1px;
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .flow-split {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      width: 100%;
+      gap: 1.2rem;
+      margin: 0;
+    }
+
+    .branch {
+      position: relative;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 320px;
+    }
+
+    .branch-line {
+      position: relative;
+      width: 1px;
+      height: 20px;
+      margin-bottom: 5px;
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .branch-line::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      border-right: 1px solid rgba(31, 47, 41, 0.55);
+      border-bottom: 1px solid rgba(31, 47, 41, 0.55);
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .branch .flow-node {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Merge the two branches into the final card */
+
+    .merge-connector {
+      position: relative;
+      width: 72%;
+      height: 42px;
+      margin-top: 5px;
+    }
+
+    .merge-line {
+      position: absolute;
+      top: 5px;
+      width: 38%;
+      height: 1px;
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .merge-left {
+      left: 12%;
+      transform: rotate(9deg);
+      transform-origin: left center;
+    }
+
+    .merge-right {
+      right: 12%;
+      transform: rotate(-9deg);
+      transform-origin: right center;
+    }
+
+    .merge-stem {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      width: 1px;
+      height: 22px;
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .merge-stem::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      border-right: 1px solid rgba(31, 47, 41, 0.55);
+      border-bottom: 1px solid rgba(31, 47, 41, 0.55);
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .flow-merge {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 4px;
+    }
+
+    .flow-node.large {
+      width: min(100%, 520px);
+      max-width: 520px;
+    }
+
+    /* Large loop returning to the first card */
+
+    .flow-loop {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: calc(100% + 130px);
+      height: 100%;
+      overflow: visible;
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .loop-path {
+      fill: none;
+      stroke: rgba(31, 47, 41, 0.35);
+      stroke-width: 1.5;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .flow-loop marker path {
+      fill: rgba(31, 47, 41, 0.48);
+    }
+
+
+    @media (max-width: 700px) {
+      .flow {
+        padding: 0 1rem;
+      }
+
+      .flow-split {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .branch {
+        width: 100%;
+        max-width: 420px;
+      }
+
+      .split-connector,
+      .merge-connector {
+        display: none;
+      }
+
+      .branch::before {
+        content: "";
+        width: 1px;
+        height: 20px;
+        margin-bottom: 5px;
+        background: rgba(31, 47, 41, 0.38);
+      }
+
+      .branch-line {
+        display: none;
+      }
+
+      .flow-merge::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        margin-top: -25px;
+        background: rgba(31, 47, 41, 0.38);
+      }
+
+      /* The large loop would overlap cards on narrow screens */
+      .flow-loop {
+        display: none;
+      }
     }
 
     .button {
@@ -385,72 +591,115 @@
 
     <div class="flow">
 
-      <div class="flow-node">
-        <h3>A question that caught my attention
-or an unfamiliar field I wanted to understand better</h3>
+      <div class="flow-node first-node">
+        <h3>
+          A question that caught my attention<br>
+          or an unfamiliar field I wanted to understand better
+        </h3>
       </div>
 
-      <div class="flow-arrow">↓</div>
+      <div class="flow-arrow"></div>
 
       <div class="flow-node">
         <h3>An initial round of exploration</h3>
-        <p>Building a high-level understanding of the key concepts and learning the language of the field.</p>
+        <p>
+          Building a high-level understanding of the key concepts
+          and learning the language of the field.
+        </p>
       </div>
 
-      <div class="flow-arrow">↓</div>
+      <div class="flow-arrow"></div>
 
       <div class="flow-node">
         <h3>An initial round of implementation</h3>
         <p>Just enough to build an intuition for how the ideas work.</p>
       </div>
 
-      <div class="flow-arrow">↓</div>
+      <div class="flow-arrow"></div>
 
       <div class="flow-node">
         <h3>Following the chain of curiosities</h3>
       </div>
 
-      <div class="flow-arrow">↓</div>
+      <div class="flow-arrow"></div>
 
       <div class="flow-node">
         <h3>Noticing where my attention goes</h3>
-        <p>Recognizing which questions I'm personally curious about, and which the field currently values.</p>
+        <p>
+          Recognizing which questions I'm personally curious about,
+          and which the field currently values.
+        </p>
+      </div>
+
+      <div class="split-connector">
+        <div class="split-horizontal"></div>
       </div>
 
       <div class="flow-split">
 
         <div class="branch">
-
-          <div class="flow-diagonal">↙</div>
+          <div class="branch-line"></div>
 
           <div class="flow-node">
             <h3>Dig deeper</h3>
             <p>Continue within the field.</p>
           </div>
-
         </div>
 
         <div class="branch">
-
-          <div class="flow-diagonal">↘</div>
+          <div class="branch-line"></div>
 
           <div class="flow-node">
             <h3>Borrow the idea</h3>
             <p>Carry the perspective into another domain.</p>
           </div>
-
         </div>
 
       </div>
 
-      <div class="flow-merge">
-
-          <div class="flow-node large">
-              <h3>Gradually filling in a coherent picture</h3>
-              <p>Understanding how different perspectives relate to, complement, and enrich one another.</p>
-          </div>
-
+      <div class="merge-connector">
+        <div class="merge-line merge-left"></div>
+        <div class="merge-line merge-right"></div>
+        <div class="merge-stem"></div>
       </div>
+
+      <div class="flow-merge">
+        <div class="flow-node large last-node">
+          <h3>Gradually filling in a coherent picture</h3>
+          <p>
+            Understanding how different perspectives relate to,
+            complement, and enrich one another.
+          </p>
+        </div>
+      </div>
+
+      <!-- Loop from the final card back to the first -->
+      <svg
+        class="flow-loop"
+        viewBox="0 0 800 1000"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <defs>
+          <marker
+            id="loop-arrowhead"
+            markerWidth="8"
+            markerHeight="8"
+            refX="6"
+            refY="3"
+            orient="auto"
+          >
+            <path d="M0,0 L0,6 L6,3 z"></path>
+          </marker>
+        </defs>
+
+        <path
+          class="loop-path"
+          d="M 575 930
+            C 755 930, 755 70, 575 70"
+          marker-end="url(#loop-arrowhead)"
+        ></path>
+      </svg>
 
     </div>
 
