@@ -125,51 +125,411 @@
       color: #40564c;
     }
 
-    .thought-step {
-    position: relative;
+    .flow-instruction {
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      color: #40564c;
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.8;
     }
 
-    .thought-node {
-    width: 420px;
-    padding: 1.2rem 1.5rem;
-    border: 1px solid rgba(31, 47, 41, 0.15);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.12);
-    text-align: center;
-    cursor: default;
+
+    /* ===================================
+       MAIN FLOW
+       =================================== */
+
+    .flow {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 3rem;
+      overflow: visible;
+    }
+
+    .flow-node {
+      box-sizing: border-box;
+      width: min(100%, 420px);
+      padding: 1.1rem 1.5rem;
+
+      border: 1px solid rgba(31, 47, 41, 0.15);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.12);
+
+      color: #1f2f29;
+      text-align: center;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    button.flow-node {
+      display: block;
+      font: inherit;
+      cursor: help;
+    }
+
+    .flow-node h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+
+    .flow-node p {
+      margin: 0.45rem 0 0;
+      color: #40564c;
+      line-height: 1.55;
+    }
+
+    .thought-trigger {
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .thought-trigger:hover,
+    .thought-trigger:focus {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.22);
+      border-color: rgba(31, 47, 41, 0.28);
+      outline: none;
+    }
+
+
+    /* ===================================
+       VERTICAL ARROWS
+       =================================== */
+
+    .flow-arrow {
+      position: relative;
+      width: 1px;
+      height: 24px;
+      margin: 5px 0;
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .flow-arrow::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+
+      width: 7px;
+      height: 7px;
+
+      border-right: 1px solid rgba(31, 47, 41, 0.55);
+      border-bottom: 1px solid rgba(31, 47, 41, 0.55);
+
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+
+    /* ===================================
+       SPLIT
+       =================================== */
+
+    .split-connector {
+      position: relative;
+      width: 72%;
+      height: 30px;
+      margin-top: 5px;
+    }
+
+    .split-connector::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 1px;
+      height: 15px;
+
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .split-horizontal {
+      position: absolute;
+      top: 15px;
+      left: 25%;
+
+      width: 50%;
+      height: 1px;
+
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .flow-split {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+
+      width: 100%;
+      gap: 1.2rem;
+      margin: 0;
+    }
+
+    .branch {
+      position: relative;
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 340px;
+    }
+
+    .branch-line {
+      position: relative;
+      width: 1px;
+      height: 20px;
+      margin-bottom: 5px;
+
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .branch-line::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+
+      width: 7px;
+      height: 7px;
+
+      border-right: 1px solid rgba(31, 47, 41, 0.55);
+      border-bottom: 1px solid rgba(31, 47, 41, 0.55);
+
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .branch .flow-node {
+      width: 100%;
+    }
+
+
+    /* ===================================
+       MERGE
+       =================================== */
+
+    .merge-connector {
+      position: relative;
+      width: 72%;
+      height: 42px;
+      margin-top: 5px;
+    }
+
+    .merge-line {
+      position: absolute;
+      top: 5px;
+
+      width: 38%;
+      height: 1px;
+
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .merge-left {
+      left: 12%;
+      transform: rotate(9deg);
+      transform-origin: left center;
+    }
+
+    .merge-right {
+      right: 12%;
+      transform: rotate(-9deg);
+      transform-origin: right center;
+    }
+
+    .merge-stem {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+
+      width: 1px;
+      height: 22px;
+
+      background: rgba(31, 47, 41, 0.38);
+    }
+
+    .merge-stem::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 7px;
+      height: 7px;
+
+      border-right: 1px solid rgba(31, 47, 41, 0.55);
+      border-bottom: 1px solid rgba(31, 47, 41, 0.55);
+
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .flow-merge {
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
+      margin-top: 4px;
+    }
+
+    .flow-node.large {
+      width: min(100%, 520px);
+      max-width: 520px;
+    }
+
+
+    /* ===================================
+       THOUGHT CLOUDS
+       =================================== */
+
+    .thought-step {
+      position: relative;
+      width: min(100%, 420px);
+      z-index: 3;
+    }
+
+    .large-step {
+      width: min(100%, 520px);
+    }
+
+    .branch .thought-step {
+      width: 100%;
+    }
+
+    .thought-step .flow-node {
+      width: 100%;
     }
 
     .thought-cloud {
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 25px);
-    transform: translateY(-50%) translateX(-8px);
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 24px);
 
-    width: 320px;
-    padding: 1.5rem;
+      box-sizing: border-box;
+      width: 350px;
+      max-height: 70vh;
+      overflow-y: auto;
 
-    background: #b8d3c5;
-    border: 1px solid rgba(31, 47, 41, 0.15);
-    border-radius: 24px;
+      padding: 1.5rem;
 
-    box-shadow: 0 12px 35px rgba(31, 47, 41, 0.12);
+      border: 1px solid rgba(31, 47, 41, 0.16);
+      border-radius: 24px;
+      background: #b8d3c5;
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+      box-shadow: 0 16px 40px rgba(31, 47, 41, 0.14);
 
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
 
-    z-index: 10;
+      transform: translateY(-50%) translateX(-8px);
+
+      transition:
+        opacity 0.22s ease,
+        transform 0.22s ease,
+        visibility 0.22s ease;
+
+      z-index: 100;
     }
 
-    .thought-step:hover .thought-cloud {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(-50%) translateX(0);
+    .thought-step:hover .thought-cloud,
+    .thought-step:focus-within .thought-cloud {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+
+      transform: translateY(-50%) translateX(0);
+    }
+
+    .thought-cloud::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -9px;
+
+      width: 16px;
+      height: 16px;
+
+      background: #b8d3c5;
+
+      border-left: 1px solid rgba(31, 47, 41, 0.16);
+      border-bottom: 1px solid rgba(31, 47, 41, 0.16);
+
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .thought-cloud-left {
+      left: auto;
+      right: calc(100% + 24px);
+    }
+
+    .thought-cloud-left::before {
+      left: auto;
+      right: -9px;
+
+      border-left: none;
+      border-bottom: none;
+      border-right: 1px solid rgba(31, 47, 41, 0.16);
+      border-top: 1px solid rgba(31, 47, 41, 0.16);
+    }
+
+    .thought-cloud h3 {
+      margin: 0 0 0.8rem;
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .thought-cloud p {
+      margin: 0 0 1rem;
+      color: #40564c;
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+
+    .thought-cloud p:last-child {
+      margin-bottom: 0;
+    }
+
+    .thought-evidence {
+      margin: 1rem 0;
+      padding: 0.8rem 1rem;
+
+      border-left: 1px solid rgba(31, 47, 41, 0.32);
+
+      color: #40564c;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .belief-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+
+      margin: 1.2rem 0;
+      padding: 1rem;
+
+      border: 1px solid rgba(31, 47, 41, 0.12);
+      border-radius: 14px;
+
+      color: #40564c;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    .belief-flow strong {
+      font-weight: 400;
+      opacity: 0.5;
     }
 
     .author-break {
