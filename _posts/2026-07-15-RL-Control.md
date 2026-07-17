@@ -8,3 +8,22 @@ linkedin_url: "https://www.linkedin.com/in/sepideh-fouladzadeh/"
 permalink: /research/rl-vs-control/
 ---
 
+<div class="thought-step">
+
+  <div class="thought-node">
+    Initial exploration
+  </div>
+
+  <div class="thought-cloud">
+    <h3>What I tried</h3>
+
+    <p>
+      Started with 
+    </p>
+
+    <p>
+      This made me curious whether 
+    </p>
+  </div>
+
+</div>
