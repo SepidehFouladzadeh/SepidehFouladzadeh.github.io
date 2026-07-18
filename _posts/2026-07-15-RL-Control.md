@@ -9,7 +9,7 @@ permalink: /research/rl-vs-control/
 ---
 
 <p class="flow-instruction">
-  Hover over—or tap—each step to see what I explored and what question followed.
+  Hover over for a few more details ;)
 </p>
 
 <div class="flow thought-flow">
@@ -18,24 +18,23 @@ permalink: /research/rl-vs-control/
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
       <h3>
-        Reinforcement learning seems to pursue a similar goal to control theory.
+        Can I understand RL from a control theory perspective?
       </h3>
-      <p>
-        Where do they overlap—and where do they fundamentally differ?
-      </p>
+      <!-- <p>
+        Similarities and differences?
+      </p> -->
     </button>
 
     <div class="thought-cloud">
-      <h3>The question that started it</h3>
+      <h3>Questions that came up</h3>
 
       <p>
-        Both reinforcement learning and control theory involve acting on a
-        system to influence its behavior.
+        - One model-based, the other data-driven? But no… How about these then? Model-based Reinforcement Learning? data-driven control? Model-free control?<br>
+        - One relies on understanding, the other relies on experience?<br>
+        - Is policy just feedback control?<br>
+        - Is RL just optimal control? (Minimizing a cost vs maximizing a reward?)
       </p>
-
-      <p>
-        I wanted to understand 
-      </p>
+      
     </div>
   </div>
 
@@ -45,18 +44,15 @@ permalink: /research/rl-vs-control/
   <!-- STEP 2 -->
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
-      <h3>Start with </h3>
+      <h3>First implementation </h3>
     </button>
 
     <div class="thought-cloud">
-      <h3>Why </h3>
+      <h3>Started with a well-understood system</h3>
 
       <p>
-        I am
-      </p>
-
-      <p>
-        Still, I enjoy beginning with 
+        - Gymnasium’s default CartPole environment<br>
+        - PPO<br>
       </p>
     </div>
   </div>
@@ -68,25 +64,23 @@ permalink: /research/rl-vs-control/
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
       <h3>Begin </h3>
-      <p>Train </p>
+      <p>How is this different from designing \(u = Kx\)<br>
+    </p>
     </button>
 
     <div class="thought-cloud">
-      <h3>My first implementation</h3>
+      <h3>Understanding the learned policy</h3>
 
       <p>
-        I began with 
+      Comparing with classical control
       </p>
 
       <div class="thought-evidence">
-        ✓ CartPole-v1<br>
-        ✓ PPO<br>
+        - How is this different from designing \(u = Kx\)<br>
+        - How do their performance differ with each? <br>
+        - Can the learned policy be represented as \(u = Kx\)? Controller identification? <br>
       </div>
 
-      <p>
-        it did not yet explain
-        what the learned policy was actually doing.
-      </p>
     </div>
   </div>
 
@@ -96,18 +90,26 @@ permalink: /research/rl-vs-control/
   <!-- STEP 4 -->
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
-      <h3>Two lines of curiosity appeared</h3>
+      <h3>Two lines of curiosity</h3>
     </button>
 
     <div class="thought-cloud">
-      <h3>A natural split</h3>
+      <h3>Diving deeper in details of implementation</h3>
 
       <p>
-        One direction was to compare 
+        Other default environments? More complicated dynamics? 
+        Other learning algorithms? 
+        <p class="thought-evidence">
+        ✓ PPO<br>
+        ✓ DQN<br>
+        ✓ SAC<br>
+        ✓ Discrete and continuous action spaces
+      </p>
+      
       </p>
 
       <p>
-        The other was to look beneath
+        Look beneath the defult environments!
       </p>
     </div>
   </div>
@@ -127,11 +129,17 @@ permalink: /research/rl-vs-control/
 
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
-          <h3>How is </h3>
+          <h3>Algorithms in greater depth?</h3>
         </button>
 
         <div class="thought-cloud thought-cloud-left">
-          <h3>Comparing </h3>
+          <h3>Comparing algorithms</h3>
+          <p class="thought-evidence">
+            ✓ PPO<br>
+            ✓ DQN<br>
+            ✓ SAC<br>
+            ✓ Discrete and continuous action spaces
+        </p>
 
           <p>
             I compared 
@@ -181,18 +189,29 @@ permalink: /research/rl-vs-control/
 
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
-          <h3>What assumptions are already hidden inside Gymnasium?</h3>
+          <h3>Environment desing?</h3>
         </button>
 
         <div class="thought-cloud">
-          <h3>Looking beneath </h3>
+          <h3>What assumptions are already hidden inside Gymnasium? </h3>
 
           <p>
-            Gymnasium
+            Algorithm design often improves learning efficiency. But efficiency
+            alone cannot guarantee that the simulated problem meaningfully
+            represents the real system.
           </p>
+          <p>
+            This made me wonder whether environment design can sometimes be the
+            more fundamental contribution: deciding what exists, what changes,
+            what is observed, and what is rewarded.
+        </p>
 
           <p>
-            useful for benchmarking 
+            - Gymnasium makes experimentation easy because the dynamics,
+            observations, actions, termination rules, and rewards already exist.<br>
+            - useful for benchmarking algorithms, but it also hides many of
+            the modeling choices that determine what the agent is actually learning.<br>
+            - But what assumptions are already hidden inside the simulator?
           </p>
         </div>
       </div>
@@ -201,206 +220,86 @@ permalink: /research/rl-vs-control/
 
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
-          <h3>Can I derive and implement the dynamics myself?</h3>
+          <h3>designing the agent vs designing the
+        world</h3>
         </button>
 
         <div class="thought-cloud">
           <h3>Moving one level lower</h3>
 
-          <p>
-            I wanted to understand 
-          </p>
+          <p class="thought-evidence">
+          ✓reproduce behavior comparable
+            to the ready-made environment
+        ✓ Custom environment structure<br>
+        ✓ State and action spaces<br>
+        ✓ Reward function (Designing the reward also led me toward questions about optimal
+        control)<br>
+        ✓ Environment dynamics
+      </p>
 
-          <p>
-            reproduce behavior comparable
-            to the ready-made environment?
-          </p>
-
-          <p>
-            unfinished
-          </p>
         </div>
       </div>
 
+      </div>
+
+    <div class="flow-arrow"></div>
+
+    <!-- STEP 6 -->
+    <div class="thought-step">
+        <button class="flow-node thought-trigger" type="button">
+        <h3>What if dynamics are partially known?</h3>
+        </button>
+
+        <div class="thought-cloud">
+        <h3>Complex systems.</h3>
+
+        <p>
+            Complex biological, psychological, or social systems?
+        </p>
+        </div>
     </div>
 
-  </div>
+    <div class="flow-arrow"></div>
 
 
-  <!-- MERGE -->
-  <div class="merge-connector">
-    <div class="merge-line merge-left"></div>
-    <div class="merge-line merge-right"></div>
-    <div class="merge-stem"></div>
-  </div>
-
-  <div class="flow-merge">
-    <div class="thought-step large-step">
-      <button class="flow-node large thought-trigger" type="button">
+    <!-- STEP 7 -->
+    <div class="thought-step">
+        <button class="flow-node thought-trigger" type="button">
         <h3>
-          The problem shifted 
+            Beyond physical systems? 
         </h3>
-      </button>
+        </button>
 
-      <div class="thought-cloud">
-        <h3>A change in perspective</h3>
-
-        <p>
-          Algorithm design 
-        </p>
+        <div class="thought-cloud">
+        <h3>Internal and external unknowns</h3>
 
         <p>
-          The environment defines 
+            May not have cleanly defined states, inputs, or equations.
         </p>
-      </div>
+
+        </div>
     </div>
-  </div>
 
-  <div class="flow-arrow"></div>
+    <div class="flow-arrow"></div>
 
 
-  <!-- STEP 5 -->
-  <div class="thought-step">
-    <button class="flow-node thought-trigger" type="button">
-      <h3>Build a custom Gymnasium environment</h3>
-    </button>
+    <!-- STEP 8 -->
+    <div class="thought-step">
+        <button class="flow-node thought-trigger" type="button">
+        <h3>How should we account for uncertainty?</h3>
+        </button>
 
-    <div class="thought-cloud">
-      <h3>What I explored</h3>
+        <div class="thought-cloud">
+        <h3>Uncertainty both about system and environment </h3>
 
-      <div class="thought-evidence">
-        ✓ Custom environment structure<br>
-      </div>
+        <p>
+            Bayesian framemwork?<br>
+            Robust design?
+        </p>
 
-      <p>
-        Designing the reward led me toward questions about
-      </p>
+        </div>
     </div>
-  </div>
 
-  <div class="flow-arrow"></div>
-
-
-  <!-- STEP 6 -->
-  <div class="thought-step">
-    <button class="flow-node thought-trigger" type="button">
-      <h3>What changes when the dynamics are only partially known?</h3>
-    </button>
-
-    <div class="thought-cloud">
-      <h3>Beyond CartPole</h3>
-
-      <p>
-         mechanics are known.
-        Biological systems are rarely so accommodating.
-      </p>
-
-      <p>
-        In complex systems
-      </p>
     </div>
-  </div>
-
-  <div class="flow-arrow"></div>
-
-
-  <!-- STEP 7 -->
-  <div class="thought-step">
-    <button class="flow-node thought-trigger" type="button">
-      <h3>
-        What if 
-      </h3>
-    </button>
-
-    <div class="thought-cloud">
-      <h3>Internal and external unknowns</h3>
-
-      <p>
-        may not have cleanly defined states,
-      </p>
-
-      <p>
-        The uncertainty
-      </p>
-    </div>
-  </div>
-
-  <div class="flow-arrow"></div>
-
-
-  <!-- STEP 8 -->
-  <div class="thought-step">
-    <button class="flow-node thought-trigger" type="button">
-      <h3>How should we reason</h3>
-    </button>
-
-    <div class="thought-cloud">
-      <h3>Representing uncertainty explicitly</h3>
-
-      <p>
-        Rather than pretending the model is exact, one possibility is
-      </p>
-
-      <div class="belief-flow">
-        <span>Prior beliefs</span>
-        <strong>→</strong>
-        <span>Observed evidence</span>
-        <strong>→</strong>
-        <span>Updated beliefs</span>
-      </div>
-
-      <p>
-        This is where
-      </p>
-    </div>
-  </div>
-
-  <div class="flow-arrow"></div>
-
-
-  <!-- STEP 9 -->
-  <div class="thought-step">
-    <button class="flow-node thought-trigger" type="button">
-      <h3>
-        Or should
-      </h3>
-    </button>
-
-    <div class="thought-cloud">
-      <h3>Robustness</h3>
-
-      <p>
-        Another possibility 
-      </p>
-
-      <p>
-        This naturally brings me back toward 
-      </p>
-    </div>
-  </div>
-
-  <div class="flow-arrow"></div>
-
-
-  <!-- STEP 10 -->
-  <div class="thought-step">
-    <button class="flow-node thought-trigger" type="button">
-      <h3>
-        If RL can 
-      </h3>
-    </button>
-
-    <div class="thought-cloud">
-      <h3>The question I am returning to</h3>
-
-      <p>
-        Reinforcement learning can learn 
-      </p>
-
-      <p>
-        I am curious about 
-      </p>
-    </div>
-  </div>
 
 </div>
