@@ -204,8 +204,6 @@ permalink: /research/rl-vs-control/
         </div>
       </div>
 
-      </div>
-
         <div class="flow-arrow"></div>
 
         <!-- STEP 6 -->
@@ -224,7 +222,6 @@ permalink: /research/rl-vs-control/
         </div>
 
         <div class="flow-arrow"></div>
-
 
         <!-- STEP 7 -->
         <div class="thought-step">
@@ -262,8 +259,6 @@ permalink: /research/rl-vs-control/
             </p>
 
             </div>
-        </div>
-
         </div>
 
 </div>
