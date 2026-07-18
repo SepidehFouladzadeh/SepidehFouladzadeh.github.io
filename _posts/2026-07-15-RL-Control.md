@@ -140,44 +140,10 @@ permalink: /research/rl-vs-control/
             ✓ SAC<br>
             ✓ Discrete and continuous action spaces
         </p>
-
-          <p>
-            I compared 
-          </p>
-
-          <div class="thought-evidence">
-            ✓ Angle-based controller<br>
-          </div>
-
-          <p>
-            A controller may look
-          </p>
         </div>
       </div>
 
       <div class="flow-arrow"></div>
-
-      <div class="thought-step">
-        <button class="flow-node thought-trigger" type="button">
-          <h3>Can the learned policy </h3>
-        </button>
-
-        <div class="thought-cloud thought-cloud-left">
-          <h3>Controller</h3>
-
-          <p>
-            collected 
-          </p>
-
-          <div class="thought-evidence">
-            ✓ Policy
-          </div>
-
-          <p>
-            interpreting what it had learned.
-          </p>
-        </div>
-      </div>
 
     </div>
 
