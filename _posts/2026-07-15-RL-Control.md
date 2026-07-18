@@ -143,8 +143,6 @@ permalink: /research/rl-vs-control/
         </div>
       </div>
 
-      <div class="flow-arrow"></div>
-
     </div>
 
 
@@ -208,64 +206,64 @@ permalink: /research/rl-vs-control/
 
       </div>
 
-    <div class="flow-arrow"></div>
+        <div class="flow-arrow"></div>
 
-    <!-- STEP 6 -->
-    <div class="thought-step">
-        <button class="flow-node thought-trigger" type="button">
-        <h3>What if dynamics are partially known?</h3>
-        </button>
+        <!-- STEP 6 -->
+        <div class="thought-step">
+            <button class="flow-node thought-trigger" type="button">
+            <h3>What if dynamics are partially known?</h3>
+            </button>
 
-        <div class="thought-cloud">
-        <h3>Complex systems.</h3>
+            <div class="thought-cloud">
+            <h3>Complex systems.</h3>
 
-        <p>
-            Complex biological, psychological, or social systems?
-        </p>
+            <p>
+                Complex biological, psychological, or social systems?
+            </p>
+            </div>
         </div>
-    </div>
 
-    <div class="flow-arrow"></div>
+        <div class="flow-arrow"></div>
 
 
-    <!-- STEP 7 -->
-    <div class="thought-step">
-        <button class="flow-node thought-trigger" type="button">
-        <h3>
-            Beyond physical systems? 
-        </h3>
-        </button>
+        <!-- STEP 7 -->
+        <div class="thought-step">
+            <button class="flow-node thought-trigger" type="button">
+            <h3>
+                Beyond physical systems? 
+            </h3>
+            </button>
 
-        <div class="thought-cloud">
-        <h3>Internal and external unknowns</h3>
+            <div class="thought-cloud">
+            <h3>Internal and external unknowns</h3>
 
-        <p>
-            May not have cleanly defined states, inputs, or equations.
-        </p>
+            <p>
+                May not have cleanly defined states, inputs, or equations.
+            </p>
+
+            </div>
+        </div>
+
+        <div class="flow-arrow"></div>
+
+
+        <!-- STEP 8 -->
+        <div class="thought-step">
+            <button class="flow-node thought-trigger" type="button">
+            <h3>How should we account for uncertainty?</h3>
+            </button>
+
+            <div class="thought-cloud">
+            <h3>Uncertainty both about system and environment </h3>
+
+            <p>
+                Bayesian framemwork?<br>
+                Robust design?
+            </p>
+
+            </div>
+        </div>
 
         </div>
-    </div>
-
-    <div class="flow-arrow"></div>
-
-
-    <!-- STEP 8 -->
-    <div class="thought-step">
-        <button class="flow-node thought-trigger" type="button">
-        <h3>How should we account for uncertainty?</h3>
-        </button>
-
-        <div class="thought-cloud">
-        <h3>Uncertainty both about system and environment </h3>
-
-        <p>
-            Bayesian framemwork?<br>
-            Robust design?
-        </p>
-
-        </div>
-    </div>
-
-    </div>
 
 </div>
