@@ -14,25 +14,19 @@ permalink: /research/rl-vs-control/
 
 <div class="flow thought-flow">
 
-  <!-- STEP 1 -->
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
       <h3>
         Can I understand RL from a control theory perspective?
       </h3>
-      <!-- <p>
-        Similarities and differences?
-      </p> -->
     </button>
 
     <div class="thought-cloud">
-      <h3>Questions that came up</h3>
+      <h3>Both seem to have the same goal of achieving a desired behaviour in a system, how do they approach it differently then?</h3>
 
       <p>
-        - One model-based, the other data-driven? But no… How about these then? Model-based Reinforcement Learning? data-driven control? Model-free control?<br>
-        - One relies on understanding, the other relies on experience?<br>
-        - Is policy just feedback control?<br>
-        - Is RL just optimal control? (Minimizing a cost vs maximizing a reward?)
+        - One model-based, the other data-driven? But no… How about these then? Model-based RL? data-driven control? Model-free control?<br>
+        - Is RL just optimal control (approximate optimal control)?
       </p>
       
     </div>
@@ -40,27 +34,49 @@ permalink: /research/rl-vs-control/
 
   <div class="flow-arrow"></div>
 
-
-  <!-- STEP 2 -->
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
-      <h3>First implementation </h3>
+      <h3>
+        Fundamental building blocks?
+      </h3>
     </button>
 
     <div class="thought-cloud">
-      <h3>Started with a well-understood system</h3>
+      <h3>Language of RL</h3>
 
       <p>
-        - Gymnasium’s default CartPole environment<br>
-        - PPO<br>
+        - <br>
+        - State<br>
+        - Observation? Measured output? <br>
+        - Environment? Plant/system + context? <br>
+        - Action? Control input?
+        - Policy? Controller (The rule that determines the control input)?
+      </p>
+      
+    </div>
+  </div>
+
+  <div class="flow-arrow"></div>
+
+  <div class="thought-step">
+    <button class="flow-node thought-trigger" type="button">
+      <h3>First implementation with a simple system</h3>
+    </button>
+
+    <div class="thought-cloud">
+      <h3>CartPole</h3>
+
+      <p>
+        - Gymnasium’s standard CartPole environment<br>
+        - States: position, velocity, pole angle, pole angular velocity<br>
+        - Discrete actions/control (left/right)
+        - PPO + MLP policy<br>
       </p>
     </div>
   </div>
 
   <div class="flow-arrow"></div>
 
-
-  <!-- STEP 3 -->
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
       <h3>Begin </h3>
@@ -86,8 +102,6 @@ permalink: /research/rl-vs-control/
 
   <div class="flow-arrow"></div>
 
-
-  <!-- STEP 4 -->
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
       <h3>Two lines of curiosity</h3>
@@ -206,7 +220,7 @@ permalink: /research/rl-vs-control/
 
         <div class="flow-arrow"></div>
 
-        <!-- STEP 6 -->
+
         <div class="thought-step">
             <button class="flow-node thought-trigger" type="button">
             <h3>What if dynamics are partially known?</h3>
@@ -223,7 +237,7 @@ permalink: /research/rl-vs-control/
 
         <div class="flow-arrow"></div>
 
-        <!-- STEP 7 -->
+
         <div class="thought-step">
             <button class="flow-node thought-trigger" type="button">
             <h3>
@@ -244,7 +258,6 @@ permalink: /research/rl-vs-control/
         <div class="flow-arrow"></div>
 
 
-        <!-- STEP 8 -->
         <div class="thought-step">
             <button class="flow-node thought-trigger" type="button">
             <h3>How should we account for uncertainty?</h3>
