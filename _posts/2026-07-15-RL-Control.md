@@ -133,10 +133,8 @@ permalink: /research/rl-vs-control/
       </div>
 
     </div>
-
-
-    <!-- RIGHT BRANCH -->
-    <div class="branch">
+    <!-- Middle BRANCH -->
+        <div class="branch">
 
       <div class="branch-line"></div>
 
@@ -149,17 +147,23 @@ permalink: /research/rl-vs-control/
           <h3>Other standard environments in Gymnasium? </h3>
 
           <p>
-            - pendulum<br>
-            - mountaincar<br>
-            - acrobot<br>
-            - bipedal
+            - Pendulum<br>
+            - Mountaincar<br>
+            - Acrobot<br>
+            - Bipedal
           </p>
 
         </div>
       </div>
 
-      <div class="flow-arrow"></div>
-      
+    </div>
+
+
+    <!-- RIGHT BRANCH -->
+    <div class="branch">
+
+      <div class="branch-line"></div>
+
 <!-- Look beneath the defult environments! -->
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
