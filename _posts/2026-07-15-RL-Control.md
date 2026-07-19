@@ -48,7 +48,7 @@ permalink: /research/rl-vs-control/
         - State<br>
         - Observation? Measured output? <br>
         - Environment? Plant/system + context? <br>
-        - Action? Control input?
+        - Action? Control input?<br>
         - Policy? Controller (The rule that determines the control input)?
       </p>
       
@@ -98,27 +98,10 @@ permalink: /research/rl-vs-control/
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
       <h3>Two lines of curiosity</h3>
+      <p>
+        Diving deeper in details 
+      </p>
     </button>
-
-    <div class="thought-cloud">
-      <h3>Diving deeper in details of implementation</h3>
-
-      <p>
-        Other default environments? More complicated dynamics? 
-        Other learning algorithms? 
-        <p class="thought-evidence">
-        ✓ PPO<br>
-        ✓ DQN<br>
-        ✓ SAC<br>
-        ✓ Discrete and continuous action spaces
-      </p>
-      
-      </p>
-
-      <p>
-        Look beneath the defult environments!
-      </p>
-    </div>
   </div>
 
 
@@ -145,7 +128,6 @@ permalink: /research/rl-vs-control/
             ✓ PPO<br>
             ✓ DQN<br>
             ✓ SAC<br>
-            ✓ Discrete and continuous action spaces
         </p>
         </div>
       </div>
@@ -158,6 +140,27 @@ permalink: /research/rl-vs-control/
 
       <div class="branch-line"></div>
 
+      <div class="thought-step">
+        <button class="flow-node thought-trigger" type="button">
+          <h3>More complex dynamics?</h3>
+        </button>
+
+        <div class="thought-cloud">
+          <h3>Other standard environments in Gymnasium? </h3>
+
+          <p>
+            - pendulum<br>
+            - mountaincar<br>
+            - acrobot<br>
+            - bipedal
+          </p>
+
+        </div>
+      </div>
+
+      <div class="flow-arrow"></div>
+      
+<!-- Look beneath the defult environments! -->
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
           <h3>Environment desing?</h3>
