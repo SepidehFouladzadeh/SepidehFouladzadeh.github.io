@@ -155,7 +155,7 @@ permalink: /research/rl-vs-control/
           <p class="thought-evidence">
 
             ✓ What about more complex systems? Beyond physical systems? Biological, psychological, or social systems with no cleanly defined states, inputs, or equations? Partially known dynamics... Internal and external unknowns...<br>
-            ✓ How to account for uncertainty? Both in system and the environment. Bayesian framemwork? Robust design?
+            ✓ How to account for uncertainty? Both in system and the environment. Bayesian framemwork? Robust design?<br>
       </p>
 
         </div>
@@ -188,7 +188,7 @@ permalink: /research/rl-vs-control/
           <p class="thought-evidence">
           ✓ Reproduce behavior comparable to the ready-made environment<br>
           ✓ Custom environment<br>
-          ✓ Designing the agent vs designing the world?
+          ✓ Designing the agent vs designing the world?<br>
       </p>
 
         </div>
