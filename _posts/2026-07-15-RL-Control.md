@@ -78,22 +78,16 @@ permalink: /research/rl-vs-control/
 
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
-      <h3>Begin </h3>
-      <p>How is this different from designing \(u = Kx\)<br>
-    </p>
+      <h3>Comparing with classical control</h3>
     </button>
 
     <div class="thought-cloud">
       <h3>Understanding the learned policy</h3>
 
-      <p>
-      Comparing with classical control
-      </p>
-
       <div class="thought-evidence">
         - How is this different from designing \(u = Kx\)<br>
-        - How do their performance differ with each? <br>
-        - Can the learned policy be represented as \(u = Kx\)? Controller identification? <br>
+        - How do their performances compare? <br>
+        - Can the learned policy be approximated by a linear controller \(u = Kx\)?
       </div>
 
     </div>
