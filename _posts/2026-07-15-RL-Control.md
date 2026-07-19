@@ -143,7 +143,7 @@ permalink: /research/rl-vs-control/
           <h3>More complex dynamics?</h3>
         </button>
 
-        <div class="thought-cloud">
+        <div class="thought-cloud thought-cloud-bottom">
           <h3>Other standard environments in Gymnasium? </h3>
 
           <p>
