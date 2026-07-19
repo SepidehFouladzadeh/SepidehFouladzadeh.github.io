@@ -97,7 +97,7 @@ permalink: /research/rl-vs-control/
 
   <div class="thought-step">
     <button class="flow-node thought-trigger" type="button">
-      <h3>Two lines of curiosity</h3>
+      <h3>Different lines of curiosity</h3>
       <p>
         Diving deeper in details 
       </p>
@@ -152,6 +152,11 @@ permalink: /research/rl-vs-control/
             - Acrobot<br>
             - Bipedal
           </p>
+          <p class="thought-evidence">
+
+            ✓ What about more complex systems? Beyond physical systems? Biological, psychological, or social systems with no cleanly defined states, inputs, or equations? Partially known dynamics... Internal and external unknowns...<br>
+            ✓ How to account for uncertainty? Both in system and the environment. Bayesian framemwork? Robust design?
+      </p>
 
         </div>
       </div>
@@ -164,114 +169,29 @@ permalink: /research/rl-vs-control/
 
       <div class="branch-line"></div>
 
-<!-- Look beneath the defult environments! -->
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
-          <h3>Environment desing?</h3>
+          <h3>Environment design?</h3>
+          <p>
+            Looking beneath the defult environments
+          </p>
         </button>
 
         <div class="thought-cloud">
           <h3>What assumptions are already hidden inside Gymnasium? </h3>
 
           <p>
-            Algorithm design often improves learning efficiency. But efficiency
-            alone cannot guarantee that the simulated problem meaningfully
-            represents the real system.
+            - Dynamics, observations, actions, termination rules, and rewards already defined in Gymnasium? Useful for benchmarking algorithms!<br>
+            - Algorithm design focuses only on learning efficiency? What about meaningfully representing the real system?<br>
+            - Environment design (modeling choices) itself a fundamental contribution?
           </p>
-          <p>
-            This made me wonder whether environment design can sometimes be the
-            more fundamental contribution: deciding what exists, what changes,
-            what is observed, and what is rewarded.
-        </p>
-
-          <p>
-            - Gymnasium makes experimentation easy because the dynamics,
-            observations, actions, termination rules, and rewards already exist.<br>
-            - useful for benchmarking algorithms, but it also hides many of
-            the modeling choices that determine what the agent is actually learning.<br>
-            - But what assumptions are already hidden inside the simulator?
-          </p>
-        </div>
-      </div>
-
-      <div class="flow-arrow"></div>
-
-      <div class="thought-step">
-        <button class="flow-node thought-trigger" type="button">
-          <h3>designing the agent vs designing the
-        world</h3>
-        </button>
-
-        <div class="thought-cloud">
-          <h3>Moving one level lower</h3>
-
           <p class="thought-evidence">
-          ✓reproduce behavior comparable
-            to the ready-made environment
-        ✓ Custom environment structure<br>
-        ✓ State and action spaces<br>
-        ✓ Reward function (Designing the reward also led me toward questions about optimal
-        control)<br>
-        ✓ Environment dynamics
+          ✓ Reproduce behavior comparable to the ready-made environment<br>
+          ✓ Custom environment<br>
+          ✓ Designing the agent vs designing the world?
       </p>
 
         </div>
       </div>
-
-        <div class="flow-arrow"></div>
-
-
-        <div class="thought-step">
-            <button class="flow-node thought-trigger" type="button">
-            <h3>What if dynamics are partially known?</h3>
-            </button>
-
-            <div class="thought-cloud">
-            <h3>Complex systems.</h3>
-
-            <p>
-                Complex biological, psychological, or social systems?
-            </p>
-            </div>
-        </div>
-
-        <div class="flow-arrow"></div>
-
-
-        <div class="thought-step">
-            <button class="flow-node thought-trigger" type="button">
-            <h3>
-                Beyond physical systems? 
-            </h3>
-            </button>
-
-            <div class="thought-cloud">
-            <h3>Internal and external unknowns</h3>
-
-            <p>
-                May not have cleanly defined states, inputs, or equations.
-            </p>
-
-            </div>
-        </div>
-
-        <div class="flow-arrow"></div>
-
-
-        <div class="thought-step">
-            <button class="flow-node thought-trigger" type="button">
-            <h3>How should we account for uncertainty?</h3>
-            </button>
-
-            <div class="thought-cloud">
-            <h3>Uncertainty both about system and environment </h3>
-
-            <p>
-                Bayesian framemwork?<br>
-                Robust design?
-            </p>
-
-            </div>
-        </div>
 
 </div>
