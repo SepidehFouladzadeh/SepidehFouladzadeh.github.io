@@ -45,7 +45,6 @@ permalink: /research/rl-vs-control/
       <h3>Language of RL</h3>
 
       <p>
-        - <br>
         - State<br>
         - Observation? Measured output? <br>
         - Environment? Plant/system + context? <br>
@@ -69,8 +68,8 @@ permalink: /research/rl-vs-control/
       <p>
         - Gymnasium’s standard CartPole environment<br>
         - States: position, velocity, pole angle, pole angular velocity<br>
-        - Discrete actions/control (left/right)
-        - PPO + MLP policy<br>
+        - Discrete actions/control (left/right)<br>
+        - PPO + MLP policy
       </p>
     </div>
   </div>
