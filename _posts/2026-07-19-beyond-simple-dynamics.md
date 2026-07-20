@@ -7,3 +7,4 @@ date: 2026-07-19
 linkedin_url: "https://www.linkedin.com/in/sepideh-fouladzadeh/"
 permalink: /research/rl-vs-control/beyond-simple-dynamics/
 ---
+Coming soon.
