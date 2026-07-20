@@ -195,8 +195,8 @@ permalink: /research/rl-vs-control/
       </div>
 
     </div>
+    </div>
 </div>
-
 
 <section class="related-explorations">
 
