@@ -5,5 +5,5 @@ description: "Understanding what distinguishes them, and how they relate to othe
 date: 2026-07-19
 # reading_time: "1 min read"
 linkedin_url: "https://www.linkedin.com/in/sepideh-fouladzadeh/"
-permalink: /research/rl-algorithms/
+permalink: /research/rl-vs-control/rl-algorithms/
 ---

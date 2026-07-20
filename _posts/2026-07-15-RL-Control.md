@@ -211,7 +211,7 @@ permalink: /research/rl-vs-control/
         Going beyond standard environments in Gymnasium to explore how RL might intersect with problems I'm personally curious about.
       </p>
 
-      <a href="/research/custom-environment/">
+      <a href="/research/rl-vs-control/custom-environment/">
         See my train of thought →
       </a>
     </article>
@@ -223,7 +223,7 @@ permalink: /research/rl-vs-control/
         Understanding what distinguishes them, and how they relate to other computational methods.
       </p>
 
-      <a href="/research/rl-algorithms/">
+      <a href="/research/rl-vs-control/rl-algorithms/">
         See my train of thought →
       </a>
     </article>
@@ -235,7 +235,7 @@ permalink: /research/rl-vs-control/
         Gradually moving toward increasingly complex dynamical systems. 
       </p>
 
-      <a href="/research/beyond-simple-dynamics/">
+      <a href="/research/rl-vs-control/beyond-simple-dynamics/">
         See my train of thought →
       </a>
     </article>
