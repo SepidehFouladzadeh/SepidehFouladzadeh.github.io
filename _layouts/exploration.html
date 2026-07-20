@@ -750,9 +750,13 @@
 
   <main class="essay-page">
 
-    <a href="/#writing" class="back-link">
+    <!-- <a href="/#writing" class="back-link">
       ← Back to research
-    </a>
+    </a> -->
+
+    <a href="{{ page.back_url | default: '/#research' }}" class="back-link">
+        ← {{ page.back_text | default: 'Back to research' }}
+        </a>
 
     <article>
       <header class="essay-header">
