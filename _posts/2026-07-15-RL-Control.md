@@ -235,7 +235,7 @@ permalink: /research/rl-vs-control/
         Gradually moving toward increasingly complex dynamical systems. 
       </p>
 
-      <a href="/research/from-simple-dynamics/">
+      <a href="/research/beyond-simple-dynamics/">
         See my train of thought →
       </a>
     </article>
