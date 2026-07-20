@@ -198,6 +198,31 @@ permalink: /research/rl-vs-control/
     </div>
 </div>
 
+
+
+<section class="artifacts">
+
+  <h2>Some artifacts from this exploration</h2>
+
+  <div class="artifact">
+
+    <div class="artifact-media">
+      <img src="/assets/images/cartpole.png" alt="CartPole">
+      <!-- or <video controls> -->
+    </div>
+
+    <div class="artifact-content">
+      <h3>CartPole</h3>
+
+      <p>
+        One of my first experiments.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
 <section class="related-explorations">
 
   <h2>Other explorations inspired by this train of thought</h2>

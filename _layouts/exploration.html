@@ -626,6 +626,43 @@
     opacity: 0.6;
     }
 
+
+
+    .artifacts {
+        margin-top: 5rem;
+    }
+
+    .artifact {
+        display: grid;
+        grid-template-columns: 380px 1fr;
+        gap: 2.5rem;
+
+        align-items: center;
+
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(31,47,41,0.15);
+    }
+
+    .artifact:last-child {
+        border-bottom: none;
+    }
+
+    .artifact-media img,
+    .artifact-media video {
+        width: 100%;
+        border-radius: 18px;
+        display: block;
+    }
+
+    .artifact-content h3 {
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+    }
+
+    .artifact-content p {
+        margin: 0.6rem 0;
+    }
+
     .author-break {
         display: flex;
         align-items: center;
