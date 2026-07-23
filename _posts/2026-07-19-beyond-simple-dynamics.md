@@ -10,4 +10,35 @@ back_url: /research/rl-vs-control/
 back_text: Back to where this began
 ---
 
-Coming soon.
+
+<section class="artifacts">
+
+  <h2>Artifacts from this exploration</h2>
+
+  <div class="artifact-gallery">
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/cartpole-rl-episode-0.mp4" type="video/mp4">
+    </video>
+    <h4>PPO</h4>
+    <p>MLP policy trained for 100,000 timesteps.</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/cartpole-lqr-episode-0.mp4" type="video/mp4">
+    </video>
+    <h4>LQR</h4>
+    <p>Linear quadratic regulator.</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/cartpole-manual-episode-0.mp4" type="video/mp4">
+    </video>
+    <h4>Manual State Feedback</h4>
+    <p>Hand-designed linear state-feedback controller.</p>
+  </div>
+
+</div>
