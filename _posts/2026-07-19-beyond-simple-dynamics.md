@@ -19,7 +19,7 @@ back_text: Back to where this began
 
   <div class="artifact-card">
     <video controls>
-      <source src="/assets/videos/rl-video-episode-0-shorter-training-time.mp4" type="video/mp4">
+      <source src="/assets/videos/rl-video-episode-0-pendulum-shorter-training-time.mp4" type="video/mp4">
     </video>
     <h4>Pendulum - PPO</h4>
     <p>shorter training time</p>
@@ -27,18 +27,34 @@ back_text: Back to where this began
 
   <div class="artifact-card">
     <video controls>
-      <source src="/assets/videos/rl-video-episode-0-longer-training-time.mp4" type="video/mp4">
+      <source src="/assets/videos/rl-video-episode-0-pendulum-longer-training-time.mp4" type="video/mp4">
     </video>
     <h4>Pendulum - PPO</h4>
     <p>longer training time</p>
   </div>
 
-  <!-- <div class="artifact-card">
+  <div class="artifact-card">
     <video controls>
-      <source src="/assets/videos/cartpole-manual-episode-0.mp4" type="video/mp4">
+      <source src="/assets/videos/rl-video-episode-0-acrobat-ppo-shorter.mp4" type="video/mp4">
     </video>
-    <h4>Manual State Feedback</h4>
-    <p>Hand-designed linear state-feedback controller.</p>
-  </div> -->
+    <h4>Acrobat - PPO</h4>
+    <p>shorter training time</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-acrobat-ppo-longer.mp4" type="video/mp4">
+    </video>
+    <h4>Acrobat - PPO</h4>
+    <p>longer training time</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-acrobat-dqn.mp4" type="video/mp4">
+    </video>
+    <h4>Acrobat - DQN</h4>
+    <p>Similar shorter and longer training time</p>
+  </div>
 
 </div>
