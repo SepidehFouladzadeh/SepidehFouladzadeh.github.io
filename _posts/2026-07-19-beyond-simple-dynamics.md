@@ -88,5 +88,4 @@ back_text: Back to where this began
     <h4>Bipedal - SAC</h4>
     <p>longer training time</p>
   </div>
-
-</div>
+  </div>
