@@ -88,4 +88,39 @@ back_text: Back to where this began
     <h4>Bipedal - SAC</h4>
     <p>longer training time</p>
   </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-mountaincar-ppo-shorter.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - PPO</h4>
+    <p>shorter training time</p>
   </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-mountaincar-ppo-longer.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - PPO</h4>
+    <p>longer training time</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-mountaincar-dqn-shorter.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - SAC</h4>
+    <p>shorter training time</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-mountaincar-dqn-longer.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - SAC</h4>
+    <p>longer training time</p>
+  </div>
+
+
+  </div>
+  </section>
