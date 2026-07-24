@@ -57,4 +57,36 @@ back_text: Back to where this began
     <p>Similar shorter and longer training time</p>
   </div>
 
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-bipedal-ppo-shorter.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - PPO</h4>
+    <p>shorter training time</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-bipedal-ppo-longer.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - PPO</h4>
+    <p>longer training time</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-bipedal-sac-shorter.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - SAC</h4>
+    <p>shorter training time</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/rl-video-episode-0-bipedal-sac-longer.mp4" type="video/mp4">
+    </video>
+    <h4>Bipedal - SAC</h4>
+    <p>longer training time</p>
+  </div>
+
 </div>
