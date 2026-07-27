@@ -10,37 +10,9 @@ back_url: /research/rl-vs-control/
 back_text: Back to where this began
 ---
 
-<section class="artifact-detail">
+A hypothetical environment in which a researcher allocates weekly effort among literature review, implementation, result analysis, result communication, and recovery while optimizing for meaningful and sustainable research development.
 
-  <!-- =========================================================
-       INTRODUCTION
-  ========================================================== -->
-
-  <header class="artifact-introduction">
-    <p class="artifact-label">
-      Hypothesis simulator · Reinforcement learning
-    </p>
-
-    <h2>A PhD Research Allocation Environment</h2>
-
-    <p class="artifact-lead">
-      What behavior emerges when an agent is asked to balance
-      progress, learning, uncertainty reduction, deadlines,
-      health, and recovery?
-    </p>
-
-    <p class="artifact-context">
-      In this simulation, one step represents one week. A PPO agent
-      allocates its weekly effort among literature review,
-      implementation, result analysis, result communication,
-      and recovery.
-    </p>
-  </header>
-
-
-  <!-- =========================================================
-       VIDEO
-  ========================================================== -->
+Below you can see how the research process evolves alongside weekly effort allocation over one year.
 
   <div class="artifact-video">
     <video controls preload="metadata">
@@ -52,29 +24,9 @@ back_text: Back to where this began
       Your browser does not support the video element.
     </video>
 
-    <p class="artifact-caption">
-      One simulated year. The upper chart shows the evolving state
-      of the research process, while the lower chart shows the
-      agent’s weekly effort allocation.
-    </p>
   </div>
 
-
-  <!-- =========================================================
-       IMPORTANT FRAMING
-  ========================================================== -->
-
-  <aside class="artifact-note">
-    <strong>This is a hypothesis simulator.</strong>
-
-    <p>
-      The agent is not learning from real data about PhD students.
-      It is learning how to behave inside a simplified environment
-      whose relationships, constraints, and values I explicitly
-      designed.
-    </p>
-  </aside>
-
+  For simplicity, activities outside research are not modeled explicitly. Instead, their overall influence is approximated through the recovery action, assuming the primary focus during this simulated period is research :)
 
   <!-- =========================================================
        REWARD
