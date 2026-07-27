@@ -358,12 +358,10 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <p class="section-number">02</p>
 
         <div>
-        <h3>What assumptions define the environment?</h3>
+        <h3>Assumptions defining the environment</h3>
 
         <p>
-            The environment is defined through transition equations describing
-            how the current state and weekly effort allocation are assumed to
-            shape the following week.
+            Transition equations describing how the current state and weekly effort allocation are assumed to shape the following week.
         </p>
         </div>
     </div>
