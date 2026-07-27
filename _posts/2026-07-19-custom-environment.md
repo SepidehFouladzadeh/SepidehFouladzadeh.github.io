@@ -162,12 +162,9 @@ Below you can see how the research process evolves alongside weekly effort alloc
   ========================================================== -->
 
   <section class="artifact-section">
-        <p>
-          Below are my assumtions about the world :)
-        <p>
-        <p>
-          The transition equations describing the environment that agent learns within. (simply a hypothesis about the underlying causal relationships and not based established empirical fact)
-        </p>
+    <p>
+    Below are my assumtions about the world through the transition equations describing the environment that agent learns within. (simply a hypothesis about the underlying causal relationships and not based established empirical fact)
+    </p>
 
     <div class="hypothesis-legend">
       <span>
