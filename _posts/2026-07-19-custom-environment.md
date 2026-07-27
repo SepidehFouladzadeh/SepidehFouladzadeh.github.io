@@ -355,33 +355,20 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <section class="artifact-section">
 
     <div class="section-heading">
-        <p class="section-number">02</p>
-
         <div>
         <h3>Assumptions defining the environment</h3>
 
         <p>
             Transition equations describing how the current state and weekly effort allocation are assumed to shape the following week.
-        </p>
-        </div>
-    </div>
-
-
-    <div class="model-equation-intro">
-
         <p>
-        In general, the environment follows the form:
+        <p>
+            x<sub>t+1</sub> = f(x<sub>t</sub>, a<sub>t</sub>, noise)
         </p>
-
-        <div class="model-equation-main">
-        x<sub>t+1</sub> = f(x<sub>t</sub>, a<sub>t</sub>, noise)
-        </div>
-
         <p>
         where <em>x</em> represents the research state and <em>a</em>
         represents the weekly effort allocation.
         </p>
-
+        </div>
     </div>
 
 
