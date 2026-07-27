@@ -155,6 +155,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
       The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort.
     <p>
     </blockquote>
+    </div>
   </section>
 
   <!-- =========================================================
