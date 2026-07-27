@@ -368,8 +368,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         where <em>x</em> represents the research state and <em>a</em>
         represents the weekly effort allocation.
         </p>
-        </div>
-    </div>
 
 
     <div class="assumption-list">
@@ -379,7 +377,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">01</span>
 
             <div>
             <h4>Effective capacity</h4>
@@ -391,13 +388,13 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            C<sub>t</sub>
+            capacity
             =
-            E<sub>t</sub>
+            energy
             ×
-            H<sub>t</sub>
+            health
             ×
-            (1 − U<sup>life</sup><sub>t</sub>)
+            (1 − life uncertainty)
         </div>
 
         <div class="assumption-meaning">
@@ -418,7 +415,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">02</span>
 
             <div>
             <h4>Research direction quality</h4>
@@ -430,7 +426,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            D<sub>t</sub>
+            direction quality
             =
             f(
             K<sub>t</sub>,
