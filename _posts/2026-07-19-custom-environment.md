@@ -28,369 +28,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   For simplicity, activities outside research are not modeled explicitly. Instead, their overall influence is approximated through the recovery action, assuming the primary focus during this simulated period is research :)
 
-  <!-- =========================================================
-       REWARD
-  ========================================================== -->
-
-  <section class="artifact-section">
-
-    <div class="equation-card">
-      <p class="equation-title">My Conceptual Reward</p>
-
-      <div class="reward-equation">
-
-        <span class="equation-symbol">=</span>
-
-        <span class="equation-positive">
-          progress
-          + knowledge
-          + information
-        </span>
-
-        <span class="equation-negative">
-          − health damage
-          − low energy
-          − deadline pressure
-          − wasted effort
-        </span>
-
-        <span class="equation-bonus">
-          + completion bonuses
-        </span>
-      </div>
-    </div>
-
-
-    <div class="priority-block">
-      <h4>Reward priorities</h4>
-
-      <p>
-        Weights expressing the relative values encoded in the
-        environment (not literal percentages of the reward
-        received during every week because each reward component also
-        has its own scale and condition)
-      </p>
-
-      <div class="priority-list">
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Research progress</span>
-            <span>30%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 30%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Health and sustainability</span>
-            <span>28%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 28%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Research information</span>
-            <span>20%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 20%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Knowledge</span>
-            <span>12%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 12%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Deadline responsiveness</span>
-            <span>10%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 10%;"
-            ></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <blockquote class="interpretation-quote">
-        The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort. Rewarding meaningful and sustainable research development rather than progress alone :)
-    </blockquote>
-  </section>
-
-  <!-- =========================================================
-       HYPOTHESIS / CAUSAL STRUCTURE
-  ========================================================== -->
-
-  <section class="artifact-section">
-    <p>
-    Below are my assumtions about the world through the transition equations describing the environment that agent learns within. (simply a hypothesis about the underlying causal relationships and not based established empirical fact)
-    </p>
-
-    <div class="hypothesis-legend">
-      <span>
-        <span class="legend-line"></span>
-        Assumed influence
-      </span>
-
-      <span>
-        <span class="legend-node"></span>
-        State or process
-      </span>
-    </div>
-
-
-    <div class="hypothesis-diagram">
-
-      <!-- Capacity row -->
-
-      <div class="diagram-row diagram-row-three">
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Energy</strong>
-        </div>
-
-        <div class="diagram-arrow">
-          <span>contributes to</span>
-          <span class="arrow-symbol">→</span>
-        </div>
-
-        <div class="diagram-node diagram-node-highlight">
-          <span class="node-category">Derived condition</span>
-          <strong>Effective capacity</strong>
-        </div>
-
-      </div>
-
-
-      <div class="diagram-row diagram-row-three">
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Health</strong>
-        </div>
-
-        <div class="diagram-arrow">
-          <span>contributes to</span>
-          <span class="arrow-symbol">→</span>
-        </div>
-
-        <div class="diagram-node diagram-node-highlight">
-          <span class="node-category">Moderated by</span>
-          <strong>Life stability</strong>
-          <small>1 − life uncertainty</small>
-        </div>
-
-      </div>
-
-
-      <!-- Direction quality -->
-
-      <div class="diagram-divider">
-        <span>Research direction</span>
-      </div>
-
-
-      <div class="diagram-inputs">
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Knowledge</strong>
-        </div>
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Feedback clarity</strong>
-        </div>
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Lower research uncertainty</strong>
-        </div>
-
-      </div>
-
-      <div class="diagram-down-arrow">
-        <span>jointly shape</span>
-        <span>↓</span>
-      </div>
-
-      <div class="diagram-center-node">
-        <div class="diagram-node diagram-node-highlight">
-          <span class="node-category">Derived condition</span>
-          <strong>Direction quality</strong>
-        </div>
-      </div>
-
-
-      <!-- Research pipeline -->
-
-      <div class="diagram-divider">
-        <span>Research process</span>
-      </div>
-
-
-      <div class="research-pipeline">
-
-        <div class="pipeline-stage">
-          <div class="diagram-node">
-            <span class="node-category">Action</span>
-            <strong>Literature review</strong>
-          </div>
-
-          <span class="pipeline-arrow">→</span>
-
-          <div class="diagram-node">
-            <span class="node-category">State change</span>
-            <strong>Knowledge</strong>
-            <small>and uncertainty</small>
-          </div>
-        </div>
-
-
-        <div class="pipeline-stage">
-          <div class="diagram-node">
-            <span class="node-category">Action</span>
-            <strong>Implementation</strong>
-          </div>
-
-          <span class="pipeline-arrow">→</span>
-
-          <div class="diagram-node">
-            <span class="node-category">State change</span>
-            <strong>Available results</strong>
-            <small>and progress</small>
-          </div>
-        </div>
-
-
-        <div class="pipeline-stage">
-          <div class="diagram-node">
-            <span class="node-category">Action</span>
-            <strong>Result analysis</strong>
-          </div>
-
-          <span class="pipeline-arrow">→</span>
-
-          <div class="diagram-node">
-            <span class="node-category">State change</span>
-            <strong>Information gain</strong>
-            <small>and uncertainty reduction</small>
-          </div>
-        </div>
-
-      </div>
-
-
-      <!-- Feedback loop -->
-
-      <div class="diagram-divider">
-        <span>Communication feedback loop</span>
-      </div>
-
-
-      <div class="feedback-loop">
-
-        <div class="diagram-node">
-          <span class="node-category">Readiness</span>
-          <strong>
-            Progress + knowledge + lower uncertainty
-          </strong>
-        </div>
-
-        <span class="pipeline-arrow">→</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Action</span>
-          <strong>Result communication</strong>
-        </div>
-
-        <span class="pipeline-arrow">→</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Future conditions</span>
-          <strong>Clarity and support</strong>
-        </div>
-
-      </div>
-
-
-      <!-- Sustainability loop -->
-
-      <div class="diagram-divider">
-        <span>Sustainability feedback loop</span>
-      </div>
-
-
-      <div class="feedback-loop">
-
-        <div class="diagram-node">
-          <span class="node-category">Demand</span>
-          <strong>Research workload</strong>
-        </div>
-
-        <span class="pipeline-arrow">→</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Possible cost</span>
-          <strong>Energy and health loss</strong>
-        </div>
-
-        <span class="pipeline-arrow">↔</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Balancing action</span>
-          <strong>Recovery</strong>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <p class="diagram-caption">
-      The model assumes that the value of an action depends on context.
-      For example, implementation is more productive when the agent has
-      sufficient capacity and a clearer research direction, while analysis
-      is only useful when results are available.
-    </p>
-  </section>
-
 
   <!-- =========================================================
        ACTION ASSUMPTIONS
@@ -710,6 +347,370 @@ Below you can see how the research process evolves alongside weekly effort alloc
     </div>
   </section>
 
+
+  <!-- =========================================================
+       HYPOTHESIS / CAUSAL STRUCTURE
+  ========================================================== -->
+
+  <section class="artifact-section">
+    <p>
+    Below are my assumtions about the world through the transition equations describing the environment that agent learns within. (simply a hypothesis about the underlying causal relationships and not based established empirical fact)
+    </p>
+
+    <div class="hypothesis-legend">
+      <span>
+        <span class="legend-line"></span>
+        Assumed influence
+      </span>
+
+      <span>
+        <span class="legend-node"></span>
+        State or process
+      </span>
+    </div>
+
+
+    <div class="hypothesis-diagram">
+
+      <!-- Capacity row -->
+
+      <div class="diagram-row diagram-row-three">
+
+        <div class="diagram-node">
+          <span class="node-category">State</span>
+          <strong>Energy</strong>
+        </div>
+
+        <div class="diagram-arrow">
+          <span>contributes to</span>
+          <span class="arrow-symbol">→</span>
+        </div>
+
+        <div class="diagram-node diagram-node-highlight">
+          <span class="node-category">Derived condition</span>
+          <strong>Effective capacity</strong>
+        </div>
+
+      </div>
+
+
+      <div class="diagram-row diagram-row-three">
+
+        <div class="diagram-node">
+          <span class="node-category">State</span>
+          <strong>Health</strong>
+        </div>
+
+        <div class="diagram-arrow">
+          <span>contributes to</span>
+          <span class="arrow-symbol">→</span>
+        </div>
+
+        <div class="diagram-node diagram-node-highlight">
+          <span class="node-category">Moderated by</span>
+          <strong>Life stability</strong>
+          <small>1 − life uncertainty</small>
+        </div>
+
+      </div>
+
+
+      <!-- Direction quality -->
+
+      <div class="diagram-divider">
+        <span>Research direction</span>
+      </div>
+
+
+      <div class="diagram-inputs">
+
+        <div class="diagram-node">
+          <span class="node-category">State</span>
+          <strong>Knowledge</strong>
+        </div>
+
+        <div class="diagram-node">
+          <span class="node-category">State</span>
+          <strong>Feedback clarity</strong>
+        </div>
+
+        <div class="diagram-node">
+          <span class="node-category">State</span>
+          <strong>Lower research uncertainty</strong>
+        </div>
+
+      </div>
+
+      <div class="diagram-down-arrow">
+        <span>jointly shape</span>
+        <span>↓</span>
+      </div>
+
+      <div class="diagram-center-node">
+        <div class="diagram-node diagram-node-highlight">
+          <span class="node-category">Derived condition</span>
+          <strong>Direction quality</strong>
+        </div>
+      </div>
+
+
+      <!-- Research pipeline -->
+
+      <div class="diagram-divider">
+        <span>Research process</span>
+      </div>
+
+
+      <div class="research-pipeline">
+
+        <div class="pipeline-stage">
+          <div class="diagram-node">
+            <span class="node-category">Action</span>
+            <strong>Literature review</strong>
+          </div>
+
+          <span class="pipeline-arrow">→</span>
+
+          <div class="diagram-node">
+            <span class="node-category">State change</span>
+            <strong>Knowledge</strong>
+            <small>and uncertainty</small>
+          </div>
+        </div>
+
+
+        <div class="pipeline-stage">
+          <div class="diagram-node">
+            <span class="node-category">Action</span>
+            <strong>Implementation</strong>
+          </div>
+
+          <span class="pipeline-arrow">→</span>
+
+          <div class="diagram-node">
+            <span class="node-category">State change</span>
+            <strong>Available results</strong>
+            <small>and progress</small>
+          </div>
+        </div>
+
+
+        <div class="pipeline-stage">
+          <div class="diagram-node">
+            <span class="node-category">Action</span>
+            <strong>Result analysis</strong>
+          </div>
+
+          <span class="pipeline-arrow">→</span>
+
+          <div class="diagram-node">
+            <span class="node-category">State change</span>
+            <strong>Information gain</strong>
+            <small>and uncertainty reduction</small>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Feedback loop -->
+
+      <div class="diagram-divider">
+        <span>Communication feedback loop</span>
+      </div>
+
+
+      <div class="feedback-loop">
+
+        <div class="diagram-node">
+          <span class="node-category">Readiness</span>
+          <strong>
+            Progress + knowledge + lower uncertainty
+          </strong>
+        </div>
+
+        <span class="pipeline-arrow">→</span>
+
+        <div class="diagram-node">
+          <span class="node-category">Action</span>
+          <strong>Result communication</strong>
+        </div>
+
+        <span class="pipeline-arrow">→</span>
+
+        <div class="diagram-node">
+          <span class="node-category">Future conditions</span>
+          <strong>Clarity and support</strong>
+        </div>
+
+      </div>
+
+
+      <!-- Sustainability loop -->
+
+      <div class="diagram-divider">
+        <span>Sustainability feedback loop</span>
+      </div>
+
+
+      <div class="feedback-loop">
+
+        <div class="diagram-node">
+          <span class="node-category">Demand</span>
+          <strong>Research workload</strong>
+        </div>
+
+        <span class="pipeline-arrow">→</span>
+
+        <div class="diagram-node">
+          <span class="node-category">Possible cost</span>
+          <strong>Energy and health loss</strong>
+        </div>
+
+        <span class="pipeline-arrow">↔</span>
+
+        <div class="diagram-node">
+          <span class="node-category">Balancing action</span>
+          <strong>Recovery</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <p class="diagram-caption">
+      The model assumes that the value of an action depends on context.
+      For example, implementation is more productive when the agent has
+      sufficient capacity and a clearer research direction, while analysis
+      is only useful when results are available.
+    </p>
+  </section>
+
+
+  <!-- =========================================================
+       REWARD
+  ========================================================== -->
+
+  <section class="artifact-section">
+
+    <div class="equation-card">
+      <p class="equation-title">My Conceptual Reward</p>
+
+      <div class="reward-equation">
+
+        <span class="equation-symbol">=</span>
+
+        <span class="equation-positive">
+          progress
+          + knowledge
+          + information
+        </span>
+
+        <span class="equation-negative">
+          − health damage
+          − low energy
+          − deadline pressure
+          − wasted effort
+        </span>
+
+        <span class="equation-bonus">
+          + completion bonuses
+        </span>
+      </div>
+    </div>
+
+
+    <div class="priority-block">
+      <h4>Reward priorities</h4>
+
+      <p>
+        Weights expressing the relative values encoded in the
+        environment (not literal percentages of the reward
+        received during every week because each reward component also
+        has its own scale and condition)
+      </p>
+
+      <div class="priority-list">
+
+        <div class="priority-item">
+          <div class="priority-label">
+            <span>Research progress</span>
+            <span>30%</span>
+          </div>
+
+          <div class="priority-track">
+            <div
+              class="priority-fill"
+              style="width: 30%;"
+            ></div>
+          </div>
+        </div>
+
+        <div class="priority-item">
+          <div class="priority-label">
+            <span>Health and sustainability</span>
+            <span>28%</span>
+          </div>
+
+          <div class="priority-track">
+            <div
+              class="priority-fill"
+              style="width: 28%;"
+            ></div>
+          </div>
+        </div>
+
+        <div class="priority-item">
+          <div class="priority-label">
+            <span>Research information</span>
+            <span>20%</span>
+          </div>
+
+          <div class="priority-track">
+            <div
+              class="priority-fill"
+              style="width: 20%;"
+            ></div>
+          </div>
+        </div>
+
+        <div class="priority-item">
+          <div class="priority-label">
+            <span>Knowledge</span>
+            <span>12%</span>
+          </div>
+
+          <div class="priority-track">
+            <div
+              class="priority-fill"
+              style="width: 12%;"
+            ></div>
+          </div>
+        </div>
+
+        <div class="priority-item">
+          <div class="priority-label">
+            <span>Deadline responsiveness</span>
+            <span>10%</span>
+          </div>
+
+          <div class="priority-track">
+            <div
+              class="priority-fill"
+              style="width: 10%;"
+            ></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <blockquote class="interpretation-quote">
+        The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort. Rewarding meaningful and sustainable research development rather than progress alone :)
+    </blockquote>
+  </section>
 
   <!-- =========================================================
        INTERPRETATION
