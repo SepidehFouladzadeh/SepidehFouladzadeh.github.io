@@ -148,8 +148,12 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
 
     <blockquote class="interpretation-quote">
+    <p>
       Rewarding meaningful and sustainable research development rather than progress alone :)
+    <p>
+    <p>
       The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort.
+    <p>
     </blockquote>
   </section>
 
@@ -160,6 +164,8 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <section class="artifact-section">
         <p>
           Below are my assumtions about the world :)
+        <p>
+        <p>
           The transition equations describing the environment that agent learns within. (simply a hypothesis about the underlying causal relationships and not based established empirical fact)
         </p>
 
