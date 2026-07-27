@@ -353,239 +353,492 @@ Below you can see how the research process evolves alongside weekly effort alloc
   ========================================================== -->
 
   <section class="artifact-section">
-    <p>
-    Below are my assumtions about the world through the transition equations describing the environment that agent learns within. (simply a hypothesis about the underlying causal relationships and not based established empirical fact)
-    </p>
 
-    <div class="hypothesis-legend">
-      <span>
-        <span class="legend-line"></span>
-        Assumed influence
-      </span>
+    <div class="section-heading">
+        <p class="section-number">02</p>
 
-      <span>
-        <span class="legend-node"></span>
-        State or process
-      </span>
+        <div>
+        <h3>What assumptions define the environment?</h3>
+
+        <p>
+            The environment is defined through transition equations describing
+            how the current state and weekly effort allocation are assumed to
+            shape the following week.
+        </p>
+        </div>
     </div>
 
 
-    <div class="hypothesis-diagram">
+    <div class="model-equation-intro">
 
-      <!-- Capacity row -->
+        <p>
+        In general, the environment follows the form:
+        </p>
 
-      <div class="diagram-row diagram-row-three">
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Energy</strong>
+        <div class="model-equation-main">
+        x<sub>t+1</sub> = f(x<sub>t</sub>, a<sub>t</sub>, noise)
         </div>
 
-        <div class="diagram-arrow">
-          <span>contributes to</span>
-          <span class="arrow-symbol">→</span>
-        </div>
-
-        <div class="diagram-node diagram-node-highlight">
-          <span class="node-category">Derived condition</span>
-          <strong>Effective capacity</strong>
-        </div>
-
-      </div>
-
-
-      <div class="diagram-row diagram-row-three">
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Health</strong>
-        </div>
-
-        <div class="diagram-arrow">
-          <span>contributes to</span>
-          <span class="arrow-symbol">→</span>
-        </div>
-
-        <div class="diagram-node diagram-node-highlight">
-          <span class="node-category">Moderated by</span>
-          <strong>Life stability</strong>
-          <small>1 − life uncertainty</small>
-        </div>
-
-      </div>
-
-
-      <!-- Direction quality -->
-
-      <div class="diagram-divider">
-        <span>Research direction</span>
-      </div>
-
-
-      <div class="diagram-inputs">
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Knowledge</strong>
-        </div>
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Feedback clarity</strong>
-        </div>
-
-        <div class="diagram-node">
-          <span class="node-category">State</span>
-          <strong>Lower research uncertainty</strong>
-        </div>
-
-      </div>
-
-      <div class="diagram-down-arrow">
-        <span>jointly shape</span>
-        <span>↓</span>
-      </div>
-
-      <div class="diagram-center-node">
-        <div class="diagram-node diagram-node-highlight">
-          <span class="node-category">Derived condition</span>
-          <strong>Direction quality</strong>
-        </div>
-      </div>
-
-
-      <!-- Research pipeline -->
-
-      <div class="diagram-divider">
-        <span>Research process</span>
-      </div>
-
-
-      <div class="research-pipeline">
-
-        <div class="pipeline-stage">
-          <div class="diagram-node">
-            <span class="node-category">Action</span>
-            <strong>Literature review</strong>
-          </div>
-
-          <span class="pipeline-arrow">→</span>
-
-          <div class="diagram-node">
-            <span class="node-category">State change</span>
-            <strong>Knowledge</strong>
-            <small>and uncertainty</small>
-          </div>
-        </div>
-
-
-        <div class="pipeline-stage">
-          <div class="diagram-node">
-            <span class="node-category">Action</span>
-            <strong>Implementation</strong>
-          </div>
-
-          <span class="pipeline-arrow">→</span>
-
-          <div class="diagram-node">
-            <span class="node-category">State change</span>
-            <strong>Available results</strong>
-            <small>and progress</small>
-          </div>
-        </div>
-
-
-        <div class="pipeline-stage">
-          <div class="diagram-node">
-            <span class="node-category">Action</span>
-            <strong>Result analysis</strong>
-          </div>
-
-          <span class="pipeline-arrow">→</span>
-
-          <div class="diagram-node">
-            <span class="node-category">State change</span>
-            <strong>Information gain</strong>
-            <small>and uncertainty reduction</small>
-          </div>
-        </div>
-
-      </div>
-
-
-      <!-- Feedback loop -->
-
-      <div class="diagram-divider">
-        <span>Communication feedback loop</span>
-      </div>
-
-
-      <div class="feedback-loop">
-
-        <div class="diagram-node">
-          <span class="node-category">Readiness</span>
-          <strong>
-            Progress + knowledge + lower uncertainty
-          </strong>
-        </div>
-
-        <span class="pipeline-arrow">→</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Action</span>
-          <strong>Result communication</strong>
-        </div>
-
-        <span class="pipeline-arrow">→</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Future conditions</span>
-          <strong>Clarity and support</strong>
-        </div>
-
-      </div>
-
-
-      <!-- Sustainability loop -->
-
-      <div class="diagram-divider">
-        <span>Sustainability feedback loop</span>
-      </div>
-
-
-      <div class="feedback-loop">
-
-        <div class="diagram-node">
-          <span class="node-category">Demand</span>
-          <strong>Research workload</strong>
-        </div>
-
-        <span class="pipeline-arrow">→</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Possible cost</span>
-          <strong>Energy and health loss</strong>
-        </div>
-
-        <span class="pipeline-arrow">↔</span>
-
-        <div class="diagram-node">
-          <span class="node-category">Balancing action</span>
-          <strong>Recovery</strong>
-        </div>
-
-      </div>
+        <p>
+        where <em>x</em> represents the research state and <em>a</em>
+        represents the weekly effort allocation.
+        </p>
 
     </div>
 
 
-    <p class="diagram-caption">
-      The model assumes that the value of an action depends on context.
-      For example, implementation is more productive when the agent has
-      sufficient capacity and a clearer research direction, while analysis
-      is only useful when results are available.
-    </p>
-  </section>
+    <div class="assumption-list">
+
+        <!-- EFFECTIVE CAPACITY -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">01</span>
+
+            <div>
+            <h4>Effective capacity</h4>
+            <p>
+                Energy, health, and life stability jointly determine how
+                effectively effort can be converted into work.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            C<sub>t</sub>
+            =
+            E<sub>t</sub>
+            ×
+            H<sub>t</sub>
+            ×
+            (1 − U<sup>life</sup><sub>t</sub>)
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Low energy, reduced health, or greater life uncertainty lowers
+            the effectiveness of all research activities, even when the same
+            amount of effort is allocated.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- DIRECTION QUALITY -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">02</span>
+
+            <div>
+            <h4>Research direction quality</h4>
+            <p>
+                Knowledge, feedback, and lower uncertainty are assumed to make
+                research effort better directed.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            D<sub>t</sub>
+            =
+            f(
+            K<sub>t</sub>,
+            F<sub>t</sub>,
+            1 − U<sup>research</sup><sub>t</sub>
+            )
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Implementation is more productive when the researcher has more
+            relevant knowledge, clearer feedback, and less uncertainty about
+            the research direction.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- KNOWLEDGE -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">03</span>
+
+            <div>
+            <h4>Knowledge development</h4>
+            <p>
+                Literature review converts effort and capacity into additional
+                knowledge.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            K<sub>t+1</sub>
+            =
+            K<sub>t</sub>
+            +
+            α ·
+            a<sup>literature</sup><sub>t</sub>
+            · C<sub>t</sub>
+            · (1 − K<sub>t</sub>)
+            +
+            ε<sup>K</sup><sub>t</sub>
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Literature review increases knowledge, but the gain gradually
+            saturates as knowledge becomes higher. Random variation represents
+            differences in the usefulness of what is read each week.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- IMPLEMENTATION AND PROGRESS -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">04</span>
+
+            <div>
+            <h4>Research progress</h4>
+            <p>
+                Implementation converts effort, capacity, and direction quality
+                into progress.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            P<sub>t+1</sub>
+            =
+            P<sub>t</sub>
+            +
+            β ·
+            a<sup>implementation</sup><sub>t</sub>
+            · C<sub>t</sub>
+            · D<sub>t</sub>
+            +
+            ε<sup>P</sup><sub>t</sub>
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            The same implementation effort produces less progress when
+            capacity is limited or the research direction is unclear.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- RESULTS -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">05</span>
+
+            <div>
+            <h4>Available results</h4>
+            <p>
+                Implementation generates results, while analysis consumes them.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            R<sub>t+1</sub>
+            =
+            R<sub>t</sub>
+            +
+            γ ·
+            a<sup>implementation</sup><sub>t</sub>
+            · C<sub>t</sub>
+            −
+            δ ·
+            a<sup>analysis</sup><sub>t</sub>
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Implementation produces material that can later be analyzed.
+            Analysis is only productive when sufficient results are available.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- INFORMATION -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">06</span>
+
+            <div>
+            <h4>Information gain through analysis</h4>
+            <p>
+                Analysis converts available results into interpretable
+                information.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            I<sub>t</sub>
+            =
+            η ·
+            min(
+            R<sub>t</sub>,
+            a<sup>analysis</sup><sub>t</sub> · C<sub>t</sub>
+            )
+            · K<sub>t</sub>
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Information gain is constrained by both the available results and
+            the effort allocated to analysis. Greater knowledge improves the
+            ability to interpret those results.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- RESEARCH UNCERTAINTY -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">07</span>
+
+            <div>
+            <h4>Research uncertainty</h4>
+            <p>
+                Reading, analysis, and communication may reduce uncertainty,
+                while poorly directed implementation may increase it.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            U<sup>research</sup><sub>t+1</sub>
+            =
+            U<sup>research</sup><sub>t</sub>
+            −
+            λ<sub>1</sub>I<sub>t</sub>
+            −
+            λ<sub>2</sub>a<sup>literature</sup><sub>t</sub>
+            −
+            λ<sub>3</sub>a<sup>communication</sup><sub>t</sub>
+            +
+            λ<sub>4</sub>Confusion<sub>t</sub>
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Research uncertainty falls through useful information and external
+            feedback, but implementation undertaken with insufficient knowledge
+            or direction may generate additional confusion.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- COMMUNICATION -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">08</span>
+
+            <div>
+            <h4>Communication and feedback</h4>
+            <p>
+                Communicating sufficiently developed work is assumed to increase
+                feedback clarity and professional support.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            F<sub>t+1</sub>
+            =
+            F<sub>t</sub>
+            +
+            μ ·
+            a<sup>communication</sup><sub>t</sub>
+            · Readiness<sub>t</sub>
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            Readiness<sub>t</sub>
+            =
+            f(
+            P<sub>t</sub>,
+            K<sub>t</sub>,
+            1 − U<sup>research</sup><sub>t</sub>
+            )
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Communication is more useful after sufficient progress and
+            understanding have developed. Premature communication produces
+            less useful feedback.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- ENERGY -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">09</span>
+
+            <div>
+            <h4>Energy dynamics</h4>
+            <p>
+                Research effort consumes energy, while recovery restores it.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            E<sub>t+1</sub>
+            =
+            E<sub>t</sub>
+            −
+            ρ · Workload<sub>t</sub>
+            +
+            σ · a<sup>recovery</sup><sub>t</sub>
+            · H<sub>t</sub>
+            · (1 − U<sup>life</sup><sub>t</sub>)
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Recovery replenishes energy, but it is less effective when health
+            is poor or life uncertainty is high.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- HEALTH -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">10</span>
+
+            <div>
+            <h4>Health dynamics</h4>
+            <p>
+                Sustained overload may reduce health, while recovery supports
+                gradual restoration.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            H<sub>t+1</sub>
+            =
+            H<sub>t</sub>
+            −
+            κ · Overload<sub>t</sub>
+            +
+            τ · a<sup>recovery</sup><sub>t</sub>
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Health changes more slowly than energy. Occasional demanding weeks
+            may be manageable, but repeated overload without recovery produces
+            cumulative deterioration.
+            </p>
+        </div>
+
+        </article>
+
+
+        <!-- DEADLINE -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <span class="assumption-number">11</span>
+
+            <div>
+            <h4>Deadline pressure</h4>
+            <p>
+                Pressure grows as time passes while meaningful progress remains
+                incomplete.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            Q<sub>t+1</sub>
+            =
+            f(
+            1 − TimeRemaining<sub>t</sub>,
+            1 − P<sub>t</sub>
+            )
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Assumption</strong>
+
+            <p>
+            Deadline pressure is highest when little time remains and research
+            progress is still low.
+            </p>
+        </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 
   <!-- =========================================================
