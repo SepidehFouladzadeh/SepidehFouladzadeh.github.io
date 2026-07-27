@@ -10,7 +10,7 @@ back_url: /research/rl-vs-control/
 back_text: Back to where this began
 ---
 
-A hypothetical environment in which a researcher allocates weekly effort among literature review, implementation, result analysis, result communication, and recovery while optimizing for meaningful and sustainable research development.
+A hypothetical environment in which a researcher allocates weekly effort among literature review, implementation, result analysis, result communication, and recovery while optimizing for meaningful and sustainable research development :)
 
 Below you can see how the research process evolves alongside weekly effort allocation over one year.
 
@@ -33,57 +33,11 @@ Below you can see how the research process evolves alongside weekly effort alloc
   ========================================================== -->
 
   <section class="artifact-section">
-    <div class="section-heading">
-      <p class="section-number">01</p>
-
-      <div>
-        <h3>What is the agent optimizing?</h3>
-
-        <p>
-          The reward function defines what the environment considers
-          a desirable outcome. It rewards meaningful and sustainable
-          research development rather than progress alone.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="reward-summary">
-
-      <div class="reward-column reward-positive">
-        <h4>Encouraged</h4>
-
-        <ul>
-          <li>Research progress</li>
-          <li>Knowledge gain</li>
-          <li>Reduction of research uncertainty</li>
-          <li>Completion with preserved health and energy</li>
-          <li>Useful analysis and communication</li>
-        </ul>
-      </div>
-
-      <div class="reward-column reward-negative">
-        <h4>Discouraged</h4>
-
-        <ul>
-          <li>Health deterioration</li>
-          <li>Persistently low energy</li>
-          <li>Overwork during life instability</li>
-          <li>Increasing deadline pressure</li>
-          <li>Poorly timed or wasted effort</li>
-        </ul>
-      </div>
-
-    </div>
-
 
     <div class="equation-card">
-      <p class="equation-title">Conceptual reward</p>
+      <p class="equation-title">My Conceptual Reward</p>
 
       <div class="reward-equation">
-        <span class="equation-main">
-          Reward
-        </span>
 
         <span class="equation-symbol">=</span>
 
@@ -108,13 +62,13 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
 
     <div class="priority-block">
-      <h4>Default reward priorities</h4>
+      <h4>Reward priorities</h4>
 
       <p>
-        These weights express the relative values encoded in the
-        environment. They are not literal percentages of the reward
+        Weights expressing the relative values encoded in the
+        environment (not literal percentages of the reward
         received during every week because each reward component also
-        has its own scale and condition.
+        has its own scale and condition)
       </p>
 
       <div class="priority-list">
@@ -194,32 +148,20 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
 
     <blockquote class="interpretation-quote">
-      The reward encodes a value judgment: research progress matters,
-      but progress achieved through health collapse or chronically
-      unsustainable effort should not be treated as equally successful.
+      Rewarding meaningful and sustainable research development rather than progress alone :)
+      The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort.
     </blockquote>
   </section>
-
 
   <!-- =========================================================
        HYPOTHESIS / CAUSAL STRUCTURE
   ========================================================== -->
 
   <section class="artifact-section">
-    <div class="section-heading">
-      <p class="section-number">02</p>
-
-      <div>
-        <h3>What hypothesis defines the environment?</h3>
-
         <p>
-          The transition equations describe how the simulated world
-          works. Each arrow below represents an assumed influence,
-          not an established empirical fact.
+          Below are my assumtions about the world :)
+          The transition equations describing the environment that agent learns within. (simply a hypothesis about the underlying causal relationships and not based established empirical fact)
         </p>
-      </div>
-    </div>
-
 
     <div class="hypothesis-legend">
       <span>
