@@ -664,48 +664,704 @@
     line-height: 1.35;
     }
 
-    /* .artifact {
-        display: grid;
-        grid-template-columns: 380px 1fr;
-        gap: 2.5rem;
+    /* =========================================================
+    PHD RESEARCH ENVIRONMENT ARTIFACT
+    ========================================================= */
 
-        align-items: center;
-
-        padding: 2rem 0;
-        border-bottom: 1px solid rgba(31,47,41,0.15);
+    .artifact-detail {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
     }
 
-    .artifact:last-child {
-        border-bottom: none;
-    } */
 
-    /* .artifact-media img,
-    .artifact-media video {
-        width: 100%;
-        max-width: 300px;   /* adjust: 250–350px */
-        /* border-radius: 18px; */
-        /* display: block; */
-    /* } */
-    /* .artifact-content h2 {
-    margin: 0 0 2.5rem;
-    font-size: 1.45rem;
-    font-weight: 500;
+    /* =========================================================
+    INTRODUCTION
+    ========================================================= */
+
+    .artifact-introduction {
+    max-width: 820px;
+    margin-bottom: 2.5rem;
+    }
+
+    .artifact-label {
+    margin: 0 0 0.8rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    }
+
+    .artifact-introduction h2 {
+    margin: 0 0 1.2rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.08;
+    }
+
+    .artifact-lead {
+    max-width: 750px;
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.55;
+    }
+
+    .artifact-context {
+    max-width: 750px;
+    margin: 0;
+    opacity: 0.8;
+    }
+
+
+    /* =========================================================
+    VIDEO
+    ========================================================= */
+
+    .artifact-video {
+    margin: 2.5rem 0 2rem;
+    }
+
+    .artifact-video video {
+    display: block;
+    width: 100%;
+    max-height: 720px;
+    border-radius: 22px;
+    background: #111;
+    box-shadow: 0 18px 45px rgba(31, 47, 41, 0.15);
+    }
+
+    .artifact-caption {
+    max-width: 800px;
+    margin: 0.9rem 0 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    opacity: 0.72;
+    }
+
+
+    /* =========================================================
+    INTRODUCTORY NOTE
+    ========================================================= */
+
+    .artifact-note {
+    margin: 2.5rem 0 5rem;
+    padding: 1.5rem 1.7rem;
+    border-left: 4px solid currentColor;
+    border-radius: 0 18px 18px 0;
+    background: rgba(255, 255, 255, 0.27);
+    }
+
+    .artifact-note strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    }
+
+    .artifact-note p {
+    max-width: 800px;
+    margin: 0;
+    }
+
+
+    /* =========================================================
+    GENERAL SECTIONS
+    ========================================================= */
+
+    .artifact-section {
+    margin-top: 6rem;
+    }
+
+    .section-heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1.3rem;
+    max-width: 850px;
+    margin-bottom: 2.5rem;
+    }
+
+    .section-number {
+    margin: 0.2rem 0 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.55;
+    }
+
+    .section-heading h3 {
+    margin: 0 0 0.7rem;
+    font-size: clamp(1.65rem, 3vw, 2.3rem);
+    line-height: 1.2;
+    }
+
+    .section-heading p {
+    margin: 0;
+    max-width: 760px;
+    opacity: 0.82;
+    }
+
+
+    /* =========================================================
+    REWARD SUMMARY
+    ========================================================= */
+
+    .reward-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem;
+    }
+
+    .reward-column {
+    padding: 1.6rem;
+    border: 1px solid rgba(31, 47, 41, 0.15);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    }
+
+    .reward-column h4 {
+    margin: 0 0 1rem;
+    }
+
+    .reward-column ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    }
+
+    .reward-column li {
+    margin: 0.55rem 0;
+    }
+
+    .reward-positive {
+    border-top: 4px solid rgba(31, 47, 41, 0.75);
+    }
+
+    .reward-negative {
+    border-top: 4px solid rgba(31, 47, 41, 0.3);
+    }
+
+
+    /* =========================================================
+    EQUATION
+    ========================================================= */
+
+    .equation-card {
+    margin-top: 1.5rem;
+    padding: 1.7rem;
+    border-radius: 20px;
+    background: rgba(31, 47, 41, 0.92);
+    color: #f7f4ef;
+    }
+
+    .equation-title {
+    margin: 0 0 1.2rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.72;
+    }
+
+    .reward-equation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    }
+
+    .equation-main {
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+
+    .equation-symbol {
+    opacity: 0.6;
+    }
+
+    .equation-positive,
+    .equation-negative,
+    .equation-bonus {
+    padding: 0.45rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 9px;
+    }
+
+
+    /* =========================================================
+    PRIORITIES
+    ========================================================= */
+
+    .priority-block {
+    margin-top: 1.5rem;
+    padding: 1.7rem;
+    border: 1px solid rgba(31, 47, 41, 0.14);
+    border-radius: 20px;
+    }
+
+    .priority-block h4 {
+    margin: 0 0 0.5rem;
+    }
+
+    .priority-block > p {
+    max-width: 780px;
+    margin: 0 0 1.6rem;
+    opacity: 0.78;
+    }
+
+    .priority-list {
+    display: grid;
+    gap: 1rem;
+    }
+
+    .priority-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.92rem;
+    }
+
+    .priority-track {
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(31, 47, 41, 0.12);
+    }
+
+    .priority-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: currentColor;
+    opacity: 0.72;
+    }
+
+    .interpretation-quote {
+    max-width: 820px;
+    margin: 2rem 0 0;
+    padding: 1.5rem 1.8rem;
+    border-left: 3px solid currentColor;
+    font-family: Georgia, serif;
+    font-size: 1.12rem;
+    line-height: 1.65;
+    }
+
+
+    /* =========================================================
+    HYPOTHESIS DIAGRAM
+    ========================================================= */
+
+    .hypothesis-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.3rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    }
+
+    .hypothesis-legend > span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    }
+
+    .legend-line {
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+    }
+
+    .legend-node {
+    width: 16px;
+    height: 12px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    }
+
+    .hypothesis-diagram {
+    padding: 2rem;
+    border: 1px solid rgba(31, 47, 41, 0.14);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.16);
+    }
+
+    .diagram-row {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    }
+
+    .diagram-row-three {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    }
+
+    .diagram-node {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 88px;
+    padding: 1rem;
+    border: 1px solid rgba(31, 47, 41, 0.19);
+    border-radius: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.24);
+    }
+
+    .diagram-node-highlight {
+    border-width: 2px;
+    background: rgba(255, 255, 255, 0.45);
+    }
+
+    .diagram-node strong {
     line-height: 1.35;
     }
 
-    .artifact-content h3 {
-        margin: 0 0 0.45rem;
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 1.4;
-    } */
+    .diagram-node small {
+    margin-top: 0.35rem;
+    opacity: 0.68;
+    }
 
-    /* .artifact-content p {
-        max-width: 650px;
-        margin: 0 0 0.85rem;
-        font-size: 1rem;
-        line-height: 1.65;
-    } */
+    .node-category {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    }
+
+    .diagram-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    font-size: 0.72rem;
+    text-align: center;
+    opacity: 0.65;
+    }
+
+    .arrow-symbol {
+    font-size: 1.6rem;
+    line-height: 1;
+    }
+
+    .diagram-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1.5rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    }
+
+    .diagram-divider::before,
+    .diagram-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: rgba(31, 47, 41, 0.18);
+    }
+
+    .diagram-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    }
+
+    .diagram-down-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.8rem 0;
+    font-size: 0.75rem;
+    opacity: 0.62;
+    }
+
+    .diagram-down-arrow span:last-child {
+    font-size: 1.7rem;
+    line-height: 1;
+    }
+
+    .diagram-center-node {
+    max-width: 360px;
+    margin: 0 auto;
+    }
+
+    .research-pipeline {
+    display: grid;
+    gap: 1rem;
+    }
+
+    .pipeline-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+    }
+
+    .pipeline-arrow {
+    font-size: 1.6rem;
+    opacity: 0.55;
+    }
+
+    .feedback-loop {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+    align-items: center;
+    gap: 0.8rem;
+    }
+
+    .diagram-caption {
+    max-width: 820px;
+    margin: 1.2rem 0 0;
+    font-size: 0.92rem;
+    opacity: 0.72;
+    }
+
+
+    /* =========================================================
+    ACTION ACCORDIONS
+    ========================================================= */
+
+    .action-assumptions {
+    border-top: 1px solid rgba(31, 47, 41, 0.16);
+    }
+
+    .action-detail {
+    border-bottom: 1px solid rgba(31, 47, 41, 0.16);
+    }
+
+    .action-detail summary {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.4rem 0;
+    cursor: pointer;
+    list-style: none;
+    }
+
+    .action-detail summary::-webkit-details-marker {
+    display: none;
+    }
+
+    .action-number {
+    font-size: 0.76rem;
+    opacity: 0.55;
+    }
+
+    .action-summary-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    }
+
+    .action-summary-text strong {
+    font-size: 1.08rem;
+    }
+
+    .action-summary-text small {
+    opacity: 0.68;
+    }
+
+    .detail-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.2s ease;
+    }
+
+    .action-detail[open] .detail-icon {
+    transform: rotate(45deg);
+    }
+
+    .action-content {
+    max-width: 850px;
+    padding: 0 0 1.8rem 2.3rem;
+    }
+
+    .action-content p {
+    margin: 0.8rem 0;
+    }
+
+    .action-effects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 1rem;
+    }
+
+    .action-effects span {
+    padding: 0.35rem 0.65rem;
+    border: 1px solid rgba(31, 47, 41, 0.17);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.24);
+    }
+
+
+    /* =========================================================
+    STATE GRID
+    ========================================================= */
+
+    .state-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    }
+
+    .state-card {
+    padding: 1.3rem;
+    border: 1px solid rgba(31, 47, 41, 0.15);
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.19);
+    }
+
+    .state-card strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    }
+
+    .state-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.74;
+    }
+
+
+    /* =========================================================
+    LIMITATIONS
+    ========================================================= */
+
+    .limitations-box {
+    max-width: 850px;
+    padding: 1.7rem;
+    border: 2px solid rgba(31, 47, 41, 0.52);
+    border-radius: 20px;
+    }
+
+    .limitations-box h4 {
+    margin: 0 0 0.8rem;
+    }
+
+    .limitations-box p {
+    margin: 0.7rem 0;
+    }
+
+    .interpretation-points {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    }
+
+    .interpretation-points article {
+    padding: 1.4rem;
+    border-top: 1px solid rgba(31, 47, 41, 0.2);
+    }
+
+    .interpretation-points h4 {
+    margin: 0 0 0.6rem;
+    }
+
+    .interpretation-points p {
+    margin: 0;
+    opacity: 0.78;
+    }
+
+
+    /* =========================================================
+    CONCLUSION
+    ========================================================= */
+
+    .artifact-conclusion {
+    max-width: 850px;
+    margin-top: 6rem;
+    padding: 2rem;
+    border-radius: 22px;
+    background: rgba(31, 47, 41, 0.92);
+    color: #f7f4ef;
+    }
+
+    .artifact-conclusion p {
+    margin: 0 0 0.8rem;
+    opacity: 0.78;
+    }
+
+    .artifact-conclusion strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: clamp(1.25rem, 3vw, 1.7rem);
+    line-height: 1.5;
+    }
+
+
+    /* =========================================================
+    RESPONSIVE DESIGN
+    ========================================================= */
+
+    @media (max-width: 760px) {
+
+    .artifact-detail {
+        padding: 3rem 1rem 5rem;
+    }
+
+    .artifact-section {
+        margin-top: 4.5rem;
+    }
+
+    .reward-summary,
+    .state-grid,
+    .interpretation-points {
+        grid-template-columns: 1fr;
+    }
+
+    .hypothesis-diagram {
+        padding: 1.2rem;
+    }
+
+    .diagram-row-three,
+    .pipeline-stage,
+    .feedback-loop {
+        grid-template-columns: 1fr;
+    }
+
+    .diagram-arrow,
+    .pipeline-arrow {
+        transform: rotate(90deg);
+        justify-self: center;
+        min-width: auto;
+    }
+
+    .diagram-arrow span:first-child {
+        display: none;
+    }
+
+    .diagram-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .action-detail summary {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+    }
+
+    .action-content {
+        padding-left: 0;
+    }
+
+    .artifact-conclusion {
+        padding: 1.5rem;
+    }
+    }
 
     .author-break {
         display: flex;
