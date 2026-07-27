@@ -156,6 +156,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
     <p>
     </blockquote>
     </div>
+    </div>
   </section>
 
   <!-- =========================================================
