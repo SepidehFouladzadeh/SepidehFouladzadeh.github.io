@@ -398,13 +398,12 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   <section class="artifact-section">
     <div class="section-heading">
-      <p class="section-number">03</p>
 
       <div>
-        <h3>What does each action assume?</h3>
+        <h3>Actions</h3>
 
         <p>
-          Open each action to see the relationships encoded in the
+          Along with the relationships encoded in the
           environment.
         </p>
       </div>
@@ -417,12 +416,11 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
       <details class="action-detail">
         <summary>
-          <span class="action-number">01</span>
 
           <span class="action-summary-text">
             <strong>Literature review</strong>
             <small>
-              Builds knowledge and changes perceived uncertainty
+              Builds knowledge and changes perceived uncertainty about the project
             </small>
           </span>
 
@@ -431,16 +429,16 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
         <div class="action-content">
           <div class="action-effects">
-            <span>↑ Knowledge</span>
+            <span>↑ Gained knowledge</span>
             <span>↓ Research uncertainty</span>
             <span>↑ Newly revealed unknowns</span>
           </div>
 
           <p>
             Literature review is assumed to increase knowledge,
-            particularly when knowledge is still limited. It can reduce
-            research uncertainty, but early reading may also reveal
-            unknown unknowns and temporarily make the project feel less
+            particularly when knowledge is still limited (early stages of the research). It can reduce
+            research uncertainty, but in early stages it may also reveal
+            more unknown layers of complexity and temporarily make the project feel less
             clear.
           </p>
 
@@ -457,7 +455,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
       <details class="action-detail">
         <summary>
-          <span class="action-number">02</span>
 
           <span class="action-summary-text">
             <strong>Implementation</strong>
@@ -495,7 +492,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
       <details class="action-detail">
         <summary>
-          <span class="action-number">03</span>
 
           <span class="action-summary-text">
             <strong>Result analysis</strong>
@@ -535,7 +531,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
       <details class="action-detail">
         <summary>
-          <span class="action-number">04</span>
 
           <span class="action-summary-text">
             <strong>Result communication</strong>
@@ -581,7 +576,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
       <details class="action-detail">
         <summary>
-          <span class="action-number">05</span>
 
           <span class="action-summary-text">
             <strong>Recovery</strong>
@@ -623,13 +617,12 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   <section class="artifact-section">
     <div class="section-heading">
-      <p class="section-number">04</p>
 
       <div>
-        <h3>What can the agent observe?</h3>
+        <h3>Observations</h3>
 
         <p>
-          The policy receives eleven normalized state values between
+          Normalized state values between
           zero and one.
         </p>
       </div>
@@ -646,7 +639,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
       <div class="state-card">
         <strong>Knowledge</strong>
         <p>
-          The modeled understanding available to guide research work.
+          The understanding available to guide research work.
         </p>
       </div>
 
@@ -710,7 +703,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
       <div class="state-card">
         <strong>Remaining time</strong>
         <p>
-          The fraction of the simulated year remaining.
+          The fraction of the simulated time remaining.
         </p>
       </div>
 
@@ -723,29 +716,9 @@ Below you can see how the research process evolves alongside weekly effort alloc
   ========================================================== -->
 
   <section class="artifact-section">
-    <div class="section-heading">
-      <p class="section-number">05</p>
-
-      <div>
-        <h3>How should the result be interpreted?</h3>
-
-        <p>
-          The learned policy is a consequence of the model, not an
-          independently discovered truth about research.
-        </p>
-      </div>
-    </div>
-
 
     <div class="limitations-box">
-      <h4>Interpretation boundary</h4>
-
-      <p>
-        This environment is not a validated model of doctoral research,
-        and its learned policy should not be interpreted as personal or
-        professional advice.
-      </p>
-
+      <h4>Interpreting the learned policy</h4>
       <p>
         The behavior reflects the transition equations, reward
         priorities, random disturbances, initial conditions, and state
@@ -753,73 +726,9 @@ Below you can see how the research process evolves alongside weekly effort alloc
       </p>
 
       <p>
-        Its purpose is to make those assumptions inspectable and to
+        The purpose is to make those assumptions inspectable and to
         explore what kinds of behavior they produce.
       </p>
     </div>
 
-
-    <div class="interpretation-points">
-
-      <article>
-        <h4>Actions represent a fixed effort budget</h4>
-
-        <p>
-          The five action values are converted into nonnegative effort
-          fractions that sum to one. Increasing effort in one activity
-          necessarily reduces the fraction available to the others.
-        </p>
-      </article>
-
-      <article>
-        <h4>Relationships are hypotheses</h4>
-
-        <p>
-          Statements such as “knowledge improves implementation” or
-          “recovery restores capacity” are modeling assumptions encoded
-          in equations, not conclusions learned from empirical data.
-        </p>
-      </article>
-
-      <article>
-        <h4>Randomness represents unmodeled variation</h4>
-
-        <p>
-          Literature, implementation, analysis, feedback, redirection,
-          and life uncertainty include random variation, so identical
-          allocations do not always produce identical trajectories.
-        </p>
-      </article>
-
-      <article>
-        <h4>The objective determines the behavior</h4>
-
-        <p>
-          Changing the reward weights or penalties can produce a
-          different policy even when the transition equations remain
-          unchanged.
-        </p>
-      </article>
-
-    </div>
   </section>
-
-
-  <!-- =========================================================
-       FINAL FRAMING
-  ========================================================== -->
-
-  <footer class="artifact-conclusion">
-    <p>
-      Rather than asking whether reinforcement learning can discover
-      the correct way to conduct a PhD, this exploration asks a different
-      question:
-    </p>
-
-    <strong>
-      What behavior emerges after beliefs about research are translated
-      into states, actions, transition equations, and values?
-    </strong>
-  </footer>
-
-</section>
