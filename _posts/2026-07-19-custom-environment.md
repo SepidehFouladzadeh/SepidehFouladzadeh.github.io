@@ -1139,6 +1139,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
             + completion or final-state bonuses
         </span>
     </div>
+    
 </section>
 
 <!-- =========================================================
