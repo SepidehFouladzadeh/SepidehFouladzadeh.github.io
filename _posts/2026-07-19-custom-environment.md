@@ -66,7 +66,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
         <div class="action-content">
           <div class="action-effects">
-            <span>↑ Gained knowledge</span>
+            <span>↑ Knowledge</span>
             <span>↓ Research uncertainty</span>
             <span>↑ Newly revealed unknowns</span>
           </div>
@@ -256,7 +256,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
     <div class="section-heading">
 
       <div>
-        <h3>Observations</h3>
+        <h3>State and observation</h3>
 
         <p>
           Normalized state values between
