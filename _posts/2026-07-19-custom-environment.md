@@ -425,14 +425,13 @@ Below you can see how the research process evolves alongside weekly effort alloc
             </div>
         </div>
 
+
         <div class="assumption-equation">
             direction quality
             =
-            f(
-            K<sub>t</sub>,
-            F<sub>t</sub>,
-            1 − U<sup>research</sup><sub>t</sub>
-            )
+            knowledge
+            × feedback clarity
+            × (1 − research uncertainty)
         </div>
 
         <div class="assumption-meaning">
@@ -453,7 +452,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">03</span>
 
             <div>
             <h4>Knowledge development</h4>
@@ -465,16 +463,14 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            K<sub>t+1</sub>
+
+            knowledge next week
             =
-            K<sub>t</sub>
+            knowledge this week
             +
-            α ·
-            a<sup>literature</sup><sub>t</sub>
-            · C<sub>t</sub>
-            · (1 − K<sub>t</sub>)
-            +
-            ε<sup>K</sup><sub>t</sub>
+            literature effort
+            × effective capacity
+            × (1 − current knowledge)
         </div>
 
         <div class="assumption-meaning">
@@ -495,7 +491,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">04</span>
 
             <div>
             <h4>Research progress</h4>
@@ -507,16 +502,14 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            P<sub>t+1</sub>
+
+            research progress next week
             =
-            P<sub>t</sub>
+            research progress this week
             +
-            β ·
-            a<sup>implementation</sup><sub>t</sub>
-            · C<sub>t</sub>
-            · D<sub>t</sub>
-            +
-            ε<sup>P</sup><sub>t</sub>
+            implementation effort
+            × effective capacity
+            × direction quality
         </div>
 
         <div class="assumption-meaning">
@@ -536,7 +529,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">05</span>
 
             <div>
             <h4>Available results</h4>
@@ -576,7 +568,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">06</span>
 
             <div>
             <h4>Information gain through analysis</h4>
@@ -588,14 +579,12 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            I<sub>t</sub>
+            information gain
             =
-            η ·
-            min(
-            R<sub>t</sub>,
-            a<sup>analysis</sup><sub>t</sub> · C<sub>t</sub>
-            )
-            · K<sub>t</sub>
+            analyzed results
+            × knowledge
+            × research uncertainty
+            × random effectiveness
         </div>
 
         <div class="assumption-meaning">
@@ -616,7 +605,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">07</span>
 
             <div>
             <h4>Research uncertainty</h4>
@@ -659,7 +647,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">08</span>
 
             <div>
             <h4>Communication and feedback</h4>
@@ -719,15 +706,15 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            E<sub>t+1</sub>
+            energy next week
             =
-            E<sub>t</sub>
+            energy this week
             −
-            ρ · Workload<sub>t</sub>
+            workload
             +
-            σ · a<sup>recovery</sup><sub>t</sub>
-            · H<sub>t</sub>
-            · (1 − U<sup>life</sup><sub>t</sub>)
+            recovery effort
+            × health
+            × (1 − life uncertainty)
         </div>
 
         <div class="assumption-meaning">
@@ -759,13 +746,11 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            H<sub>t+1</sub>
+            health next week
             =
-            H<sub>t</sub>
-            −
-            κ · Overload<sub>t</sub>
-            +
-            τ · a<sup>recovery</sup><sub>t</sub>
+            health this week
+            − overload damage
+            + recovery gain
         </div>
 
         <div class="assumption-meaning">
@@ -786,7 +771,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">11</span>
 
             <div>
             <h4>Deadline pressure</h4>
@@ -798,12 +782,10 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            Q<sub>t+1</sub>
+            deadline pressure
             =
-            f(
-            1 − TimeRemaining<sub>t</sub>,
-            1 − P<sub>t</sub>
-            )
+            elapsed time
+            × incomplete progress
         </div>
 
         <div class="assumption-meaning">
