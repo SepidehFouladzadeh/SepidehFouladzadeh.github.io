@@ -259,8 +259,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <h3>State and observation</h3>
 
         <p>
-          Normalized state values between
-          zero and one.
+          Ten evolving state variables and one deterministic measure of remaining time. All values are normalized between zero and one.
         </p>
       </div>
     </div>
@@ -373,6 +372,46 @@ Below you can see how the research process evolves alongside weekly effort alloc
     <div class="assumption-list">
 
         <!-- EFFECTIVE CAPACITY -->
+        <article class="assumption-card">
+        <div class="assumption-heading">
+            <div>
+            <h4>Effective capacity</h4>
+            <p>
+                Energy, health, and life stability determine how effectively
+                allocated effort can influence the research process.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            physical capacity
+            =
+            0.55 × energy
+            +
+            0.45 × health
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            effective capacity
+            =
+            physical capacity
+            ×
+            [0.55 + 0.45 × (1 − life uncertainty)]
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Modeling assumption</strong>
+            <p>
+            Energy contributes slightly more than health to immediate physical
+            capacity. Life uncertainty then reduces how much of that capacity
+            can be converted into effective research activity.
+            </p>
+        </div>
+        </article>
+
+
+
+
 
         <article class="assumption-card">
 
