@@ -40,212 +40,243 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <h3>Actions</h3>
 
         <p>
-          Along with the relationships encoded in the
-          environment.
+          Weekly effort allocation
         </p>
       </div>
     </div>
 
-
     <div class="action-assumptions">
 
-      <!-- Literature -->
+        <!-- Literature review -->
 
-      <details class="action-detail">
+        <details class="action-detail">
         <summary>
-
-          <span class="action-summary-text">
+            <span class="action-summary-text">
             <strong>Literature review</strong>
-            <small>
-              Builds knowledge and changes perceived uncertainty about the project
-            </small>
-          </span>
 
-          <span class="detail-icon" aria-hidden="true">+</span>
+            <small>
+                Develops knowledge and changes research uncertainty
+            </small>
+            </span>
+
+            <span class="detail-icon" aria-hidden="true">+</span>
         </summary>
 
         <div class="action-content">
-          <div class="action-effects">
+            <div class="action-effects">
             <span>↑ Knowledge</span>
-            <span>↓ Research uncertainty</span>
-            <span>↑ Newly revealed unknowns</span>
-          </div>
+            <span>Usually ↓ research uncertainty</span>
+            <span>May temporarily ↑ research uncertainty early on</span>
+            </div>
 
-          <p>
-            Literature review is assumed to increase knowledge,
-            particularly when knowledge is still limited (early stages of the research). It can reduce
-            research uncertainty, but in early stages it may also reveal
-            more unknown layers of complexity and temporarily make the project feel less
-            clear.
-          </p>
+            <p>
+            Literature review is assumed to increase knowledge, with larger
+            gains when current knowledge is still limited. Its effectiveness
+            also depends on energy, health, and life uncertainty.
+            </p>
 
-          <p>
+            <p>
+            Literature review generally reduces research uncertainty.
+            However, when knowledge is still low, reading may reveal
+            previously unrecognized complexity and temporarily increase
+            research uncertainty.
+            </p>
+
+            <p>
             Allocating more than approximately 65% of weekly effort to
             literature review is treated as possible overuse and receives
             a wasted-effort penalty.
-          </p>
+            </p>
         </div>
-      </details>
+        </details>
 
 
-      <!-- Implementation -->
+        <!-- Implementation -->
 
-      <details class="action-detail">
+        <details class="action-detail">
         <summary>
-
-          <span class="action-summary-text">
+            <span class="action-summary-text">
             <strong>Implementation</strong>
-            <small>
-              Converts direction and capacity into progress and results
-            </small>
-          </span>
 
-          <span class="detail-icon" aria-hidden="true">+</span>
+            <small>
+                Converts effort and research direction into progress and results
+            </small>
+            </span>
+
+            <span class="detail-icon" aria-hidden="true">+</span>
         </summary>
 
         <div class="action-content">
-          <div class="action-effects">
+            <div class="action-effects">
             <span>↑ Research progress</span>
             <span>↑ Available results</span>
-            <span>↑ Confusion when underprepared</span>
-          </div>
+            <span>May ↑ research uncertainty when knowledge is low</span>
+            </div>
 
-          <p>
-            Implementation is assumed to be more productive when the
-            agent has sufficient energy, health, knowledge, feedback
-            clarity, and a relatively clear research direction.
-          </p>
+            <p>
+            Implementation is assumed to be more productive when effective
+            capacity and research direction quality are higher. Direction
+            quality depends on knowledge, feedback clarity, and research
+            uncertainty.
+            </p>
 
-          <p>
-            Implementation performed with very limited knowledge can
-            increase research uncertainty through confusion or poorly
-            directed work.
-          </p>
+            <p>
+            Implementation generates results that can later be analyzed.
+            Its contribution gradually saturates as research progress and
+            available results approach their maximum values.
+            </p>
+
+            <p>
+            Implementation undertaken with very limited knowledge may
+            increase research uncertainty through poorly directed work or
+            difficulty interpreting what should be implemented.
+            </p>
         </div>
-      </details>
+        </details>
 
 
-      <!-- Analysis -->
+        <!-- Result analysis -->
 
-      <details class="action-detail">
+        <details class="action-detail">
         <summary>
-
-          <span class="action-summary-text">
+            <span class="action-summary-text">
             <strong>Result analysis</strong>
-            <small>
-              Converts available results into information
-            </small>
-          </span>
 
-          <span class="detail-icon" aria-hidden="true">+</span>
+            <small>
+                Converts available results into progress and reduced uncertainty
+            </small>
+            </span>
+
+            <span class="detail-icon" aria-hidden="true">+</span>
         </summary>
 
         <div class="action-content">
-          <div class="action-effects">
-            <span>↑ Information gain</span>
+            <div class="action-effects">
             <span>↑ Research progress</span>
+            <span>↑ Knowledge</span>
             <span>↓ Research uncertainty</span>
-            <span>↓ Unprocessed results</span>
-          </div>
+            <span>↓ Available results</span>
+            </div>
 
-          <p>
-            Analysis requires available results. The amount that can be
-            analyzed in one week is limited by both the analysis effort
-            and the amount of existing results.
-          </p>
+            <p>
+            Analysis requires available results. The amount analyzed during
+            one week is limited by both the analysis allocation and the
+            quantity of results currently available.
+            </p>
 
-          <p>
-            Analysis becomes more informative when knowledge is higher
-            and when there is still meaningful research uncertainty to
-            resolve. Analysis effort without sufficient results is
-            penalized.
-          </p>
+            <p>
+            Analysis is assumed to be more productive when effective
+            capacity and knowledge are higher. Its informational value is
+            also greater when meaningful research uncertainty remains to be
+            resolved.
+            </p>
+
+            <p>
+            Analysis contributes directly to research progress, reduces
+            research uncertainty, and provides a smaller contribution to
+            knowledge. Analysis effort allocated when few or no results are
+            available receives a wasted-effort penalty.
+            </p>
         </div>
-      </details>
+        </details>
 
 
-      <!-- Communication -->
+        <!-- Result communication -->
 
-      <details class="action-detail">
+        <details class="action-detail">
         <summary>
-
-          <span class="action-summary-text">
+            <span class="action-summary-text">
             <strong>Result communication</strong>
-            <small>
-              Creates feedback, clarity, support, and possible redirection
-            </small>
-          </span>
 
-          <span class="detail-icon" aria-hidden="true">+</span>
+            <small>
+                Uses developed work to generate feedback, support, and clarification
+            </small>
+            </span>
+
+            <span class="detail-icon" aria-hidden="true">+</span>
         </summary>
 
         <div class="action-content">
-          <div class="action-effects">
+            <div class="action-effects">
             <span>↑ Feedback clarity</span>
             <span>↑ Professional support</span>
             <span>↓ Research uncertainty</span>
-            <span>↻ Possible redirection</span>
-          </div>
+            <span>May change research progress through redirection</span>
+            </div>
 
-          <p>
-            Communication readiness depends on research progress,
-            knowledge, and uncertainty. Communicating meaningful work is
-            assumed to improve clarity and may indirectly strengthen
-            professional support.
-          </p>
+            <p>
+            The effectiveness of communication depends on effective capacity
+            and communication readiness. Readiness is higher when research
+            progress and knowledge are greater and research uncertainty is
+            lower.
+            </p>
 
-          <p>
-            Communication can also reveal that part of the current
-            direction should be revised. In the simulation, this may
-            reduce a small amount of accumulated progress while producing
-            useful information.
-          </p>
+            <p>
+            Communicating sufficiently developed work is assumed to improve
+            feedback clarity, reduce research uncertainty, and indirectly
+            strengthen professional support. It may also contribute a small
+            amount of research progress.
+            </p>
 
-          <p>
-            Communicating before the work is sufficiently ready receives
-            a premature-communication penalty.
-          </p>
+            <p>
+            Communication can reveal that part of the current direction
+            should be revised. In the simulation, this may remove a small
+            amount of accumulated progress while also reducing research
+            uncertainty.
+            </p>
+
+            <p>
+            Communication allocated before the work is sufficiently ready
+            receives a premature-communication penalty.
+            </p>
         </div>
-      </details>
+        </details>
 
 
-      <!-- Recovery -->
+        <!-- Recovery -->
 
-      <details class="action-detail">
+        <details class="action-detail">
         <summary>
-
-          <span class="action-summary-text">
+            <span class="action-summary-text">
             <strong>Recovery</strong>
-            <small>
-              Restores the capacity required for future work
-            </small>
-          </span>
 
-          <span class="detail-icon" aria-hidden="true">+</span>
+            <small>
+                Restores energy, supports health, and increases sustainable capacity
+            </small>
+            </span>
+
+            <span class="detail-icon" aria-hidden="true">+</span>
         </summary>
 
         <div class="action-content">
-          <div class="action-effects">
+            <div class="action-effects">
             <span>↑ Energy</span>
             <span>↑ Health</span>
-            <span>↓ Risk of overload</span>
-          </div>
+            <span>Raises the workload threshold before overload</span>
+            </div>
 
-          <p>
-            Recovery does not directly generate research progress.
-            Instead, it restores energy and health and reduces the risk
-            that a demanding workload will become damaging.
-          </p>
+            <p>
+            Recovery does not directly generate research progress. Instead,
+            it restores energy, supports gradual health recovery, and makes
+            a given research workload less likely to produce overload.
+            </p>
 
-          <p>
-            Recovery is assumed to be more effective when baseline
-            health is stronger and life uncertainty is lower.
-          </p>
+            <p>
+            Recovery is assumed to be more effective when health is stronger
+            and life uncertainty is lower. Energy recovery also gradually
+            saturates as energy approaches its maximum value.
+            </p>
+
+            <p>
+            Recovery does not directly reduce life uncertainty. Life
+            uncertainty is modeled separately through external disturbances,
+            deadline spillover, and buffering from professional support.
+            </p>
         </div>
-      </details>
+        </details>
 
     </div>
-  </section>
+    </section>
 
 
   <!-- =========================================================
@@ -377,7 +408,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
             <div>
             <h4>Effective capacity</h4>
             <p>
-                Energy, health, and life stability determine how effectively
+                Energy, health, and life stability jointly determine how effectively
                 allocated effort can influence the research process.
             </p>
             </div>
@@ -402,50 +433,11 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <div class="assumption-meaning">
             <strong>Modeling assumption</strong>
             <p>
-            Energy contributes slightly more than health to immediate physical
-            capacity. Life uncertainty then reduces how much of that capacity
-            can be converted into effective research activity.
-            </p>
-        </div>
-        </article>
-
-
-
-
-
-        <article class="assumption-card">
-
-        <div class="assumption-heading">
-
-            <div>
-            <h4>Effective capacity</h4>
-            <p>
-                Energy, health, and life stability jointly determine how
-                effectively effort can be converted into work.
-            </p>
-            </div>
-        </div>
-
-        <div class="assumption-equation">
-            capacity
-            =
-            energy
-            ×
-            health
-            ×
-            (1 − life uncertainty)
-        </div>
-
-        <div class="assumption-meaning">
-            <strong>Assumption</strong>
-
-            <p>
             Low energy, reduced health, or greater life uncertainty lowers
             the effectiveness of all research activities, even when the same
             amount of effort is allocated.
             </p>
         </div>
-
         </article>
 
 
@@ -468,9 +460,11 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <div class="assumption-equation">
             direction quality
             =
-            knowledge
-            × feedback clarity
-            × (1 − research uncertainty)
+            0.40 × knowledge
+            +
+            0.35 × feedback clarity
+            +
+            0.25 × (1 − research uncertainty)
         </div>
 
         <div class="assumption-meaning">
@@ -502,14 +496,24 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
+            literature learning
+            =
+            0.075
+            × literature allocation
+            × effective capacity
+            × (1 − knowledge)
+        </div>
 
+        <div class="assumption-equation assumption-equation-secondary">
             knowledge next week
             =
             knowledge this week
             +
-            literature effort
-            × effective capacity
-            × (1 − current knowledge)
+            literature learning
+            +
+            0.30 × information gain
+            +
+            random literature variation
         </div>
 
         <div class="assumption-meaning">
@@ -541,14 +545,29 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
+            implementation productivity
+            =
+            0.070
+            × implementation allocation
+            × effective capacity
+            × (0.25 + 0.75 × direction quality)
+            × (1 − research progress)
+        </div>
 
+        <div class="assumption-equation assumption-equation-secondary">
             research progress next week
             =
             research progress this week
             +
-            implementation effort
-            × effective capacity
-            × direction quality
+            implementation productivity
+            +
+            analysis productivity
+            +
+            communication progress
+            +
+            random variation
+            −
+            possible redirection cost
         </div>
 
         <div class="assumption-meaning">
@@ -578,16 +597,33 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            R<sub>t+1</sub>
+            results generated
             =
-            R<sub>t</sub>
+            0.13
+            × implementation allocation
+            × effective capacity
+            × (0.30 + 0.70 × knowledge)
+            × (1 − available results)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            analyzable results
+            =
+            minimum of
+            [
+            available results,
+            0.15 × analysis allocation
+            ]
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            available results next week
+            =
+            available results this week
             +
-            γ ·
-            a<sup>implementation</sup><sub>t</sub>
-            · C<sub>t</sub>
+            results generated
             −
-            δ ·
-            a<sup>analysis</sup><sub>t</sub>
+            analyzable results
         </div>
 
         <div class="assumption-meaning">
@@ -618,12 +654,19 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
+            analysis productivity
+            =
+            analyzable results
+            × effective capacity
+            × (0.45 + 0.55 × knowledge)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
             information gain
             =
-            analyzed results
-            × knowledge
-            × research uncertainty
-            × random effectiveness
+            0.75
+            × analysis productivity
+            × (0.40 + 0.60 × research uncertainty)
         </div>
 
         <div class="assumption-meaning">
@@ -655,17 +698,35 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            U<sup>research</sup><sub>t+1</sub>
+            research uncertainty next week
             =
-            U<sup>research</sup><sub>t</sub>
-            −
-            λ<sub>1</sub>I<sub>t</sub>
-            −
-            λ<sub>2</sub>a<sup>literature</sup><sub>t</sub>
-            −
-            λ<sub>3</sub>a<sup>communication</sup><sub>t</sub>
+            research uncertainty this week
             +
-            λ<sub>4</sub>Confusion<sub>t</sub>
+            uncertainty revealed or generated
+            −
+            uncertainty resolved
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            uncertainty revealed or generated
+            =
+            confusion from implementation with low knowledge
+            +
+            unknowns revealed by early literature review
+            +
+            literature overuse effect
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            uncertainty resolved
+            =
+            literature-based reduction
+            +
+            information gain from analysis
+            +
+            communication-based reduction
+            +
+            information from possible redirection
         </div>
 
         <div class="assumption-meaning">
@@ -697,23 +758,43 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </div>
 
         <div class="assumption-equation">
-            F<sub>t+1</sub>
+            communication readiness
             =
-            F<sub>t</sub>
+            0.55 × research progress
             +
-            μ ·
-            a<sup>communication</sup><sub>t</sub>
-            · Readiness<sub>t</sub>
+            0.30 × knowledge
+            +
+            0.15 × (1 − research uncertainty)
         </div>
 
         <div class="assumption-equation assumption-equation-secondary">
-            Readiness<sub>t</sub>
+            communication quality
             =
-            f(
-            P<sub>t</sub>,
-            K<sub>t</sub>,
-            1 − U<sup>research</sup><sub>t</sub>
-            )
+            communication allocation
+            × effective capacity
+            × communication readiness
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            feedback clarity next week
+            =
+            feedback clarity this week
+            +
+            0.070
+            × communication quality
+            × (1 − feedback clarity)
+            +
+            random feedback variation
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            professional support next week
+            =
+            professional support this week
+            +
+            0.020
+            × communication quality
+            × (1 − professional support)
         </div>
 
         <div class="assumption-meaning">
@@ -734,34 +815,76 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">09</span>
-
             <div>
             <h4>Energy dynamics</h4>
             <p>
-                Research effort consumes energy, while recovery restores it.
+                Different research activities consume different amounts of
+                energy, while recovery restores it.
             </p>
             </div>
         </div>
 
         <div class="assumption-equation">
+            research workload
+            =
+            literature allocation
+            +
+            1.25 × implementation allocation
+            +
+            1.10 × analysis allocation
+            +
+            0.85 × communication allocation
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            energy cost
+            =
+            0.060
+            × research workload
+            × (1.10 − 0.25 × health)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            recovery quality
+            =
+            0.45
+            +
+            0.35 × health
+            +
+            0.20 × (1 − life uncertainty)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            energy recovery
+            =
+            0.18
+            × recovery allocation
+            × recovery quality
+            × (1 − energy)
+            +
+            0.030
+            × recovery allocation
+            × recovery quality
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
             energy next week
             =
             energy this week
-            −
-            workload
             +
-            recovery effort
-            × health
-            × (1 − life uncertainty)
+            energy recovery
+            −
+            energy cost
         </div>
 
         <div class="assumption-meaning">
-            <strong>Assumption</strong>
+            <strong>Modeling assumption</strong>
 
             <p>
-            Recovery replenishes energy, but it is less effective when health
-            is poor or life uncertainty is high.
+            Implementation and analysis are assumed to be more energetically
+            demanding than literature review or communication. Recovery becomes
+            less effective when health is lower or life uncertainty is higher,
+            and its effect gradually saturates as energy approaches its maximum.
             </p>
         </div>
 
@@ -773,66 +896,208 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <article class="assumption-card">
 
         <div class="assumption-heading">
-            <span class="assumption-number">10</span>
-
             <div>
             <h4>Health dynamics</h4>
             <p>
-                Sustained overload may reduce health, while recovery supports
-                gradual restoration.
+                Health changes more slowly than energy and is affected primarily
+                by overload, exhaustion, and recovery.
             </p>
             </div>
         </div>
 
         <div class="assumption-equation">
+            overload
+            =
+            maximum of
+            [
+            0,
+            research workload
+            − 0.82
+            − 0.35 × recovery allocation
+            ]
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            health loss
+            =
+            0.040
+            × overload
+            × (1.15 − energy)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            health recovery
+            =
+            0.055
+            × recovery allocation
+            × recovery quality
+            × (1 − health)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            exhaustion damage
+            =
+            0.035
+            × maximum of
+            [
+            0,
+            0.25 − energy
+            ]
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
             health next week
             =
             health this week
-            − overload damage
-            + recovery gain
+            +
+            health recovery
+            −
+            health loss
+            −
+            exhaustion damage
         </div>
 
         <div class="assumption-meaning">
-            <strong>Assumption</strong>
+            <strong>Modeling assumption</strong>
 
             <p>
-            Health changes more slowly than energy. Occasional demanding weeks
-            may be manageable, but repeated overload without recovery produces
-            cumulative deterioration.
+            Recovery both supports gradual health restoration and increases the
+            amount of workload that can be sustained before overload occurs.
+            Overload becomes more damaging when energy is already depleted, and
+            critically low energy can reduce health even without additional
+            overload.
+            </p>
+        </div>
+
+        </article>
+
+        <!-- LIFE UNCERTAINTY -->
+
+        <article class="assumption-card">
+
+        <div class="assumption-heading">
+            <div>
+            <h4>Life uncertainty</h4>
+            <p>
+                External instability changes independently of research effort,
+                while deadlines and professional support influence how it evolves.
+            </p>
+            </div>
+        </div>
+
+        <div class="assumption-equation">
+            external life change
+            =
+            random weekly disturbance
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            deadline spillover
+            =
+            0.010
+            × deadline pressure
+            × (1 − professional support)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            support buffer
+            =
+            0.008
+            × professional support
+            × life uncertainty
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            life uncertainty next week
+            =
+            life uncertainty this week
+            +
+            external life change
+            +
+            deadline spillover
+            −
+            support buffer
+        </div>
+
+        <div class="assumption-meaning">
+            <strong>Modeling assumption</strong>
+
+            <p>
+            Life uncertainty is treated largely as an external process rather
+            than something directly solved through research effort. Deadline
+            pressure can spill into greater instability, especially when
+            professional support is limited, while stronger support provides a
+            small buffering effect.
             </p>
         </div>
 
         </article>
 
 
-        <!-- DEADLINE -->
+        <!-- DEADLINE PRESSURE -->
 
         <article class="assumption-card">
 
         <div class="assumption-heading">
-
             <div>
             <h4>Deadline pressure</h4>
             <p>
-                Pressure grows as time passes while meaningful progress remains
-                incomplete.
+                Deadline pressure accumulates as time passes and work remains
+                incomplete, while progress and communication provide some relief.
             </p>
             </div>
         </div>
 
         <div class="assumption-equation">
-            deadline pressure
+            elapsed time fraction
             =
-            elapsed time
-            × incomplete progress
+            current week
+            ÷ total number of weeks
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            deadline growth
+            =
+            0.018
+            +
+            0.030 × elapsed time fraction
+            +
+            0.020 × (1 − research progress)
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            deadline relief
+            =
+            0.035
+            × maximum of
+            [
+            0,
+            progress gained this week
+            ]
+            +
+            0.018
+            × communication quality
+        </div>
+
+        <div class="assumption-equation assumption-equation-secondary">
+            deadline pressure next week
+            =
+            deadline pressure this week
+            +
+            deadline growth
+            −
+            deadline relief
         </div>
 
         <div class="assumption-meaning">
-            <strong>Assumption</strong>
+            <strong>Modeling assumption</strong>
 
             <p>
-            Deadline pressure is highest when little time remains and research
-            progress is still low.
+            Deadline pressure has a baseline tendency to grow every week. It
+            increases more quickly later in the simulated year and when research
+            remains incomplete. Meaningful progress and effective communication
+            provide partial relief, but do not necessarily eliminate the
+            underlying time pressure.
             </p>
         </div>
 
@@ -853,26 +1118,61 @@ Below you can see how the research process evolves alongside weekly effort alloc
       <p class="equation-title">My Conceptual Reward</p>
 
       <div class="reward-equation">
-
         <span class="equation-symbol">=</span>
 
         <span class="equation-positive">
-          progress
-          + knowledge
-          + information
+            progress gain
+            + knowledge gain
+            + research-uncertainty reduction
         </span>
 
         <span class="equation-negative">
-          − health damage
-          − low energy
-          − deadline pressure
-          − wasted effort
+            − health loss
+            − critically low energy
+            − overload under life uncertainty
+            − severe life uncertainty
+            − deadline pressure
+            − wasted effort
         </span>
 
         <span class="equation-bonus">
-          + completion bonuses
+            + completion or final-state bonuses
         </span>
-      </div>
+    </div>
+
+<!-- =========================================================
+       Termination
+  ========================================================== -->
+
+  <section class="artifact-section">
+
+    <h4>Episode completion and termination</h4>
+    <div class="assumption-equation">
+        research completed
+        =
+        research progress ≥ 0.95
+        and
+        research uncertainty ≤ 0.25
+    </div>
+
+    <div class="assumption-equation assumption-equation-secondary">
+        health collapse
+        =
+        health ≤ 0.03
+    </div>
+
+    <div class="assumption-equation assumption-equation-secondary">
+        unable to continue
+        =
+        life uncertainty ≥ 0.98
+        and
+        professional support ≤ 0.05
+    </div>
+
+    <div class="assumption-equation assumption-equation-secondary">
+        time limit
+        =
+        52 weeks
     </div>
 
 
