@@ -1104,8 +1104,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </article>
 
     </div>
-
-</section>
+  </section>
 
 
   <!-- =========================================================
@@ -1140,7 +1139,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </span>
     </div>
     
-</section>
+  </section>
 
 <!-- =========================================================
        Termination
