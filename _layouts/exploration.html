@@ -1287,6 +1287,191 @@
     }
     }
 
+    .model-section {
+      margin: 4rem 0;
+    }
+
+    .model-diagram {
+      position: relative;
+
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+
+      grid-template-areas:
+        ". deadline ."
+        "recovery capacity support"
+        "literature knowledge implementation"
+        ". communication progress";
+
+      gap: 5rem 3rem;
+      margin-top: 2rem;
+      padding: 2rem 0;
+    }
+
+    .diagram-deadline {
+      grid-area: deadline;
+    }
+
+    .diagram-recovery {
+      grid-area: recovery;
+    }
+
+    .diagram-capacity {
+      grid-area: capacity;
+    }
+
+    .diagram-support {
+      grid-area: support;
+    }
+
+    .diagram-literature {
+      grid-area: literature;
+    }
+
+    .diagram-knowledge {
+      grid-area: knowledge;
+    }
+
+    .diagram-implementation {
+      grid-area: implementation;
+    }
+
+    .diagram-communication {
+      grid-area: communication;
+    }
+
+    .diagram-progress {
+      grid-area: progress;
+    }
+
+    .model-card {
+      position: relative;
+      z-index: 2;
+
+      align-self: start;
+
+      border: 1px solid rgba(31, 47, 41, 0.17);
+      border-radius: 20px;
+
+      background: #ffffff;
+      overflow: hidden;
+
+      transition:
+        transform 160ms ease,
+        border-color 160ms ease,
+        box-shadow 160ms ease;
+    }
+
+    .model-card:hover,
+    .model-card:focus-within {
+      transform: translateY(-2px);
+      border-color: rgba(31, 47, 41, 0.34);
+      box-shadow: 0 12px 28px rgba(31, 47, 41, 0.08);
+    }
+
+    .model-card-trigger {
+      display: block;
+      width: 100%;
+      padding: 1.25rem;
+
+      border: 0;
+      background: transparent;
+      color: inherit;
+
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .model-card-trigger strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .model-card-trigger p {
+      margin: 0;
+      line-height: 1.55;
+      opacity: 0.78;
+    }
+
+    .model-card-type {
+      display: block;
+      margin-bottom: 0.5rem;
+
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.55;
+    }
+
+    .model-card-more {
+      display: block;
+      margin-top: 0.9rem;
+
+      font-size: 0.8rem;
+      font-weight: 600;
+      opacity: 0.65;
+    }
+
+    .model-card-details {
+      padding: 0 1.25rem 1.25rem;
+      border-top: 1px solid rgba(31, 47, 41, 0.10);
+    }
+
+    .model-card-details p {
+      margin: 1rem 0 0;
+      line-height: 1.55;
+    }
+
+    .model-equation {
+      margin-top: 1rem;
+      padding: 0.75rem;
+
+      border-radius: 12px;
+      background: rgba(242, 226, 229, 0.55);
+
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .action-card {
+      border-style: dashed;
+    }
+
+    .state-card {
+      border-style: solid;
+    }
+
+    .model-card-trigger:focus-visible {
+      outline: 3px solid rgba(31, 47, 41, 0.20);
+      outline-offset: -4px;
+    }
+
+    .model-connectors {
+      position: absolute;
+      z-index: 1;
+
+      inset: 0;
+      width: 100%;
+      height: 100%;
+
+      overflow: visible;
+      pointer-events: none;
+    }
+
+    .model-connectors path {
+      fill: none;
+      stroke: rgba(31, 47, 41, 0.42);
+      stroke-width: 1.5;
+      marker-end: url("#arrowhead");
+    }
+
+    .model-connectors marker path {
+      fill: rgba(31, 47, 41, 0.55);
+      stroke: none;
+    }
+
     .author-break {
         display: flex;
         align-items: center;
