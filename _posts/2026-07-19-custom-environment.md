@@ -31,12 +31,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <section class="model-section">
 
   <div class="section-heading">
-    <h2>How I assume the research process works</h2>
-
-    <p>
-      The diagram shows the relationships encoded in the environment.
-      Select any card to read the corresponding modeling assumption.
-    </p>
+    <h2>Modeling Assumptions</h2>
   </div>
 
   <div class="model-diagram" data-model-diagram>
