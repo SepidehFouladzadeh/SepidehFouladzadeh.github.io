@@ -674,7 +674,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
     
   </section>
 
-  
+
   And ending the episode with: 
 
   <!-- =========================================================
@@ -733,3 +733,83 @@ Below you can see how the research process evolves alongside weekly effort alloc
     </div>
 
   </section>
+
+  <section class="artifacts">
+
+  <h2>Artifacts from this exploration</h2>
+
+  <div class="artifact-gallery">
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/images/learned_weekly_allocation.png" type="image/png">
+    </video>
+    <!-- <h4>PPO</h4> -->
+    <p>Learned weekly allocation.</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/images/reward_components.png" type="image/png">
+    </video>
+    <!-- <h4>LQR</h4> -->
+    <p>Reward components.</p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/images/state_evolution.png" type="image/png">
+    </video>
+    <!-- <h4>Manual State Feedback</h4> -->
+    <p>State evolution.</p>
+  </div>
+
+</div>
+
+</section>
+
+<section class="related-explorations">
+
+  <h2>Other explorations inspired by this train of thought</h2>
+
+  <div class="related-exploration-list">
+
+    <article class="related-exploration-item">
+      <h3>Designing environments for my own curiosity</h3>
+
+      <p>
+        Going beyond standard environments in Gymnasium to explore how RL might intersect with problems I'm personally curious about.
+      </p>
+
+      <a href="/research/rl-vs-control/custom-environment/">
+        See my train of thought →
+      </a>
+    </article>
+
+    <article class="related-exploration-item">
+      <h3>A mini dive into RL algorithms</h3>
+
+      <p>
+        Understanding what distinguishes them, and how they relate to other computational methods.
+      </p>
+
+      <a href="/research/rl-vs-control/rl-algorithms/">
+        See my train of thought →
+      </a>
+    </article>
+
+    <article class="related-exploration-item">
+      <h3>Leveling up simple dynamics</h3>
+
+      <p>
+        Gradually moving toward increasingly complex dynamical systems. 
+      </p>
+
+      <a href="/research/rl-vs-control/beyond-simple-dynamics/">
+        See my train of thought →
+      </a>
+    </article>
+
+  </div>
+
+</section>
