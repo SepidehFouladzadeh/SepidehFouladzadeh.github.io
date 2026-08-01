@@ -673,6 +673,8 @@ Below you can see how the research process evolves alongside weekly effort alloc
     </div>
     
   </section>
+
+  
   And ending the episode with: 
 
   <!-- =========================================================
@@ -707,6 +709,8 @@ Below you can see how the research process evolves alongside weekly effort alloc
     </div>
 
   </section>
+
+
   Along with an additional bonus for completing the research with more capacity and knowledge!
 
   <!-- =========================================================
