@@ -651,29 +651,23 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <section class="artifact-section">
 
     <div class="equation-card">
-      <p class="equation-title">My Conceptual Reward</p>
+      <p class="equation-title">Reward</p>
 
       <div class="reward-equation">
         <span class="equation-symbol">=</span>
 
         <span class="equation-positive">
-            progress gain
-            + knowledge gain
-            + research-uncertainty reduction
+            progress reward
+            + knowledge reward
+            + communication reward
         </span>
 
         <span class="equation-negative">
-            − health loss
-            − critically low energy
-            − overload under life uncertainty
-            − severe life uncertainty
-            − deadline pressure
-            − wasted effort
+            − capacity loss penalty
+            − critically low capacity penalty
+            − wasted effort penalty
         </span>
 
-        <span class="equation-bonus">
-            + completion or final-state bonuses
-        </span>
       </div>
     </div>
     
@@ -687,124 +681,17 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
     <h4>Episode completion and termination</h4>
     <div class="assumption-equation">
-        research completed
-        =
-        research progress ≥ 0.95
-        and
-        research uncertainty ≤ 0.25
+        research completed = visible progress ≥ 0.95 or capacity collapse = capacity ≤ 0.03
     </div>
 
     <div class="assumption-equation assumption-equation-secondary">
-        health collapse
-        =
-        health ≤ 0.03
-    </div>
-
-    <div class="assumption-equation assumption-equation-secondary">
-        unable to continue
-        =
-        life uncertainty ≥ 0.98
-        and
-        professional support ≤ 0.05
-    </div>
-
-    <div class="assumption-equation assumption-equation-secondary">
-        time limit
-        =
-        52 weeks
-    </div>
-
-
-    <div class="priority-block">
-      <h4>Reward priorities</h4>
-
-      <p>
-        Weights expressing the relative values encoded in the
-        environment (not literal percentages of the reward
-        received during every week because each reward component also
-        has its own scale and condition)
-      </p>
-
-      <div class="priority-list">
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Research progress</span>
-            <span>30%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 30%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Health and sustainability</span>
-            <span>28%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 28%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Research information</span>
-            <span>20%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 20%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Knowledge</span>
-            <span>12%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 12%;"
-            ></div>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-label">
-            <span>Deadline responsiveness</span>
-            <span>10%</span>
-          </div>
-
-          <div class="priority-track">
-            <div
-              class="priority-fill"
-              style="width: 10%;"
-            ></div>
-          </div>
-        </div>
-
-      </div>
+        bonus considered if research completed with high capacity and high gained knowledge!
     </div>
   </section>
-  </section>
+  
     <blockquote class="interpretation-quote">
         The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort. Rewarding meaningful and sustainable research development rather than progress alone :)
     </blockquote>
-  </section>
 
   <!-- =========================================================
        INTERPRETATION
@@ -817,12 +704,12 @@ Below you can see how the research process evolves alongside weekly effort alloc
       <p>
         The behavior reflects the transition equations, reward
         priorities, random disturbances, initial conditions, and state
-        definitions chosen for the simulation.
+        definitions designed for the environment.
       </p>
 
       <p>
-        The purpose is to make those assumptions inspectable and to
-        explore what kinds of behavior they produce.
+        The purpose was to make those assumptions inspectable and not to
+        introduce a sophisticated model of research process, which might be a good idea to explore next! ;)
       </p>
     </div>
 
