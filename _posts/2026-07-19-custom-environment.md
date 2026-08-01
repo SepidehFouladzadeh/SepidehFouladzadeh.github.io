@@ -738,33 +738,43 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   <h2>Artifacts from this exploration</h2>
 
-  <div class="artifact-gallery">
-
-  <div class="artifact-card">
+  <div class="artifact-figure">
     <img
       src="/assets/images/learned_weekly_allocation.png"
-      alt="Learned weekly effort allocation"
+      alt="Learned weekly allocation"
     >
-    <p>Learned weekly allocation.</p>
+
+    <p class="artifact-caption">
+      <strong>Learned weekly allocation.</strong>
+      The policy gradually shifts effort among literature review,
+      implementation, communication, and recovery over the simulated year.
+    </p>
   </div>
 
-  <div class="artifact-card">
-    <img
-      src="/assets/images/reward_components.png"
-      alt="Reward components through time"
-    >
-    <p>Reward components.</p>
-  </div>
-
-  <div class="artifact-card">
+  <div class="artifact-figure">
     <img
       src="/assets/images/state_evolution.png"
-      alt="State evolution under the learned policy"
+      alt="State evolution"
     >
-    <p>State evolution.</p>
+
+    <p class="artifact-caption">
+      <strong>State evolution.</strong>
+      Evolution of capacity, deadline pressure, support, knowledge,
+      and visible progress under the learned policy.
+    </p>
   </div>
 
-</div>
+  <div class="artifact-figure">
+    <img
+      src="/assets/images/reward_components.png"
+      alt="Reward components"
+    >
+
+    <p class="artifact-caption">
+      <strong>Reward components.</strong>
+      Weekly contribution of each reward component during evaluation.
+    </p>
+  </div>
 
 </section>
 
