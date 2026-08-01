@@ -651,15 +651,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
   ========================================================== -->
 
   <section class="artifact-section">
-    <div class="section-heading">
-      <div>
-        <p>
-          The desirable outcome is making visible research progress, building
-          knowledge, and communicating developed work without exhausting
-          the researcher. Rewarding meaningful and sustainable research development rather than progress alone :)
-        </p>
-      </div>
-    </div>
 
     <div class="equation-card">
       <p class="equation-title">Reward</p>
@@ -682,20 +673,13 @@ Below you can see how the research process evolves alongside weekly effort alloc
     </div>
     
   </section>
+  And ending the episode with: 
 
   <!-- =========================================================
       EPISODE ENDING
   ========================================================= -->
 
   <section class="artifact-section">
-
-    <div class="section-heading">
-      <div>
-        <p>
-          One episode represents up to 52 simulated weeks.
-        </p>
-      </div>
-    </div>
 
     <div class="termination-grid">
 
@@ -722,11 +706,8 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
     </div>
 
-    <div class="completion-note">
-      Additional bonus for completing the research with more capacity and knowledge!
-    </div>
-
   </section>
+  Along with an additional bonus for completing the research with more capacity and knowledge!
 
   <!-- =========================================================
        INTERPRETATION
