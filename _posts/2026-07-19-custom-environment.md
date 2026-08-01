@@ -741,25 +741,25 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <div class="artifact-gallery">
 
   <div class="artifact-card">
-    <video controls>
+    <img controls>
       <source src="/assets/images/learned_weekly_allocation.png" type="image/png">
-    </video>
+    </img>
     <!-- <h4>PPO</h4> -->
     <p>Learned weekly allocation.</p>
   </div>
 
   <div class="artifact-card">
-    <video controls>
+    <img controls>
       <source src="/assets/images/reward_components.png" type="image/png">
-    </video>
+    </img>
     <!-- <h4>LQR</h4> -->
     <p>Reward components.</p>
   </div>
 
   <div class="artifact-card">
-    <video controls>
+    <img controls>
       <source src="/assets/images/state_evolution.png" type="image/png">
-    </video>
+    </img>
     <!-- <h4>Manual State Feedback</h4> -->
     <p>State evolution.</p>
   </div>
@@ -775,37 +775,13 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
-      <h3>Designing environments for my own curiosity</h3>
+      <h3>Coming soon.</h3>
 
       <p>
-        Going beyond standard environments in Gymnasium to explore how RL might intersect with problems I'm personally curious about.
+        Coming soon.
       </p>
 
       <a href="/research/rl-vs-control/custom-environment/">
-        See my train of thought →
-      </a>
-    </article>
-
-    <article class="related-exploration-item">
-      <h3>A mini dive into RL algorithms</h3>
-
-      <p>
-        Understanding what distinguishes them, and how they relate to other computational methods.
-      </p>
-
-      <a href="/research/rl-vs-control/rl-algorithms/">
-        See my train of thought →
-      </a>
-    </article>
-
-    <article class="related-exploration-item">
-      <h3>Leveling up simple dynamics</h3>
-
-      <p>
-        Gradually moving toward increasingly complex dynamical systems. 
-      </p>
-
-      <a href="/research/rl-vs-control/beyond-simple-dynamics/">
         See my train of thought →
       </a>
     </article>
