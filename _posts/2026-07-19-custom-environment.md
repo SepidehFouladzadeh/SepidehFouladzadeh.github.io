@@ -713,27 +713,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   Along with an additional bonus for completing the research with more capacity and knowledge!
 
-  <!-- =========================================================
-       INTERPRETATION
-  ========================================================== -->
-
-  <section class="artifact-section">
-
-    <div class="limitations-box">
-      <h4>Interpreting the learned policy</h4>
-      <p>
-        The behavior reflects the transition equations, reward
-        priorities, random disturbances, initial conditions, and state
-        definitions designed for the environment.
-      </p>
-
-      <p>
-        The purpose was to make those assumptions inspectable, not to build a sophisticated model of the research process, which might be an interesting direction to explore next! ;)
-      </p>
-    </div>
-
-  </section>
-
   <section class="artifacts">
 
   <h2>Artifacts from this exploration</h2>
@@ -773,6 +752,27 @@ Below you can see how the research process evolves alongside weekly effort alloc
     <p class="artifact-caption">
       <strong>Reward components.</strong>
       Weekly contribution of each reward component during evaluation.
+    </p>
+  </div>
+
+</section>
+
+  <!-- =========================================================
+       INTERPRETATION
+  ========================================================== -->
+
+<section class="artifact-section">
+
+  <div class="limitations-box">
+    <h4>Interpreting the learned policy</h4>
+    <p>
+      The behavior reflects the transition equations, reward
+      priorities, random disturbances, initial conditions, and state
+      definitions designed for the environment.
+    </p>
+
+    <p>
+      The purpose was to make those assumptions inspectable, not to build a sophisticated model of the research process, which might be an interesting direction to explore next! ;)
     </p>
   </div>
 
