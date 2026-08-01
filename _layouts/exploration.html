@@ -1472,6 +1472,45 @@
       stroke: none;
     }
 
+    .termination-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .termination-card {
+      padding: 1.25rem;
+      border: 1px solid rgba(31, 47, 41, 0.15);
+      border-radius: 17px;
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    .termination-card strong {
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+
+    .termination-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.74;
+    }
+
+    .completion-note {
+      margin-top: 1rem;
+      padding: 1rem 1.2rem;
+      border-radius: 14px;
+      background: #f2e2e5;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 700px) {
+      .termination-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .author-break {
         display: flex;
         align-items: center;

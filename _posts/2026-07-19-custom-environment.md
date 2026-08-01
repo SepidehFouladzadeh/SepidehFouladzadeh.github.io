@@ -644,28 +644,38 @@ Below you can see how the research process evolves alongside weekly effort alloc
   );
 </script>
 
+  The desirable outcome is making research progress, gaining knowledge, and having an effective contribution though meaningful communication but not through health collapse. Rewarding meaningful and sustainable research development rather than progress alone :)
+
   <!-- =========================================================
        REWARD
   ========================================================== -->
 
   <section class="artifact-section">
+    <div class="section-heading">
+      <div>
+        <p>
+          The desirable outcome is making visible research progress, building
+          knowledge, and communicating developed work without exhausting
+          the researcher. Rewarding meaningful and sustainable research development rather than progress alone :)
+        </p>
+      </div>
+    </div>
 
     <div class="equation-card">
       <p class="equation-title">Reward</p>
 
       <div class="reward-equation">
-        <span class="equation-symbol">=</span>
 
         <span class="equation-positive">
-            progress reward
-            + knowledge reward
-            + communication reward
+            + visible progress
+            + knowledge gained
+            + meaningful communication
         </span>
 
         <span class="equation-negative">
-            − capacity loss penalty
-            − critically low capacity penalty
-            − wasted effort penalty
+            − capacity loss
+            − critically low capacity
+            − wasted effort
         </span>
 
       </div>
@@ -673,25 +683,50 @@ Below you can see how the research process evolves alongside weekly effort alloc
     
   </section>
 
-<!-- =========================================================
-       Termination
-  ========================================================== -->
+  <!-- =========================================================
+      EPISODE ENDING
+  ========================================================= -->
 
   <section class="artifact-section">
 
-    <h4>Episode completion and termination</h4>
-    <div class="assumption-equation">
-        research completed = visible progress ≥ 0.95 or capacity collapse = capacity ≤ 0.03
+    <div class="section-heading">
+      <div>
+        <p>
+          One episode represents up to 52 simulated weeks.
+        </p>
+      </div>
     </div>
 
-    <div class="assumption-equation assumption-equation-secondary">
-        bonus considered if research completed with high capacity and high gained knowledge!
+    <div class="termination-grid">
+
+      <div class="termination-card">
+        <strong>Research completed</strong>
+        <p>
+          Visible progress reaches 0.95.
+        </p>
+      </div>
+
+      <div class="termination-card">
+        <strong>Capacity collapse</strong>
+        <p>
+          Capacity falls to 0.03 or below.
+        </p>
+      </div>
+
+      <div class="termination-card">
+        <strong>Time limit reached</strong>
+        <p>
+          The 52-week simulation ends.
+        </p>
+      </div>
+
     </div>
+
+    <div class="completion-note">
+      Additional bonus for completing the research with more capacity and knowledge!
+    </div>
+
   </section>
-  
-    <blockquote class="interpretation-quote">
-        The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort. Rewarding meaningful and sustainable research development rather than progress alone :)
-    </blockquote>
 
   <!-- =========================================================
        INTERPRETATION
@@ -708,8 +743,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
       </p>
 
       <p>
-        The purpose was to make those assumptions inspectable and not to
-        introduce a sophisticated model of research process, which might be a good idea to explore next! ;)
+        The purpose was to make those assumptions inspectable, not to build a sophisticated model of the research process, which might be an interesting direction to explore next! ;)
       </p>
     </div>
 
