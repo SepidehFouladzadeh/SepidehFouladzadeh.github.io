@@ -741,26 +741,26 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <div class="artifact-gallery">
 
   <div class="artifact-card">
-    <img controls>
-      <source src="/assets/images/learned_weekly_allocation.png" type="image/png">
-    </img>
-    <!-- <h4>PPO</h4> -->
+    <img
+      src="/assets/images/learned_weekly_allocation.png"
+      alt="Learned weekly effort allocation"
+    >
     <p>Learned weekly allocation.</p>
   </div>
 
   <div class="artifact-card">
-    <img controls>
-      <source src="/assets/images/reward_components.png" type="image/png">
-    </img>
-    <!-- <h4>LQR</h4> -->
+    <img
+      src="/assets/images/reward_components.png"
+      alt="Reward components through time"
+    >
     <p>Reward components.</p>
   </div>
 
   <div class="artifact-card">
-    <img controls>
-      <source src="/assets/images/state_evolution.png" type="image/png">
-    </img>
-    <!-- <h4>Manual State Feedback</h4> -->
+    <img
+      src="/assets/images/state_evolution.png"
+      alt="State evolution under the learned policy"
+    >
     <p>State evolution.</p>
   </div>
 
