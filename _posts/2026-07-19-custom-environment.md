@@ -674,6 +674,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <span class="equation-bonus">
             + completion or final-state bonuses
         </span>
+      </div>
     </div>
     
   </section>
@@ -798,12 +799,11 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
       </div>
     </div>
-
-
+  </section>
+  
     <blockquote class="interpretation-quote">
         The desirable outcome is research progress, but not through health collapse or chronically unsustainable effort. Rewarding meaningful and sustainable research development rather than progress alone :)
     </blockquote>
-  </section>
 
   <!-- =========================================================
        INTERPRETATION
