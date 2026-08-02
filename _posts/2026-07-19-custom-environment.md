@@ -257,7 +257,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <strong>Support</strong>
 
         <p>
-          Access to professional support and useful external input.
+          Access to professional support, feedback, and useful external input.
         </p>
 
         <span class="model-card-more">
@@ -271,13 +271,14 @@ Below you can see how the research process evolves alongside weekly effort alloc
         hidden
       >
         <p>
-          Meaningful result communication is assumed to gradually
-          increase professional support.
+          Support grows gradually through meaningful result communication. Communication is more effective when capacity is higher and less effective when deadline pressure narrows attention toward immediate completion. It is also more useful when there is enough developed work and knowledge to communicate clearly.
         </p>
 
-        <p>
-          Support also makes a small contribution to learning.
-        </p>
+        <div class="model-equation"> 
+        previous support<br>
+        + meaningful communication<br>
+        + random variation<br>
+        </div>
       </div>
     </article>
 
