@@ -130,7 +130,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <strong>Deadline pressure</strong>
 
         <p>
-          Pressure associated with passing time and incomplete work.
+          Pressure associated with limited time and incomplete work.
         </p>
 
         <span class="model-card-more">
@@ -146,7 +146,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <p>
           Deadline pressure builds over time. It grows more quickly as the end of the timeline approaches and when visible progress remains limited. Making progress brings some immediate relief, while a small amount of randomness represents factors not explicitly included in the model. 
         </p>
-        
+
         <div class="model-equation">
           previous pressure
           + deadline growth
@@ -214,7 +214,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         <strong>Capacity</strong>
 
         <p>
-          The ability to work effectively during the current week.
+          The ability to work effectively and sustain research activity.
         </p>
 
         <span class="model-card-more">
@@ -228,14 +228,16 @@ Below you can see how the research process evolves alongside weekly effort alloc
         hidden
       >
         <p>
-          Higher capacity makes literature review and implementation
-          more effective.
+          Recovery restores depleted capacity, with smaller gains as capacity approaches its maximum. Research activity can also create momentum, making it easier to continue working. Workload is not treated as inherently harmful, but overload beyond a sustainable threshold reduces capacity, becoming more damaging when capacity is already low.
         </p>
 
-        <p>
-          Workload only reduces capacity when it exceeds the level
-          treated as sustainable in the environment.
-        </p>
+        <div class="model-equation"> 
+        previous capacity 
+        + recovery 
+        + momentum 
+        − overload 
+        </div>
+        
       </div>
     </article>
 
