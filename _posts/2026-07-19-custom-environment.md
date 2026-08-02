@@ -148,9 +148,9 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </p>
 
         <div class="model-equation">
-          previous pressure
-          + deadline growth
-          − progress relief
+          previous pressure<br>
+          + deadline growth<br>
+          − progress relief<br>
           + random variation
         </div>
       </div>
@@ -232,12 +232,12 @@ Below you can see how the research process evolves alongside weekly effort alloc
         </p>
 
         <div class="model-equation"> 
-        previous capacity 
-        + recovery 
-        + momentum 
+        previous capacity <br>
+        + recovery <br>
+        + momentum <br>
         − overload 
         </div>
-        
+
       </div>
     </article>
 
