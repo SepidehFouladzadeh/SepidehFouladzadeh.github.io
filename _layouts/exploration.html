@@ -1322,10 +1322,8 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
 
       grid-template-areas:
-        ". deadline ."
-        "recovery capacity support"
-        "literature knowledge implementation"
-        ". communication progress";
+        "capacity deadline support"
+        ". knowledge progress";
 
       gap: 5rem 3rem;
       margin-top: 2rem;
@@ -1336,10 +1334,6 @@
       grid-area: deadline;
     }
 
-    .diagram-recovery {
-      grid-area: recovery;
-    }
-
     .diagram-capacity {
       grid-area: capacity;
     }
@@ -1348,20 +1342,8 @@
       grid-area: support;
     }
 
-    .diagram-literature {
-      grid-area: literature;
-    }
-
     .diagram-knowledge {
       grid-area: knowledge;
-    }
-
-    .diagram-implementation {
-      grid-area: implementation;
-    }
-
-    .diagram-communication {
-      grid-area: communication;
     }
 
     .diagram-progress {
