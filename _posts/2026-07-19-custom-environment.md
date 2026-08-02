@@ -481,14 +481,14 @@ Below you can see how the research process evolves alongside weekly effort alloc
         hidden
       >
         <p>
-          Implementation produces most visible progress. Communication
-          provides a smaller visibility gain.
+          Visible progress grows mainly through implementation. Implementation is more productive when working capacity and knowledge are higher. Progress becomes harder as the project approaches completion. Meaningful communication makes the developed work more visible.
         </p>
-
-        <p>
-          Progress gradually saturates as the simulated project approaches
-          completion and provides some deadline relief.
-        </p>
+        <div class="model-equation"> 
+        previous progress<br>
+        + implementation gain<br> 
+        + communication visibility<br> 
+        + random variation 
+        </div>
       </div>
     </article>
 
