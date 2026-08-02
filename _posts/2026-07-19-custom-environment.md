@@ -353,14 +353,17 @@ Below you can see how the research process evolves alongside weekly effort alloc
         hidden
       >
         <p>
-          Knowledge grows through literature review, learning by doing,
-          and a smaller contribution from support.
+          Knowledge grows through literature review, learning by doing, and a smaller contribution from support. Learning is more effective when working capacity is higher, and recovery can improve that capacity during the current week. Knowledge gains become smaller as understanding approaches its maximum, with a playful assumption that deadline pressure can temporarily sharpen focus.
         </p>
 
-        <p>
-          Higher knowledge improves the productivity of implementation
-          and the readiness to communicate results.
-        </p>
+        <div class="model-equation"> 
+        previous knowledge<br> 
+        + literature learning <br> 
+        + learning by doing <br> 
+        + support-based learning <br> 
+        + random variation 
+        </div>
+
       </div>
     </article>
 
