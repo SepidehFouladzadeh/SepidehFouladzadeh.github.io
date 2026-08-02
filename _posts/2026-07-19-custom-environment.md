@@ -36,83 +36,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   <div class="model-diagram" data-model-diagram>
 
-    <!-- SVG connectors -->
-    <svg
-      class="model-connectors"
-      aria-hidden="true"
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <marker
-          id="arrowhead"
-          markerWidth="8"
-          markerHeight="8"
-          refX="7"
-          refY="4"
-          orient="auto"
-        >
-          <path d="M0,0 L8,4 L0,8 Z"></path>
-        </marker>
-      </defs>
-
-      <path
-        data-from="recovery"
-        data-to="capacity"
-      ></path>
-
-      <path
-        data-from="capacity"
-        data-to="literature"
-      ></path>
-
-      <path
-        data-from="capacity"
-        data-to="implementation"
-      ></path>
-
-      <path
-        data-from="literature"
-        data-to="knowledge"
-      ></path>
-
-      <path
-        data-from="knowledge"
-        data-to="implementation"
-      ></path>
-
-      <path
-        data-from="implementation"
-        data-to="progress"
-      ></path>
-
-      <path
-        data-from="progress"
-        data-to="communication"
-      ></path>
-
-      <path
-        data-from="knowledge"
-        data-to="communication"
-      ></path>
-
-      <path
-        data-from="communication"
-        data-to="support"
-      ></path>
-
-      <path
-        data-from="deadline"
-        data-to="implementation"
-      ></path>
-
-      <path
-        data-from="progress"
-        data-to="deadline"
-        data-direction="reverse"
-      ></path>
-    </svg>
-
-
     <!-- ROW 1 -->
 
     <article
@@ -158,46 +81,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
 
     <!-- ROW 2 -->
-
-    <article
-      class="model-card action-card diagram-recovery"
-      id="recovery"
-    >
-      <button
-        class="model-card-trigger"
-        type="button"
-        aria-expanded="false"
-        aria-controls="details-recovery"
-      >
-        <span class="model-card-type">Action</span>
-
-        <strong>Recovery</strong>
-
-        <p>
-          Effort allocated to restoring sustainable working capacity.
-        </p>
-
-        <span class="model-card-more">
-          View assumption
-        </span>
-      </button>
-
-      <div
-        class="model-card-details"
-        id="details-recovery"
-        hidden
-      >
-        <p>
-          Recovery increases capacity with diminishing returns. It does
-          not directly produce visible research progress.
-        </p>
-
-        <div class="model-equation">
-          recovery → higher capacity
-        </div>
-      </div>
-    </article>
-
 
     <article
       class="model-card state-card diagram-capacity"
@@ -286,46 +169,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
     <!-- ROW 3 -->
 
     <article
-      class="model-card action-card diagram-literature"
-      id="literature"
-    >
-      <button
-        class="model-card-trigger"
-        type="button"
-        aria-expanded="false"
-        aria-controls="details-literature"
-      >
-        <span class="model-card-type">Action</span>
-
-        <strong>Literature review</strong>
-
-        <p>
-          Effort allocated to building understanding.
-        </p>
-
-        <span class="model-card-more">
-          View assumption
-        </span>
-      </button>
-
-      <div
-        class="model-card-details"
-        id="details-literature"
-        hidden
-      >
-        <p>
-          Literature review increases knowledge. The gain is greater
-          when current knowledge is still limited.
-        </p>
-
-        <div class="model-equation">
-          literature × capacity × remaining learning potential
-        </div>
-      </div>
-    </article>
-
-
-    <article
       class="model-card state-card diagram-knowledge"
       id="knowledge"
     >
@@ -368,89 +211,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
       </div>
     </article>
 
-
-    <article
-      class="model-card action-card diagram-implementation"
-      id="implementation"
-    >
-      <button
-        class="model-card-trigger"
-        type="button"
-        aria-expanded="false"
-        aria-controls="details-implementation"
-      >
-        <span class="model-card-type">Action</span>
-
-        <strong>Implementation</strong>
-
-        <p>
-          Effort allocated to turning understanding into developed work.
-        </p>
-
-        <span class="model-card-more">
-          View assumption
-        </span>
-      </button>
-
-      <div
-        class="model-card-details"
-        id="details-implementation"
-        hidden
-      >
-        <p>
-          Implementation produces more progress when capacity and
-          knowledge are higher.
-        </p>
-
-        <div class="model-equation">
-          implementation × capacity × knowledge → progress
-        </div>
-      </div>
-    </article>
-
-
     <!-- ROW 4 -->
-
-    <article
-      class="model-card action-card diagram-communication"
-      id="communication"
-    >
-      <button
-        class="model-card-trigger"
-        type="button"
-        aria-expanded="false"
-        aria-controls="details-communication"
-      >
-        <span class="model-card-type">Action</span>
-
-        <strong>Result communication</strong>
-
-        <p>
-          Effort allocated to making developed work visible.
-        </p>
-
-        <span class="model-card-more">
-          View assumption
-        </span>
-      </button>
-
-      <div
-        class="model-card-details"
-        id="details-communication"
-        hidden
-      >
-        <p>
-          Communication is more effective when sufficient progress and
-          knowledge already exist.
-        </p>
-
-        <p>
-          Meaningful communication can increase support and make some
-          developed work more visible.
-        </p>
-      </div>
-    </article>
-
 
     <article
       class="model-card state-card diagram-progress"
