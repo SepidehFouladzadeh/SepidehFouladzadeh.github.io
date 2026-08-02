@@ -144,14 +144,15 @@ Below you can see how the research process evolves alongside weekly effort alloc
         hidden
       >
         <p>
-          Deadline pressure grows over time and rises more quickly when
-          visible progress remains limited.
+          Deadline pressure builds over time. It grows more quickly as the end of the timeline approaches and when visible progress remains limited. Making progress brings some immediate relief, while a small amount of randomness represents factors not explicitly included in the model. 
         </p>
-
-        <p>
-          In the model, pressure can temporarily increase focus on work
-          directly related to understanding and completing the project.
-        </p>
+        
+        <div class="model-equation">
+          previous pressure
+          + deadline growth
+          − progress relief
+          + random variation
+        </div>
       </div>
     </article>
 
@@ -785,10 +786,10 @@ Below you can see how the research process evolves alongside weekly effort alloc
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
-      <h3>Coming soon.</h3>
+      <h3>Modeling the Research Process</h3>
 
       <p>
-        Coming soon.
+        Exploring related modeling frameworks: What questions can other modeling frameworks answer using the same assumptions?
       </p>
 
       <a href="/research/rl-vs-control/custom-environment/">
