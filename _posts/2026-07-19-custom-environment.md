@@ -36,11 +36,10 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   <div class="model-diagram" data-model-diagram>
 
-    <!-- ROW 1 -->
-
     <article
       class="model-card state-card diagram-deadline"
       id="deadline"
+      style="grid-column: 2; grid-row: 1;"
     >
       <button
         class="model-card-trigger"
@@ -80,11 +79,10 @@ Below you can see how the research process evolves alongside weekly effort alloc
     </article>
 
 
-    <!-- ROW 2 -->
-
     <article
       class="model-card state-card diagram-capacity"
       id="capacity"
+      style="grid-column: 1; grid-row: 1;"
     >
       <button
         class="model-card-trigger"
@@ -128,6 +126,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
     <article
       class="model-card state-card diagram-support"
       id="support"
+      style="grid-column: 3; grid-row: 1;"
     >
       <button
         class="model-card-trigger"
@@ -166,11 +165,10 @@ Below you can see how the research process evolves alongside weekly effort alloc
     </article>
 
 
-    <!-- ROW 3 -->
-
     <article
       class="model-card state-card diagram-knowledge"
       id="knowledge"
+      style="grid-column: 1; grid-row: 2;"
     >
       <button
         class="model-card-trigger"
@@ -211,11 +209,11 @@ Below you can see how the research process evolves alongside weekly effort alloc
       </div>
     </article>
 
-    <!-- ROW 4 -->
 
     <article
       class="model-card state-card diagram-progress"
       id="progress"
+      style="grid-column: 2; grid-row: 2;"
     >
       <button
         class="model-card-trigger"
