@@ -281,134 +281,70 @@ Below you can see how the research process evolves alongside weekly effort alloc
         );
 
         details.hidden = currentlyOpen;
-
-        /*
-         * Expanding a card changes its position and size,
-         * so redraw the arrows afterward.
-         */
-        requestAnimationFrame(drawModelConnections);
       });
     });
   });
 </script>
-<script>
-  function drawModelConnections() {
-    const diagram = document.querySelector("[data-model-diagram]");
-    const svg = diagram?.querySelector(".model-connectors");
 
-    if (!diagram || !svg) return;
 
-    const diagramRect = diagram.getBoundingClientRect();
+<section class="causal-graph-section">
 
-    svg.setAttribute(
-      "viewBox",
-      `0 0 ${diagramRect.width} ${diagramRect.height}`
-    );
+  <div class="section-heading">
+    <h2>Dynamic Causal Graph</h2>
 
-    const connections = svg.querySelectorAll(
-      "path[data-from][data-to]"
-    );
+    <p>
+      The graph shows the direct dependencies encoded in one weekly
+      transition of the environment.
+    </p>
+  </div>
 
-    connections.forEach((path) => {
-      const from = document.getElementById(
-        path.dataset.from
-      );
+  <figure class="causal-graph-preview">
+    <button
+      class="graph-open-button"
+      type="button"
+      aria-label="Open causal graph in a larger view"
+      aria-haspopup="dialog"
+      aria-controls="graph-modal"
+    >
+      <img
+        src="/assets/images/research_process_causal_graph.png"
+        alt="Dynamic causal graph of the research process environment"
+      >
 
-      const to = document.getElementById(
-        path.dataset.to
-      );
+      <span>Click to enlarge</span>
+    </button>
+  </figure>
 
-      if (!from || !to) return;
+  <div
+    class="graph-modal"
+    id="graph-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Expanded dynamic causal graph"
+    hidden
+  >
+    <div class="graph-modal-backdrop" data-close-graph></div>
 
-      const fromRect = from.getBoundingClientRect();
-      const toRect = to.getBoundingClientRect();
+    <div class="graph-modal-window">
+      <button
+        class="graph-modal-close"
+        type="button"
+        aria-label="Close expanded graph"
+        data-close-graph
+      >
+        ×
+      </button>
 
-      const fromCenterX =
-        fromRect.left
-        - diagramRect.left
-        + fromRect.width / 2;
+      <div class="graph-modal-image-wrapper">
+        <img
+          src="/assets/images/research_process_causal_graph.png"
+          alt="Expanded dynamic causal graph of the research process environment"
+        >
+      </div>
+    </div>
+  </div>
 
-      const fromCenterY =
-        fromRect.top
-        - diagramRect.top
-        + fromRect.height / 2;
-
-      const toCenterX =
-        toRect.left
-        - diagramRect.left
-        + toRect.width / 2;
-
-      const toCenterY =
-        toRect.top
-        - diagramRect.top
-        + toRect.height / 2;
-
-      const horizontalDistance =
-        Math.abs(toCenterX - fromCenterX);
-
-      const verticalDistance =
-        Math.abs(toCenterY - fromCenterY);
-
-      let startX;
-      let startY;
-      let endX;
-      let endY;
-
-      /*
-       * Connect through the closest-facing sides.
-       */
-      if (horizontalDistance > verticalDistance) {
-        const movingRight = toCenterX > fromCenterX;
-
-        startX = movingRight
-          ? fromRect.right - diagramRect.left
-          : fromRect.left - diagramRect.left;
-
-        endX = movingRight
-          ? toRect.left - diagramRect.left
-          : toRect.right - diagramRect.left;
-
-        startY = fromCenterY;
-        endY = toCenterY;
-      } else {
-        const movingDown = toCenterY > fromCenterY;
-
-        startX = fromCenterX;
-        endX = toCenterX;
-
-        startY = movingDown
-          ? fromRect.bottom - diagramRect.top
-          : fromRect.top - diagramRect.top;
-
-        endY = movingDown
-          ? toRect.top - diagramRect.top
-          : toRect.bottom - diagramRect.top;
-      }
-
-      const controlX = (startX + endX) / 2;
-
-      path.setAttribute(
-        "d",
-        [
-          `M ${startX} ${startY}`,
-          `C ${controlX} ${startY},`,
-          `${controlX} ${endY},`,
-          `${endX} ${endY}`
-        ].join(" ")
-      );
-    });
-  }
-
-  document.addEventListener(
-    "DOMContentLoaded",
-    drawModelConnections
-  );
-
-  window.addEventListener(
-    "resize",
-    drawModelConnections
-  );
-</script>
+</section>
 
   The desirable outcome is making research progress, gaining knowledge, and having an effective contribution though meaningful communication but not through health collapse. Rewarding meaningful and sustainable research development rather than progress alone :)
 
