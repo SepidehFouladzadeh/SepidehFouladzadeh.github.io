@@ -239,6 +239,18 @@ permalink: /research/rl-vs-control/
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
+      <h3>Leveling up simple dynamics</h3>
+
+      <p>
+        Gradually moving toward increasingly complex dynamical systems. 
+      </p>
+
+      <a href="/research/rl-vs-control/beyond-simple-dynamics/">
+        See my train of thought →
+      </a>
+    </article>
+
+    <article class="related-exploration-item">
       <h3>Designing environments for my own curiosity</h3>
 
       <p>
@@ -258,18 +270,6 @@ permalink: /research/rl-vs-control/
       </p>
 
       <a href="/research/rl-vs-control/rl-algorithms/">
-        See my train of thought →
-      </a>
-    </article>
-
-    <article class="related-exploration-item">
-      <h3>Leveling up simple dynamics</h3>
-
-      <p>
-        Gradually moving toward increasingly complex dynamical systems. 
-      </p>
-
-      <a href="/research/rl-vs-control/beyond-simple-dynamics/">
         See my train of thought →
       </a>
     </article>
