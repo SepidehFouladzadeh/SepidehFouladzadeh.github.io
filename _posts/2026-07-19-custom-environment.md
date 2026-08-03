@@ -346,6 +346,43 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
 </section>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const openButton = document.querySelector(".graph-open-button");
+    const modal = document.querySelector("#graph-modal");
+    const closeButtons = modal?.querySelectorAll("[data-close-graph]");
+    const closeButton = modal?.querySelector(".graph-modal-close");
+
+    if (!openButton || !modal) {
+      return;
+    }
+
+    const openModal = () => {
+      modal.hidden = false;
+      document.body.classList.add("graph-modal-open");
+      closeButton?.focus();
+    };
+
+    const closeModal = () => {
+      modal.hidden = true;
+      document.body.classList.remove("graph-modal-open");
+      openButton.focus();
+    };
+
+    openButton.addEventListener("click", openModal);
+
+    closeButtons?.forEach((button) => {
+      button.addEventListener("click", closeModal);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !modal.hidden) {
+        closeModal();
+      }
+    });
+  });
+</script>
+
   The desirable outcome is making research progress, gaining knowledge, and having an effective contribution though meaningful communication but not through health collapse. Rewarding meaningful and sustainable research development rather than progress alone :)
 
   <!-- =========================================================
