@@ -291,11 +291,6 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   <div class="section-heading">
     <h2>Dynamic Causal Graph</h2>
-
-    <p>
-      The graph shows the direct dependencies encoded in one weekly
-      transition of the environment.
-    </p>
   </div>
 
   <figure class="causal-graph-preview">
