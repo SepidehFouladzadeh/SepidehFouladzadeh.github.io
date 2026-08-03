@@ -208,24 +208,34 @@ permalink: /research/rl-vs-control/
     <video controls>
       <source src="/assets/videos/cartpole-rl-episode-0.mp4" type="video/mp4">
     </video>
-    <h4>PPO</h4>
-    <p>MLP policy trained for 100,000 timesteps.</p>
+    <h4>PPO Policy Learning</h4>
+    <p>
+    This was my starting point for understanding how RL discovers a
+    control strategy through interaction rather than from an explicit model.
+    Trained a MLP policy with PPO for 100,000 timesteps, resulting in a controller that reliably keeps the pole balanced.
+    </p>
   </div>
 
   <div class="artifact-card">
     <video controls>
       <source src="/assets/videos/cartpole-lqr-episode-0.mp4" type="video/mp4">
     </video>
-    <h4>LQR</h4>
-    <p>Linear quadratic regulator.</p>
+    <h4>How Does LQR Compare?</h4>
+    <p>
+    Was curious how a classical optimal controller would compare with the
+    policy learned by PPO. Using the linearized CartPole dynamics, LQR performed similarly successful. Realized that choosing the cost matrices (<em>Q</em>
+    and <em>R</em>) is itself an important design decision, shaping the
+    controller's behavior. With my chosen weights, the controller wasn't particularly concerned with keeping the cart close to the center and mainly focused on keeping the pole upright.
+    </p>
   </div>
 
   <div class="artifact-card">
     <video controls>
       <source src="/assets/videos/cartpole-manual-episode-0.mp4" type="video/mp4">
     </video>
-    <h4>Manual State Feedback</h4>
-    <p>Hand-designed linear state-feedback controller.</p>
+    <h4>Can PPO Be Approximated Linearly?</h4>
+    <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
+    </p>
   </div>
 
 </div>
