@@ -378,44 +378,50 @@ Below you can see how the research process evolves alongside weekly effort alloc
   });
 </script>
 
-  The desirable outcome is making research progress, gaining knowledge, and having an effective contribution though meaningful communication but not through health collapse. Rewarding meaningful and sustainable research development rather than progress alone :)
+<!-- =========================================================
+     OBJECTIVE
+========================================================== -->
 
-  <!-- =========================================================
-       REWARD
-  ========================================================== -->
+<section class="objective-section">
 
-  <section class="artifact-section">
+  <div class="section-heading">
+    <!-- <h2>What the agent is optimizing</h2> -->
 
-    <div class="equation-card">
-      <p class="equation-title">Reward</p>
+    <p class="section-intro">
+      The desirable outcome is making research progress, gaining knowledge, and having an effective contribution though meaningful communication but not through health collapse. Rewarding meaningful and sustainable research development rather than progress alone :)
+    </p>
+  </div>
 
-      <div class="reward-equation">
+  <div class="equation-card">
+    <p class="equation-title">Weekly reward</p>
 
-        <span class="equation-positive">
-            + visible progress
-            + knowledge gained
-            + meaningful communication
-        </span>
+    <div class="reward-equation">
 
-        <span class="equation-negative">
-            − capacity loss
-            − critically low capacity
-            − wasted effort
-        </span>
+      <span class="equation-positive">
+        + visible progress
+        + knowledge gained
+        + meaningful communication
+      </span>
 
-      </div>
+      <span class="equation-negative">
+        − capacity loss
+        − critically low capacity
+        − wasted effort
+      </span>
+
     </div>
-    
-  </section>
+  </div>
 
 
-  And ending the episode with: 
+  <div class="objective-subsection">
 
-  <!-- =========================================================
-      EPISODE ENDING
-  ========================================================= -->
+    <div class="subsection-heading">
 
-  <section class="artifact-section">
+      <p>
+        Each simulation continues until the research is completed,
+        capacity collapses, or the one-year time limit is reached.
+      </p>
+    </div>
 
     <div class="termination-grid">
 
@@ -442,10 +448,18 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
     </div>
 
-  </section>
+  </div>
 
 
-  Along with an additional bonus for completing the research with more capacity and knowledge!
+  <div class="completion-note">
+    <strong>Completion bonus</strong>
+
+    <p>
+      Along with an additional bonus for completing the research with more capacity and knowledge!
+    </p>
+  </div>
+
+</section>
 
   <section class="artifacts">
 
