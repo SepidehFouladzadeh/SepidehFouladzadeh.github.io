@@ -525,7 +525,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         Exploring related modeling frameworks: What questions can other modeling frameworks answer using the same assumptions?
       </p>
 
-      <a href="/research/rl-vs-control/custom-environment/">
+      <a href="/research/rl-vs-control/custom-environment//modeling-research/">
         See my train of thought →
       </a>
     </article>
