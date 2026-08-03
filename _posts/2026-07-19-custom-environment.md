@@ -386,8 +386,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
   <div class="section-heading">
     <!-- <h2>What the agent is optimizing</h2> -->
-
-    <p class="section-intro">
+    <p>
       The desirable outcome is making research progress, gaining knowledge, and having an effective contribution though meaningful communication but not through health collapse. Rewarding meaningful and sustainable research development rather than progress alone :)
     </p>
   </div>
@@ -448,15 +447,10 @@ Below you can see how the research process evolves alongside weekly effort alloc
 
     </div>
 
-  </div>
-
-
-  <div class="completion-note">
-    <strong>Completion bonus</strong>
-
     <p>
       Along with an additional bonus for completing the research with more capacity and knowledge!
     </p>
+
   </div>
 
 </section>
@@ -539,7 +533,7 @@ Below you can see how the research process evolves alongside weekly effort alloc
         Exploring related modeling frameworks: What questions can other modeling frameworks answer using the same assumptions?
       </p>
 
-      <a href="/research/rl-vs-control/custom-environment//modeling-research/">
+      <a href="/research/rl-vs-control/custom-environment/modeling-research/">
         See my train of thought →
       </a>
     </article>
