@@ -198,7 +198,78 @@ permalink: /research/rl-vs-control/
     </div>
 </div>
 
+<section class="artifacts">
+
+  <h2>Artifacts from this exploration</h2>
+
+  <div class="artifact-gallery">
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/cartpole-rl-episode-0.mp4" type="video/mp4">
+    </video>
+    <h4>PPO Policy Learning</h4>
+    <p>
+    This was my starting point for understanding how RL discovers a
+    control strategy through interaction rather than from an explicit model.
+    Trained a MLP policy with PPO for 100,000 timesteps, resulting in a controller that reliably keeps the pole balanced.
+    </p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/cartpole-lqr-episode-0.mp4" type="video/mp4">
+    </video>
+    <h4>How Does LQR Compare?</h4>
+    <p>
+    Was curious how a classical optimal controller would compare with the
+    policy learned by PPO. Using the linearized CartPole dynamics, LQR performed similarly successful. Realized that choosing the cost matrices (<em>Q</em>
+    and <em>R</em>) is itself an important design decision, shaping the
+    controller's behavior. With my chosen weights, the controller wasn't particularly concerned with keeping the cart close to the center and mainly focused on keeping the pole upright.
+    </p>
+  </div>
+
+  <div class="artifact-card">
+    <video controls>
+      <source src="/assets/videos/cartpole-manual-episode-0.mp4" type="video/mp4">
+    </video>
+    <h4>Can PPO Be Approximated Linearly?</h4>
+    <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
+    </p>
+  </div>
+
+</div>
+
 </section>
+
+<details class="dynamics-card">
+  <summary> Behind the environment</summary>
+
+  <p>
+    Nonlinear equations of translational motion of the cart and the rotational motion of the pole.<br>
+    The applied force changes both the cart's motion and the pole's rotation, while gravity continuously pulls the pole away from the unstable upright equilibrium.
+  </p>
+
+  <div class="equation-card">
+    \[
+    \ddot{x} =
+    \frac{F + m_p \sin\theta
+    \left(l\dot{\theta}^2 + g\cos\theta\right)}
+    {m_c + m_p\sin^2\theta}
+    \]
+  </div>
+
+  <div class="equation-card">
+    \[
+    \ddot{\theta} =
+    \frac{-F\cos\theta
+    -m_p l\dot{\theta}^2\cos\theta\sin\theta
+    -(m_c+m_p)g\sin\theta}
+    {l\left(m_c+m_p\sin^2\theta\right)}
+    \]
+  </div>
+
+</details>
 
 <section class="related-explorations">
 
@@ -245,73 +316,3 @@ permalink: /research/rl-vs-control/
   </div>
 
 </section>
-
-<details class="dynamics-card">
-  <summary> Behind the environment</summary>
-
-  <p>
-    Nonlinear equations of translational motion of the cart and the rotational motion of the pole.<br>
-    The applied force changes both the cart's motion and the pole's rotation, while gravity continuously pulls the pole away from the unstable upright equilibrium.
-  </p>
-
-  <div class="equation-card">
-    \[
-    \ddot{x} =
-    \frac{F + m_p \sin\theta
-    \left(l\dot{\theta}^2 + g\cos\theta\right)}
-    {m_c + m_p\sin^2\theta}
-    \]
-  </div>
-
-  <div class="equation-card">
-    \[
-    \ddot{\theta} =
-    \frac{-F\cos\theta
-    -m_p l\dot{\theta}^2\cos\theta\sin\theta
-    -(m_c+m_p)g\sin\theta}
-    {l\left(m_c+m_p\sin^2\theta\right)}
-    \]
-  </div>
-
-</details>
-<section class="artifacts">
-
-  <h2>Artifacts from this exploration</h2>
-
-  <div class="artifact-gallery">
-
-  <div class="artifact-card">
-    <video controls>
-      <source src="/assets/videos/cartpole-rl-episode-0.mp4" type="video/mp4">
-    </video>
-    <h4>PPO Policy Learning</h4>
-    <p>
-    This was my starting point for understanding how RL discovers a
-    control strategy through interaction rather than from an explicit model.
-    Trained a MLP policy with PPO for 100,000 timesteps, resulting in a controller that reliably keeps the pole balanced.
-    </p>
-  </div>
-
-  <div class="artifact-card">
-    <video controls>
-      <source src="/assets/videos/cartpole-lqr-episode-0.mp4" type="video/mp4">
-    </video>
-    <h4>How Does LQR Compare?</h4>
-    <p>
-    Was curious how a classical optimal controller would compare with the
-    policy learned by PPO. Using the linearized CartPole dynamics, LQR performed similarly successful. Realized that choosing the cost matrices (<em>Q</em>
-    and <em>R</em>) is itself an important design decision, shaping the
-    controller's behavior. With my chosen weights, the controller wasn't particularly concerned with keeping the cart close to the center and mainly focused on keeping the pole upright.
-    </p>
-  </div>
-
-  <div class="artifact-card">
-    <video controls>
-      <source src="/assets/videos/cartpole-manual-episode-0.mp4" type="video/mp4">
-    </video>
-    <h4>Can PPO Be Approximated Linearly?</h4>
-    <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
-    </p>
-  </div>
-
-</div>
