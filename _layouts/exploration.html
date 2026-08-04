@@ -1664,6 +1664,53 @@
       }
     }
 
+      .dynamics-card {
+        margin: 2rem 0;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        background: #fafafa;
+        overflow: hidden;
+    }
+
+    .dynamics-card summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 1.2rem 1.4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .dynamics-card summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .dynamics-card summary::before {
+        content: "▶";
+        font-size: 0.9rem;
+        margin-right: 0.9rem;
+        transition: transform 0.2s;
+    }
+
+    .dynamics-card[open] summary::before {
+        transform: rotate(90deg);
+    }
+
+    .dynamics-card strong {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .dynamics-card span {
+        display: block;
+        margin-top: 0.25rem;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .dynamics-card > *:not(summary) {
+        padding: 0 1.4rem 1.4rem;
+    }
+
     .author-break {
         display: flex;
         align-items: center;

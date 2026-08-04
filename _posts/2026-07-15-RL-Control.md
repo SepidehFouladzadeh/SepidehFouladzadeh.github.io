@@ -197,8 +197,57 @@ permalink: /research/rl-vs-control/
     </div>
     </div>
 </div>
-<details class="equation-details">
-  <summary>▶ Nonlinear dynamics of CartPole</summary>
+
+</section>
+
+<section class="related-explorations">
+
+  <h2>Other explorations inspired by this train of thought</h2>
+
+  <div class="related-exploration-list">
+
+    <article class="related-exploration-item">
+      <h3>Leveling up simple dynamics</h3>
+
+      <p>
+        Gradually moving toward increasingly complex dynamical systems. 
+      </p>
+
+      <a href="/research/rl-vs-control/beyond-simple-dynamics/">
+        See my train of thought →
+      </a>
+    </article>
+
+    <article class="related-exploration-item">
+      <h3>Designing environments for my own curiosity</h3>
+
+      <p>
+        Going beyond standard environments in Gymnasium to explore how RL might intersect with problems I'm personally curious about.
+      </p>
+
+      <a href="/research/rl-vs-control/custom-environment/">
+        See my train of thought →
+      </a>
+    </article>
+
+    <article class="related-exploration-item">
+      <h3>A mini dive into RL algorithms</h3>
+
+      <p>
+        Understanding what distinguishes them, and how they relate to other computational methods.
+      </p>
+
+      <a href="/research/rl-vs-control/rl-algorithms/">
+        See my train of thought →
+      </a>
+    </article>
+
+  </div>
+
+</section>
+
+<details class="dynamics-card">
+  <summary> Behind the environment</summary>
 
   <p>
     Nonlinear equations of translational motion of the cart and the rotational motion of the pole.<br>
@@ -266,51 +315,3 @@ permalink: /research/rl-vs-control/
   </div>
 
 </div>
-
-</section>
-
-<section class="related-explorations">
-
-  <h2>Other explorations inspired by this train of thought</h2>
-
-  <div class="related-exploration-list">
-
-    <article class="related-exploration-item">
-      <h3>Leveling up simple dynamics</h3>
-
-      <p>
-        Gradually moving toward increasingly complex dynamical systems. 
-      </p>
-
-      <a href="/research/rl-vs-control/beyond-simple-dynamics/">
-        See my train of thought →
-      </a>
-    </article>
-
-    <article class="related-exploration-item">
-      <h3>Designing environments for my own curiosity</h3>
-
-      <p>
-        Going beyond standard environments in Gymnasium to explore how RL might intersect with problems I'm personally curious about.
-      </p>
-
-      <a href="/research/rl-vs-control/custom-environment/">
-        See my train of thought →
-      </a>
-    </article>
-
-    <article class="related-exploration-item">
-      <h3>A mini dive into RL algorithms</h3>
-
-      <p>
-        Understanding what distinguishes them, and how they relate to other computational methods.
-      </p>
-
-      <a href="/research/rl-vs-control/rl-algorithms/">
-        See my train of thought →
-      </a>
-    </article>
-
-  </div>
-
-</section>
