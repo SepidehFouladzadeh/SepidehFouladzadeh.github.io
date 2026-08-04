@@ -197,7 +197,34 @@ permalink: /research/rl-vs-control/
     </div>
     </div>
 </div>
+<details class="equation-details">
+  <summary>▶ Nonlinear dynamics of CartPole</summary>
 
+  <p>
+    Nonlinear equations of translational motion of the cart and the rotational motion of the pole.<br>
+    The applied force changes both the cart's motion and the pole's rotation, while gravity continuously pulls the pole away from the unstable upright equilibrium.
+  </p>
+
+  <div class="equation-card">
+    \[
+    \ddot{x} =
+    \frac{F + m_p \sin\theta
+    \left(l\dot{\theta}^2 + g\cos\theta\right)}
+    {m_c + m_p\sin^2\theta}
+    \]
+  </div>
+
+  <div class="equation-card">
+    \[
+    \ddot{\theta} =
+    \frac{-F\cos\theta
+    -m_p l\dot{\theta}^2\cos\theta\sin\theta
+    -(m_c+m_p)g\sin\theta}
+    {l\left(m_c+m_p\sin^2\theta\right)}
+    \]
+  </div>
+
+</details>
 <section class="artifacts">
 
   <h2>Artifacts from this exploration</h2>
