@@ -1711,6 +1711,105 @@
         padding: 0 1.4rem 1.4rem;
     }
 
+    .dataset-matrix-diagram{
+        max-width:850px;
+        margin:50px auto;
+        font-family:monospace;
+    }
+
+    .matrix-title{
+        width:75%;
+        margin-left:auto;
+        text-align:center;
+        font-size:2rem;
+        margin-bottom:15px;
+    }
+
+    .matrix-title::after{
+        content:"";
+        display:block;
+        width:70%;
+        margin:18px auto 0;
+        border-top:2px solid black;
+    }
+
+    .matrix-wrapper{
+        display:grid;
+        grid-template-columns:140px 1fr;
+        gap:25px;
+        align-items:stretch;
+    }
+
+    .matrix-row-label{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        font-size:1.6rem;
+    }
+
+    .matrix-row-label strong{
+        font-size:2rem;
+        font-weight:500;
+    }
+
+    .matrix{
+
+        border-left:2px solid black;
+        border-right:2px solid black;
+        border-bottom:2px solid black;
+
+        min-height:280px;
+
+        display:grid;
+        grid-template-rows:100px 1fr;
+    }
+
+    .matrix-header{
+
+        display:grid;
+
+        /* Don't use 82fr 5fr 12fr */
+        grid-template-columns:2.5fr 1.3fr 1.5fr;
+
+        border-bottom:2px solid black;
+    }
+
+    .cell{
+
+        border-right:2px solid black;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+    }
+
+    .cell:last-child{
+        border-right:none;
+    }
+
+    .cell div{
+        font-size:1.35rem;
+        margin-bottom:10px;
+    }
+
+    .cell strong{
+        font-size:2rem;
+        font-weight:500;
+    }
+
+    .matrix-body{
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        font-size:2rem;
+    }
+
     .author-break {
         display: flex;
         align-items: center;
