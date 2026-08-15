@@ -50,7 +50,7 @@ permalink: /research/bio-network/
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
           <h3>What can I learn from the response measurements alone?</h3>
-          <p> Finding patterns in the outputs.
+          <p> Finding patterns in the outputs (with minimal prior assumptions).
           </p>
         </button>
 
@@ -120,6 +120,42 @@ permalink: /research/bio-network/
     </div>
 </div>
 
+<details class="dynamics-card">
+  <summary>Getting to Know the Dataset</summary>
+
+  <p>
+    Experimental rows:       89<br>
+    Total nodes:             99<br>
+    Protein nodes:           82<br>
+    Phenotype nodes:         5<br>
+    Perturbation nodes:      12<br>
+  </p>
+  <p>
+    Phenotypes:<br>
+    - G2M<br>
+    - G1arrest<br>
+    - G2arrest<br>
+    - Sarrest<br>
+    - cellviab<br>
+  <p>
+  <p>
+    Perturbations:<br>
+    - aMEK<br>
+    - aAKT<br>
+    - aHDAC<br>
+    - aMDM2<br>
+    - aJAK<br>
+    - aBRAFm<br>
+    - aPKC<br>
+    - aSTAT3<br>
+    - amTOR<br>
+    - aPI3K<br>
+    - aCDK4<br>
+    - aSRC<br>
+  <p>
+
+</details>
+
 <section class="related-explorations">
 
   <h2>Other explorations inspired by this train of thought</h2>
@@ -127,13 +163,13 @@ permalink: /research/bio-network/
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
-      <h3>Coming soon.</h3>
+      <h3>Extracting the Most from Measured Outputs</h3>
 
       <p>
-        Coming soon. 
+        Learning What Can Be Learned from Molecular and Phenotypic Measurements. 
       </p>
 
-      <a href="/research/bio-network/">
+      <a href="/research/bio-network/measurements">
         See my train of thought →
       </a>
     </article>
