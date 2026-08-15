@@ -167,9 +167,6 @@ permalink: /research/bio-network/
 
 </div>
 
-<details class="dataset-details">
-  <summary>See measured phenotypes and perturbations</summary>
-
   <p>
     <strong>Phenotypes:</strong>
     G2M · G1 arrest · G2 arrest · S arrest · cell viability
@@ -180,7 +177,6 @@ permalink: /research/bio-network/
     aMEK · aAKT · aHDAC · aMDM2 · aJAK · aBRAFm ·
     aPKC · aSTAT3 · amTOR · aPI3K · aCDK4 · aSRC
   </p>
-</details>
 
 </details>
 
