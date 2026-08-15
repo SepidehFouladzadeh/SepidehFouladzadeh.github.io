@@ -123,36 +123,64 @@ permalink: /research/bio-network/
 <details class="dynamics-card">
   <summary>Getting to Know the Dataset</summary>
 
+  <div class="dataset-matrix-diagram">
+
+    <div class="matrix-title">
+        <span>99 nodes</span>
+    </div>
+
+    <div class="matrix-wrapper">
+
+        <div class="matrix-row-label">
+        <strong>89</strong>
+        <span>conditions</span>
+        </div>
+
+        <div class="matrix">
+
+        <div class="matrix-header">
+
+            <div class="cell">
+            <div>proteins</div>
+            <strong>82</strong>
+            </div>
+
+            <div class="cell">
+            <div>phenotypes</div>
+            <strong>5</strong>
+            </div>
+
+            <div class="cell">
+            <div>perturbations</div>
+            <strong>12</strong>
+            </div>
+
+        </div>
+
+        <div class="matrix-body">
+            response matrix
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<details class="dataset-details">
+  <summary>See measured phenotypes and perturbations</summary>
+
   <p>
-    Experimental rows:       89<br>
-    Total nodes:             99<br>
-    Protein nodes:           82<br>
-    Phenotype nodes:         5<br>
-    Perturbation nodes:      12<br>
+    <strong>Phenotypes:</strong>
+    G2M · G1 arrest · G2 arrest · S arrest · cell viability
   </p>
+
   <p>
-    Phenotypes:<br>
-    - G2M<br>
-    - G1arrest<br>
-    - G2arrest<br>
-    - Sarrest<br>
-    - cellviab<br>
-  <p>
-  <p>
-    Perturbations:<br>
-    - aMEK<br>
-    - aAKT<br>
-    - aHDAC<br>
-    - aMDM2<br>
-    - aJAK<br>
-    - aBRAFm<br>
-    - aPKC<br>
-    - aSTAT3<br>
-    - amTOR<br>
-    - aPI3K<br>
-    - aCDK4<br>
-    - aSRC<br>
-  <p>
+    <strong>Perturbations:</strong>
+    aMEK · aAKT · aHDAC · aMDM2 · aJAK · aBRAFm ·
+    aPKC · aSTAT3 · amTOR · aPI3K · aCDK4 · aSRC
+  </p>
+</details>
 
 </details>
 
