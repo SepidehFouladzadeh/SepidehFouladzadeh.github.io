@@ -151,7 +151,7 @@ permalink: /research/bio-network/
         </div>
 
         <div class="cell">
-          <span>perturbations</span>
+          <span>perturbed nodes</span>
           <strong>12</strong>
         </div>
 
@@ -164,7 +164,59 @@ permalink: /research/bio-network/
     </div>
 
   </div>
+  
+  </div>
 
+    <div class="dataset-matrix-diagram">
+
+    <div class="matrix-title">
+        99 perturbation nodes
+    </div>
+
+    <div class="matrix-wrapper">
+
+        <div class="matrix-row-label">
+        <strong>89</strong>
+        <span>conditions</span>
+        </div>
+
+        <div class="matrix">
+
+        <div class="matrix-header">
+
+            <div class="cell">
+            <span>proteins</span>
+            <strong>82</strong>
+            </div>
+
+            <div class="cell">
+            <span>phenotypes</span>
+            <strong>5</strong>
+            </div>
+
+            <div class="cell">
+            <span>perturbed nodes</span>
+            <strong>12</strong>
+            </div>
+
+        </div>
+
+        <div class="matrix-body perturbation-body">
+
+            <div class="zeros">
+            all zeros
+            </div>
+
+            <div class="inputs">
+            perturbation values
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+    
 </div>
 
   <p>
