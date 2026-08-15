@@ -164,14 +164,12 @@ permalink: /research/bio-network/
     </div>
 
   </div>
-  
+
   <div class="matrix-pairing">
     <span>paired by experimental condition</span>
     <div class="pair-arrow">↓</div>
     </div>
-  
   </div>
-
     <div class="dataset-matrix-diagram">
 
     <div class="matrix-title">
