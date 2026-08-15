@@ -125,55 +125,52 @@ permalink: /research/bio-network/
 
   <div class="dataset-matrix-diagram">
 
-    <div class="matrix-title">
-        <span>99 nodes</span>
+  <div class="matrix-title">
+    99 measured nodes
+  </div>
+
+  <div class="matrix-wrapper">
+
+    <div class="matrix-row-label">
+      <strong>89</strong>
+      <span>conditions</span>
     </div>
 
-    <div class="matrix-wrapper">
+    <div class="matrix">
 
-        <div class="matrix-row-label">
-        <strong>89</strong>
-        <span>conditions</span>
+      <div class="matrix-header">
+
+        <div class="cell">
+          <span>proteins</span>
+          <strong>82</strong>
         </div>
 
-        <div class="matrix">
-
-        <div class="matrix-header">
-
-            <div class="cell">
-            <div>proteins</div>
-            <strong>82</strong>
-            </div>
-
-            <div class="cell">
-            <div>phenotypes</div>
-            <strong>5</strong>
-            </div>
-
-            <div class="cell">
-            <div>perturbations</div>
-            <strong>12</strong>
-            </div>
-
+        <div class="cell">
+          <span>phenotypes</span>
+          <strong>5</strong>
         </div>
 
-        <div class="matrix-body">
-            response matrix
+        <div class="cell">
+          <span>perturbations</span>
+          <strong>12</strong>
         </div>
 
-        </div>
+      </div>
+
+      <div class="matrix-body">
+        measured responses
+      </div>
 
     </div>
+
+  </div>
 
 </div>
 
   <p>
     <strong>Phenotypes:</strong>
     G2M · G1 arrest · G2 arrest · S arrest · cell viability
-  </p>
-
-  <p>
-    <strong>Perturbations:</strong>
+    <strong>Perturbations:</strong><br>
     aMEK · aAKT · aHDAC · aMDM2 · aJAK · aBRAFm ·
     aPKC · aSTAT3 · amTOR · aPI3K · aCDK4 · aSRC
   </p>
