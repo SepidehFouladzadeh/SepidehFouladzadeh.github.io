@@ -50,10 +50,12 @@ permalink: /research/bio-network/
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
           <h3>What can I learn from the response measurements alone?</h3>
+          <p> Finding patterns in the outputs.
+          </p>
         </button>
 
         <div class="thought-cloud thought-cloud-left">
-          <h3>Exploratory Data Analysis, Representation learning, network reconstruction</h3>
+          <h3>Exploratory data analysis, representation learning, and network reconstruction</h3>
           <p class="thought-evidence">
             ✓ Which proteins change the most across conditions?<br>
             ✓ Are there low-dimensional representations?<br>
@@ -71,16 +73,18 @@ permalink: /research/bio-network/
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
           <h3>What if I use both perturbations and responses?</h3>
+          <p> Learn mappings from inputs to outputs.
+          </p>
         </button>
 
         <div class="thought-cloud thought-cloud-middle">
           <h3>Supervised learning</h3>
 
-          <p>
-            - Per protein predictions?<br>
-            - Per phenotype predictions?<br>
-            - Most predictive features?
-          </p>
+          <p class="thought-evidence">
+          ✓ Per protein predictions?<br>
+          ✓ Per phenotype predictions?<br>
+          ✓ Most predictive features?<br>
+      </p>
 
         </div>
       </div>
@@ -96,6 +100,8 @@ permalink: /research/bio-network/
       <div class="thought-step">
         <button class="flow-node thought-trigger" type="button">
           <h3>What if I incorporate prior biological knowledge?</h3>
+          <p>Constrain learning with biological knowledge.
+          </p>
         </button>
 
         <div class="thought-cloud">
