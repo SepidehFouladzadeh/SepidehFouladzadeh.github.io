@@ -166,7 +166,7 @@ permalink: /research/bio-network/
   </div>
 
   <div class="matrix-pairing">
-    <span>paired by experimental condition</span>
+    <span>paired by input perturbation matrix</span>
     <div class="pair-arrow">↓</div>
     </div>
   </div>
