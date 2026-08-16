@@ -334,13 +334,29 @@ permalink: /research/bio-network/
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
-      <h3>Extracting the Most from Measured Outputs</h3>
+      <h3>A rabbit hole into understanding how measurements become network representations.</h3>
 
       <p>
-        Learning What Can Be Learned from Molecular and Phenotypic Measurements. 
+        Curious how different computational methods transform measurements into graphs and networks. 
       </p>
 
-      <a href="/research/bio-network/measurements">
+      <a href="/research/bio-network/network-representations">
+        See my train of thought →
+      </a>
+    </article>
+
+  </div>
+
+  <div class="related-exploration-list">
+
+    <article class="related-exploration-item">
+      <h3>Picking a Handful of the Most Promising Nodes in Hopes of Understanding the System Behind the Observations</h3>
+
+      <p>
+        Exploring alternative ways of selecting informative nodes beyond high variance as a starting point for downstream modeling. 
+      </p>
+
+      <a href="/research/bio-network/feature-selection">
         See my train of thought →
       </a>
     </article>
