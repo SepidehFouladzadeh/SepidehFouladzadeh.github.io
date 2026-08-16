@@ -232,6 +232,88 @@ permalink: /research/bio-network/
 
 </details>
 
+
+<section class="artifacts">
+
+  <h2>Artifacts from this exploration</h2>
+
+  <div class="artifact-gallery">
+
+  <div class="artifact-card">
+    <image controls>
+      <source src="/assets/images/ranked_protein_variance.png" type="image/png">
+    </image>
+    <h4>ranked_protein_variance</h4>
+    <!-- <p>
+    This was my starting point for understanding how RL discovers a
+    control strategy through interaction rather than from an explicit model.
+    Trained a MLP policy with PPO for 100,000 timesteps, resulting in a controller that reliably keeps the pole balanced.
+    </p> -->
+  </div>
+
+  <div class="artifact-card">
+    <images controls>
+      <source src="/assets/images/protein_correlation_heatmap.png" type="images/png">
+    </images>
+    <h4>protein_correlation_heatmap</h4>
+    <!-- <p>
+    Was curious how a classical optimal controller would compare with the
+    policy learned by PPO. Using the linearized CartPole dynamics, LQR performed similarly successful. Realized that choosing the cost matrices (<em>Q</em>
+    and <em>R</em>) is itself an important design decision, shaping the
+    controller's behavior. With my chosen weights, the controller wasn't particularly concerned with keeping the cart close to the center and mainly focused on keeping the pole upright.
+    </p> -->
+  </div>
+
+  <div class="artifact-card">
+    <images controls>
+      <source src="/assets/images/pca_scree_plot.png" type="images/png">
+    </images>
+    <h4>pca_scree_plot</h4>
+    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
+    </p> -->
+  </div>
+
+  <div class="artifact-card">
+    <images controls>
+      <source src="/assets/images/pc_phenotype_correlation.png" type="images/png">
+    </images>
+    <h4>pc_phenotype_correlation</h4>
+    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
+    </p> -->
+  </div>
+
+  <div class="artifact-card">
+    <images controls>
+      <source src="/assets/images/pca_by_cellviab.png" type="images/png">
+    </images>
+    <h4>pca_by_cellviab</h4>
+    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
+    </p> -->
+  </div>
+
+  <div class="artifact-card">
+    <images controls>
+      <source src="/assets/images/pca_pc1_loadings.png" type="images/png">
+    </images>
+    <h4>pca_pc1_loadings</h4>
+    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
+    </p> -->
+  </div>
+
+  <div class="artifact-card">
+    <images controls>
+      <source src="/assets/images/pca_pc2_loadings.png" type="images/png">
+    </images>
+    <h4>pca_pc2_loadings</h4>
+    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
+    </p> -->
+  </div>
+
+</div>
+
+</section>
+
+
 <section class="related-explorations">
 
   <h2>Other explorations inspired by this train of thought</h2>
