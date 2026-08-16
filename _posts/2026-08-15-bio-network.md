@@ -240,73 +240,86 @@ permalink: /research/bio-network/
   <div class="artifact-gallery">
 
   <div class="artifact-card">
-    <image controls>
-      <source src="/assets/images/ranked_protein_variance.png" type="image/png">
-    </image>
-    <h4>ranked_protein_variance</h4>
-    <!-- <p>
-    This was my starting point for understanding how RL discovers a
-    control strategy through interaction rather than from an explicit model.
-    Trained a MLP policy with PPO for 100,000 timesteps, resulting in a controller that reliably keeps the pole balanced.
-    </p> -->
+  <img src="/assets/images/ranked_protein_variance.png"
+     alt="Ranked variance of protein responses across experimental conditions">
+    <h4>Which molecular responses vary the most?</h4>
+
+      <p>
+        A simple first look at which molecular
+        measurements are most responsive across the perturbation dataset,
+        without yet asking what drives those changes.
+      </p>
   </div>
 
   <div class="artifact-card">
-    <images controls>
-      <source src="/assets/images/protein_correlation_heatmap.png" type="images/png">
-    </images>
-    <h4>protein_correlation_heatmap</h4>
-    <!-- <p>
-    Was curious how a classical optimal controller would compare with the
-    policy learned by PPO. Using the linearized CartPole dynamics, LQR performed similarly successful. Realized that choosing the cost matrices (<em>Q</em>
-    and <em>R</em>) is itself an important design decision, shaping the
-    controller's behavior. With my chosen weights, the controller wasn't particularly concerned with keeping the cart close to the center and mainly focused on keeping the pole upright.
-    </p> -->
+  <img src="/assets/images/protein_correlation_heatmap.png"
+     alt="Correlation heatmap of highly variable protein responses">
+    <h4>Which proteins tend to respond together?</h4>
+
+      <p>
+        Pairwise correlations giving clues about coordinated biological behavior, but not to distinguish
+        direct interactions, shared regulation, or causal relationships.
+      </p>
   </div>
 
   <div class="artifact-card">
-    <images controls>
-      <source src="/assets/images/pca_scree_plot.png" type="images/png">
-    </images>
-    <h4>pca_scree_plot</h4>
-    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
-    </p> -->
+  <img src="/assets/images/pca_scree_plot.png"
+     alt="PCA scree plot of molecular responses">
+    <h4>Can the response space be compressed?</h4>
+
+      <p>
+        Checking whether much of the variation across molecular measurements
+        can be represented along a smaller number of dimensions.
+      </p>
   </div>
 
   <div class="artifact-card">
-    <images controls>
-      <source src="/assets/images/pc_phenotype_correlation.png" type="images/png">
-    </images>
-    <h4>pc_phenotype_correlation</h4>
-    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
-    </p> -->
+  <img src="/assets/images/pc_phenotype_correlation.png"
+     alt="Correlations between principal components and measured phenotypes">
+    <h4>Do the molecular patterns relate to phenotype?</h4>
+
+      <p>
+        Checking whether particular axes of molecular variation are associated
+        with phenotypic outcomes.
+      </p>
   </div>
 
   <div class="artifact-card">
-    <images controls>
-      <source src="/assets/images/pca_by_cellviab.png" type="images/png">
-    </images>
-    <h4>pca_by_cellviab</h4>
-    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
-    </p> -->
+  <img src="/assets/images/pca_by_cellviab.png"
+     alt="PCA scores colored by measured cell viability">
+    <h4>How does cell viability appear in molecular response space?</h4>
+
+      <p>
+        Each point represents an experimental condition projected into the
+        molecular PCA space, colored according to measured
+        cell viability. The gradient suggests that conditions with
+        similar viability also occupy similar regions of molecular response
+        space.
+      </p>
   </div>
 
   <div class="artifact-card">
-    <images controls>
-      <source src="/assets/images/pca_pc1_loadings.png" type="images/png">
-    </images>
-    <h4>pca_pc1_loadings</h4>
-    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
-    </p> -->
+  <img src="/assets/images/pca_pc1_loadings.png"
+     alt="Largest protein loadings for the first principal component">
+    <h4>Which proteins shape PC1?</h4>
+
+      <p>
+        PCA loadings showing molecular measurements that contribute most strongly
+        to the first principal component. Positive and negative loadings represent
+        opposite directions along the same molecular response pattern.
+      </p>
   </div>
 
   <div class="artifact-card">
-    <images controls>
-      <source src="/assets/images/pca_pc2_loadings.png" type="images/png">
-    </images>
-    <h4>pca_pc2_loadings</h4>
-    <!-- <p>Was curious to know if the learned policy from PPO can be approximated by a linear state-feedback controller. Fit a logistic regression to PPO's actions to get a linearized policy, but it was unable to control the CartPole. I suspect because PPO acts in a discrete action space (left or right), the linearization wouldn't recover the continuous control signal of LQR.
-    </p> -->
+  <img src="/assets/images/pca_pc2_loadings.png"
+     alt="Largest protein loadings for the second principal component">
+    <h4>Which proteins shape PC2?</h4>
+
+      <p>
+        PCA loadings showing molecular measurements that contribute most strongly
+        to the second principal component. Again, positive and negative loadings represent
+        opposite directions along the same molecular response pattern.
+      </p>
   </div>
 
 </div>
