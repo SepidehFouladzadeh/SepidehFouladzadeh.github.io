@@ -350,7 +350,7 @@ permalink: /research/bio-network/
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
-      <h3>Picking a Handful of the Most Promising Nodes in Hopes of Understanding the System Behind the Observations</h3>
+      <h3>Picking a handful of the most promising nodes in hopes of understanding the system behind the observations</h3>
 
       <p>
         Exploring alternative ways of selecting informative nodes beyond high variance as a starting point for downstream modeling. 

@@ -1,6 +1,6 @@
 ---
 layout: exploration
-title: "Picking a Handful of the Most Promising Nodes in Hopes of Understanding the System Behind the Observations"
+title: "Picking a handful of the most promising nodes in hopes of understanding the system behind the observations"
 description: "Exploring alternative ways of selecting informative nodes beyond high variance as a starting point for downstream modeling."
 date: 2026-08-16
 # reading_time: "1 min read"
