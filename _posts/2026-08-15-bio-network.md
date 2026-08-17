@@ -263,6 +263,30 @@ permalink: /research/bio-network/
   </div>
 
   <div class="artifact-card">
+  <img src="/assets/images/protein_correlation_network.png"
+     alt="Correlation network of highly variable protein responses">
+    <h4>Which proteins tend to respond together?</h4>
+
+      <p>
+        Keeping only the stronger associations to turn the same protein
+    correlation heatmap into a network representation.
+      </p>
+  </div>
+
+  <div class="artifact-card">
+  <img src="/assets/images/protein_graphical_lasso_network.png"
+     alt="Partial correlation network of highly variable protein responses">
+    <h4>Which proteins remain associated after accounting for the others?</h4>
+
+      <p>
+        Curious how the network changes when moving from pairwise correlations
+  to Graphical Lasso while keeping the same highly variable proteins. This is probably not the most appropriate choice for Graphical Lasso, since the
+  method conditions on all included nodes. Curious to explore how the network changes
+    when using the full set of measured proteins.
+      </p>
+  </div>
+
+  <div class="artifact-card">
   <img src="/assets/images/pca_scree_plot.png"
      alt="PCA scree plot of molecular responses">
     <h4>Can the response space be compressed?</h4>
