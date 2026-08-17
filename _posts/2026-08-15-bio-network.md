@@ -257,8 +257,7 @@ permalink: /research/bio-network/
     <h4>Which proteins tend to respond together?</h4>
 
       <p>
-        Pairwise correlations giving clues about coordinated biological behavior, but not to distinguish
-        direct interactions, shared regulation, or causal relationships.
+        Pairwise correlations giving clues about coordinated biological behavior, but not to distinguish direct interactions, shared regulation, or causal relationships.
       </p>
   </div>
 
@@ -268,8 +267,7 @@ permalink: /research/bio-network/
     <h4>Which proteins tend to respond together?</h4>
 
       <p>
-        Keeping only the stronger associations to turn the same protein
-    correlation heatmap into a network representation.
+        Keeping only the stronger associations to turn the same protein correlation heatmap into a network representation.
       </p>
   </div>
 
@@ -279,10 +277,7 @@ permalink: /research/bio-network/
     <h4>Which proteins remain associated after accounting for the others?</h4>
 
       <p>
-        Curious how the network changes when moving from pairwise correlations
-  to Graphical Lasso while keeping the same highly variable proteins. This is probably not the most appropriate choice for Graphical Lasso, since the
-  method conditions on all included nodes. Curious to explore how the network changes
-    when using the full set of measured proteins.
+        Curious how the network changes when moving from pairwise correlations to Graphical Lasso while keeping the same highly variable proteins. This is probably not the most appropriate choice for Graphical Lasso, since the method conditions on all included nodes. Curious to explore how the network changes when using the full set of measured proteins.
       </p>
   </div>
 
