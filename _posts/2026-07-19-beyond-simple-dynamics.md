@@ -26,14 +26,11 @@ back_text: Back to where this began
 
     <div class="artifact-section-heading">
       <h2>Pendulum</h2>
-
-  ```
   <p>
     Pendulum replaces CartPole's discrete left-or-right pushes with a
     continuous torque to swing the pendulum toward the
     upright position and stabilize it.
   </p>
-  ```
 
     </div>
 
@@ -44,7 +41,6 @@ back_text: Back to where this began
         </div>
       </summary>
 
-  ```
   <div class="dynamics-content">
     <p>
       The state represents the pendulum's angle and angular velocity. The
@@ -65,13 +61,11 @@ back_text: Back to where this began
     </div>
 
   </div>
-  ```
 
     </details>
 
     <div class="artifact-gallery">
 
-  ```
   <div class="artifact-card">
     <video controls>
       <source
@@ -99,7 +93,6 @@ back_text: Back to where this began
       Longer training alone in this case clearly resulted in a better policy and more successful control.
     </p>
   </div>
-  ```
 
     </div>
   </section>
@@ -113,7 +106,6 @@ back_text: Back to where this began
     <div class="artifact-section-heading">
       <h2>Acrobot</h2>
 
-  ```
   <p>
     This one is an underactuated system with two connected links but
     only one actuated joint, so the controller can't directly command the
@@ -121,7 +113,6 @@ back_text: Back to where this began
       correction toward the target until the
     end of the outer link reaches the target height.
   </p>
-  ```
 
     </div>
 
@@ -132,7 +123,6 @@ back_text: Back to where this began
         </div>
       </summary>
 
-  ```
   <div class="dynamics-content">
     <p>
       The state contains the angles and angular velocities of two connected
@@ -154,13 +144,11 @@ back_text: Back to where this began
     </div>
 
   </div>
-  ```
 
     </details>
 
     <div class="artifact-gallery">
 
-  ```
   <div class="artifact-card">
     <video controls>
       <source
@@ -208,7 +196,6 @@ back_text: Back to where this began
       does not necessarily resolve the issue.
     </p>
   </div>
-  ```
 
     </div>
   </section>
@@ -222,13 +209,11 @@ back_text: Back to where this began
     <div class="artifact-section-heading">
       <h2>BipedalWalker</h2>
 
-  ```
   <p>
     Compared with the previous environments, this one has much more complex dynamics. The policy must continuously control several
     joints, maintain balance, and move forward without
     falling. The dynamics also change whenever a foot makes or loses contact with the ground making it a more challenging control problem. 
   </p>
-  ```
 
     </div>
 
@@ -239,20 +224,17 @@ back_text: Back to where this began
         </div>
       </summary>
 
-  ```
   <div class="dynamics-content">
     <p>
       Will investigate later :)
     </p>
 
   </div>
-  ```
 
     </details>
 
     <div class="artifact-gallery">
 
-  ```
   <div class="artifact-card">
     <video controls>
       <source
@@ -310,7 +292,6 @@ back_text: Back to where this began
     The longer SAC run was also moderately successful. Interestingly, it had learned a different strategy for moving forward than PPO. I also noticed that SAC took considerably longer to train, making it an interesting comparison between learning behavior and computational cost.
     </p>
   </div>
-  ```
 
     </div>
   </section>
@@ -324,11 +305,9 @@ back_text: Back to where this began
     <div class="artifact-section-heading">
       <h2>MountainCar</h2>
 
-  ```
   <p>
     MountainCar looks simple at first, but the engine is intentionally too weak to drive directly up the hill. The controller must first move away from the goal, build momentum by oscillating between the slopes, and accumulate enough energy to eventually climb the hill. Tried a couple of things but couldn't make it work! Will revisit this one later!
   </p>
-  ```
 
     </div>
 
@@ -339,7 +318,6 @@ back_text: Back to where this began
         </div>
       </summary>
 
-  ```
   <div class="dynamics-content">
     <p>
       The state includes only the car's position and velocity. However,
@@ -358,13 +336,11 @@ back_text: Back to where this began
     </div>
 
   </div>
-  ```
 
     </details>
 
     <div class="artifact-gallery">
 
-  ```
   <div class="artifact-card">
     <video controls>
       <source
@@ -420,7 +396,6 @@ back_text: Back to where this began
       Still unsuccessful!
     </p>
   </div>
-  ```
 
     </div>
   </section>
