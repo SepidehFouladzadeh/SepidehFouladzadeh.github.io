@@ -202,7 +202,6 @@ back_text: Back to where this began
     >
 
     <p class="artifact-caption">
-      <strong>proteins_bic_mle_numbered_dag</strong>
       This was my first attempt at moving beyond undirected association networks toward directed graphical models. While a learned Bayesian network is not automatically causal, it gives a good starting point that can later be combined with prior knowledge and causal assumptions. Parameters were estimated using Gaussian maximum likelihood after learning the structure with the BIC score.
     </p>
   </div>
@@ -214,7 +213,6 @@ back_text: Back to where this began
     >
 
     <p class="artifact-caption">
-      <strong>proteins_aic_mle_numbered_dag</strong>
       As expected, AIC retured a denser graph than BIC as it less penalizes complexity. An interesting follow-up would be to compare directions and the parameter estimates for edges shared by both networks and investigate how sensitive they are to the choice of scoring criterion.
     </p>
   </div>
@@ -222,11 +220,9 @@ back_text: Back to where this began
   <div class="artifact-figure">
     <img
       src="/assets/images/expanded_hillclimb_bic_network.png"
-      alt="expanded_hillclimb_bic_network"
-    >
+      alt="expanded_hillclimb_bic_network">
 
     <p class="artifact-caption">
-      <strong>expanded_hillclimb_bic_network</strong>
       Expanded the node space from just proteins to phenotypes and activity nodes, which quickly highlighted the importance of incorporating prior knowledge. Without that, it also learns some obviouly wrong edges (for example edges from phenotype to proteins). Here, I've only constrained phenotypes to be terminal nodes, but other obvious forbidden edges should probably be included.
       
     </p>
@@ -235,11 +231,9 @@ back_text: Back to where this began
   <div class="artifact-figure">
     <img
       src="/assets/images/expanded_hillclimb_aic_network.png"
-      alt="expanded_hillclimb_aic_network"
-    >
+      alt="expanded_hillclimb_aic_network">
 
     <p class="artifact-caption">
-      <strong>expanded_hillclimb_aic_network</strong>
       As expected, AIC produced a denser network. Still curious about when the additional complexity is justified and what criteria are most appropriate for choosing between AIC and the more conservative BIC.
     </p>
   </div>
