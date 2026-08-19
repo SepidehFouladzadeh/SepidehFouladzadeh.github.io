@@ -81,7 +81,7 @@ back_text: Back to where this began
 
 <section class="artifacts">
 
-  <h2>Score-based structure learning</h2>
+  <h2>DAGs</h2>
 
   <div class="artifact-figure">
     <img
@@ -129,7 +129,7 @@ back_text: Back to where this began
 
 <section class="artifacts">
 
-  <h2>Constraint-based structure learning</h2>
+  <!-- <h2>Constraint-based structure learning</h2> -->
 
   <div class="artifact-gallery">
 
