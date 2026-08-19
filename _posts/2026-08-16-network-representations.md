@@ -124,69 +124,65 @@ back_text: Back to where this began
 
 <section class="artifacts">
 
-  <h2>Artifacts from this exploration</h2>
+  <h2>Pairwise associations</h2>
 
   <div class="artifact-gallery">
 
   <div class="artifact-card">
   <img src="/assets/images/proteins_correlation_network.png"
      alt="proteins_correlation_network">
-    <h4>proteins_correlation_network</h4>
 
       <p>
-        ...
+        Simply a thresholded visualization of the pairwise correlation matrix on the right, using only the measured protein nodes. 
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/proteins_correlation_heatmap.png"
      alt="proteins_correlation_heatmap">
-    <h4>proteins_correlation_heatmap</h4>
 
       <p>
-        ...
+        Analyzing the strongly correlated proteins is something I'd be curious to explore next.
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/expanded_correlation_network.png"
      alt="expanded_correlation_network">
-    <h4>expanded_correlation_network</h4>
 
       <p>
-        ...
+        Was wondering whether computing correlations on the whole node set including activity nodes and phenotypes would be more approprite or interesting. Since these are pairwise correlations, adding more variables doesn't change the existing protein–protein correlations though.
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/expanded_correlation_heatmap.png"
      alt="expanded_correlation_heatmap">
-    <h4>expanded_correlation_heatmap</h4>
 
       <p>
-        ...
+        While the network itself didn't reveal anything interesting at first glance, the heatmap showed that many activity nodes were similarly correlated with one another. Not sure whether this is expected biologically,but something to investigate later.
       </p>
   </div>
 
-  <h2>Artifacts from this exploration</h2>
+</section>
+<section class="artifacts">
+  <h2>Conditional associations</h2>
 
   <div class="artifact-card">
   <img src="/assets/images/proteins_graphical_lasso_network.png"
      alt="proteins_graphical_lasso_network">
-    <h4>proteins_graphical_lasso_network</h4>
 
       <p>
-        ...
+        This extends the Graphical Lasso analysis on the main research page by repeating it on both the protein-only dataset and the expanded dataset including activity nodes and phenotypes.
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/expanded_graphical_lasso_network.png"
      alt="expanded_graphical_lasso_network">
-    <h4>expanded_graphical_lasso_network</h4>
 
       <p>
-        ...
+        Was curious whether the partial correlations would change after including additional variables. Couldnt tell from the graph but wouldn't be suprised if the edges are affected. Since Graphical Lasso conditions on the remaining nodes, I suspect adding variables might change the dependencies even between proteins that were already present.
       </p>
   </div>
 
@@ -197,7 +193,7 @@ back_text: Back to where this began
 
 <section class="artifacts">
 
-  <h2>Artifacts from this exploration</h2>
+  <h2>Score-based structure learning</h2>
 
   <div class="artifact-figure">
     <img
@@ -207,7 +203,7 @@ back_text: Back to where this began
 
     <p class="artifact-caption">
       <strong>proteins_bic_mle_numbered_dag</strong>
-      ...
+      This was my first attempt at moving beyond undirected association networks toward directed graphical models. While a learned Bayesian network is not automatically causal, it gives a good starting point that can later be combined with prior knowledge and causal assumptions. Parameters were estimated using Gaussian maximum likelihood after learning the structure with the BIC score.
     </p>
   </div>
 
@@ -219,7 +215,7 @@ back_text: Back to where this began
 
     <p class="artifact-caption">
       <strong>proteins_aic_mle_numbered_dag</strong>
-      ...
+      As expected, AIC retured a denser graph than BIC as it less penalizes complexity. An interesting follow-up would be to compare directions and the parameter estimates for edges shared by both networks and investigate how sensitive they are to the choice of scoring criterion.
     </p>
   </div>
 
@@ -231,7 +227,8 @@ back_text: Back to where this began
 
     <p class="artifact-caption">
       <strong>expanded_hillclimb_bic_network</strong>
-      ...
+      Expanded the node space from just proteins to phenotypes and activity nodes, which quickly highlighted the importance of incorporating prior knowledge. Without that, it also learns some obviouly wrong edges (for example edges from phenotype to proteins). Here, I've only constrained phenotypes to be terminal nodes, but other obvious forbidden edges should probably be included.
+      
     </p>
   </div>
 
@@ -243,7 +240,7 @@ back_text: Back to where this began
 
     <p class="artifact-caption">
       <strong>expanded_hillclimb_aic_network</strong>
-      ...
+      As expected, AIC produced a denser network. Still curious about when the additional complexity is justified and what criteria are most appropriate for choosing between AIC and the more conservative BIC.
     </p>
   </div>
 
@@ -251,27 +248,25 @@ back_text: Back to where this began
 
 <section class="artifacts">
 
-  <h2>Artifacts from this exploration</h2>
+  <h2>Constraint-based structure learning</h2>
 
   <div class="artifact-gallery">
 
   <div class="artifact-card">
   <img src="/assets/images/proteins_pc_network.png"
      alt="proteins_pc_network">
-    <h4>proteins_pc_network</h4>
 
       <p>
-        ...
+        This was my first exploration of a constraint-based structure learning method. Haven't yet fully investigated the conditional independence tests though. Another question that caught my attention is how PC differs mathematically from Graphical Lasso, since both seem to rely on conditional independence in different ways. Something I'd like to understand better.
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/expanded_pc_network.png"
      alt="expanded_pc_network">
-    <h4>expanded_pc_network</h4>
 
       <p>
-        ...
+        Interestingly, some edge directions changed after including activity and phenotype nodes, suggesting that expanding the variable set can meaningfully alter the conditional independencies. Couldn't include the same prior constraints into the PC algorithm, which is something I'd like to revisit. 
       </p>
   </div>
 
