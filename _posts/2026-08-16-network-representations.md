@@ -163,10 +163,12 @@ back_text: Back to where this began
         While the network itself didn't reveal anything interesting at first glance, the heatmap showed that many activity nodes were similarly correlated with one another. Not sure whether this is expected biologically,but something to investigate later.
       </p>
   </div>
-
+  </div>
 </section>
+
 <section class="artifacts">
   <h2>Conditional associations</h2>
+  <div class="artifact-gallery">
 
   <div class="artifact-card">
   <img src="/assets/images/proteins_graphical_lasso_network.png"
@@ -185,9 +187,7 @@ back_text: Back to where this began
         Was curious whether the partial correlations would change after including additional variables. Couldnt tell from the graph but wouldn't be suprised if the edges are affected. Since Graphical Lasso conditions on the remaining nodes, I suspect adding variables might change the dependencies even between proteins that were already present.
       </p>
   </div>
-
-</div>
-
+  </div>
 </section>
 
 
@@ -243,7 +243,6 @@ back_text: Back to where this began
       As expected, AIC produced a denser network. Still curious about when the additional complexity is justified and what criteria are most appropriate for choosing between AIC and the more conservative BIC.
     </p>
   </div>
-
 </section>
 
 <section class="artifacts">
@@ -269,7 +268,5 @@ back_text: Back to where this began
         Interestingly, some edge directions changed after including activity and phenotype nodes, suggesting that expanding the variable set can meaningfully alter the conditional independencies. Couldn't include the same prior constraints into the PC algorithm, which is something I'd like to revisit. 
       </p>
   </div>
-
-</div>
-
+  </div>
 </section>
