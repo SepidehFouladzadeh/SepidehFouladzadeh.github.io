@@ -21,7 +21,10 @@ back_text: Back to where this began
     >
 
     <p class="artifact-caption">
-      ...
+      Starting with the phenotypes, I was curious how the same predictive
+      models would hold up as I changed what it meant for a test example
+      to be unseen: from held-out conditions, to unseen combinations,
+      to an entirely unseen perturbation.
     </p>
   </div>
 
@@ -32,7 +35,8 @@ back_text: Back to where this began
     >
 
     <p class="artifact-caption">
-      ...
+      Looking at the protein responses separately to see whether the same
+      patterns of generalization show up at the molecular-response level.
     </p>
   </div>
 
@@ -47,7 +51,7 @@ back_text: Back to where this began
      alt="leave_one_out_phenotype_pearson-flat_distribution">
 
       <p>
-        ...
+        Looking at Pearson correlation after prediction error, to see how well the predicted pattern of phenotype responses follows the observed one across different held-out perturbations.
       </p>
   </div>
 
@@ -56,7 +60,7 @@ back_text: Back to where this began
      alt="leave_one_out_protein_pearson-flat_distribution">
 
       <p>
-        ...
+        Looking into the extent of agreement between predicted and observed response patterns based on left out perturbations, this time for protein responses.
       </p>
   </div>
 
@@ -65,7 +69,7 @@ back_text: Back to where this began
      alt="leave_one_out_phenotype_rmse_heatmap">
 
       <p>
-        ...
+        Exploring which unseen perturbations are easier or harder for each model when predicting phenotypes.
       </p>
   </div>
 
@@ -74,7 +78,7 @@ back_text: Back to where this began
      alt="leave_one_out_protein_rmse_heatmap">
 
       <p>
-        ...
+        This time looking for dependence of prediction on the perturbation for protein responses.
       </p>
   </div>
 
@@ -83,7 +87,7 @@ back_text: Back to where this began
      alt="leave_one_perturbation_out_deep_mlp_training_history">
 
       <p>
-        ...
+        A quick look inside the training process to make sure optimization continues to improve the training fit, and whether validation follows along.
       </p>
   </div>
 
@@ -92,18 +96,26 @@ back_text: Back to where this began
      alt="leave_one_perturbation_out_shallow_mlp_training_history">
 
       <p>
-        ...
-      </p>
-  </div>
-
-  <div class="artifact-card">
-  <img src="/assets/images/leave_one_perturbation_out_observed_vs_predicted.png"
-     alt="leave_one_perturbation_out_observed_vs_predicted">
-
-      <p>
-        ...
+        Comparing the learning behavior of a much simpler network.
       </p>
   </div>
 
   </div>
+</section>
+
+<section class="artifacts">
+
+  <!-- <h2>DAGs</h2> -->
+
+  <div class="artifact-figure">
+    <img
+      src="/assets/images/leave_one_perturbation_out_observed_vs_predicted.png"
+      alt="leave_one_perturbation_out_observed_vs_predicted"
+    >
+
+    <p class="artifact-caption">
+      Looking at predicted protein and phenotype responses vs. actual observations.
+    </p>
+  </div>
+
 </section>
