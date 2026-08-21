@@ -369,6 +369,22 @@ permalink: /research/bio-network/
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
+      <h3>Playing with predictive models and learning from input–output perturbation responses</h3>
+
+      <p>
+        Exploring mappings from perturbations to biological responses across different generalization regimes.
+      </p>
+
+      <a href="/research/bio-network/prediction">
+        See my train of thought →
+      </a>
+    </article>
+
+  </div>
+
+  <div class="related-exploration-list">
+
+    <article class="related-exploration-item">
       <h3>Picking a handful of the most promising nodes in hopes of understanding the system behind the observations</h3>
 
       <p>
