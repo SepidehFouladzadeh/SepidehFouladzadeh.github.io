@@ -25,6 +25,18 @@ Below you can see without any control input and with intila condition strating t
 
   </div>
 
+  <div class="artifact-figure">
+    <img
+      src="/assets/images/Eigenvalues.png"
+      alt="Learned weekly allocation"
+    >
+
+    <p class="artifact-caption">
+      <strong>...</strong>
+      ...
+    </p>
+  </div>
+
   The goal is to stabilize this system and keep the pole upright by designing controllers. I was curious to compare ...
 
   <div class="artifact-video">
@@ -69,13 +81,13 @@ Below you can see without any control input and with intila condition strating t
 
   <div class="artifact-figure">
     <img
-      src="/assets/images/reward_components.png"
-      alt="Reward components"
+      src="/assets/images/region_of_attraction.png"
+      alt="Learned weekly allocation"
     >
 
     <p class="artifact-caption">
-      <strong>Reward components.</strong>
-      Weekly contribution of each reward component during evaluation.
+      <strong>...</strong>
+      ...
     </p>
   </div>
 
@@ -102,6 +114,35 @@ Below you can see without any control input and with intila condition strating t
 
 </section>
 
+
+<section class="artifacts">
+
+  <!-- <h2>Artifacts from this exploration</h2> -->
+
+  <div class="artifact-gallery">
+
+  <div class="artifact-card">
+  <img src="/assets/images/linear_vs_nonlinear.png"
+     alt="Ranked variance of protein responses across experimental conditions">
+    <h4>...</h4>
+
+      <p>
+        ...
+      </p>
+  </div>
+
+  <div class="artifact-card">
+  <img src="/assets/images/limits.png"
+     alt="Correlation heatmap of highly variable protein responses">
+    <h4>...</h4>
+
+      <p>
+        ...
+      </p>
+  </div>
+
+</section>
+
 <section class="related-explorations">
 
   <h2>Other explorations inspired by this train of thought</h2>
@@ -109,10 +150,10 @@ Below you can see without any control input and with intila condition strating t
   <div class="related-exploration-list">
 
     <article class="related-exploration-item">
-      <h3>Modeling the Research Process</h3>
+      <h3>Coming soon.</h3>
 
       <p>
-        Exploring related modeling frameworks: What questions can other modeling frameworks answer using the same assumptions?
+        Coming soon.
       </p>
 
       <a href="/research/rl-vs-control/custom-environment/modeling-research/">
