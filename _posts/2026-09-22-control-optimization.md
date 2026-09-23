@@ -34,17 +34,180 @@ permalink: /research/control-optimization/
 
 <details class="dynamics-card">
   <summary> Getting to know the Dynamics</summary>
-
   <p>
-    ...
+    An intentionally simple model. The cart has mass \(M\), the pole
+    is modeled as a massless rigid rod of length \(l\) with a point mass
+    \(m\) at its end, a frictionless track, no damping at the pivot, and the only control input \(u\) is a horizontal force
+    applied to the cart.
   </p>
+  <p>
+      The upright position is defined as \(\theta = 0\), with positive
+      \(\theta\) corresponding to the pole leaning clockwise / to the right.
+    </p>
 
-  <div class="equation-card">
-    
+    <div class="equation-card">
+    <h4>The state</h4>
+
+    <p>
+      At any instant, the system is described by four state variables:
+    </p>
+
+    \[
+    \mathbf{z}
+    =
+    \begin{bmatrix}
+      x \\
+      \dot{x} \\
+      \theta \\
+      \dot{\theta}
+    \end{bmatrix}
+    \]
+
+    <p>
+      where \(x\) is the cart position, \(\dot{x}\) its velocity,
+      \(\theta\) the pole angle from upright, and \(\dot{\theta}\)
+      its angular velocity.
+    </p>
   </div>
 
   <div class="equation-card">
-    
+    <h4>Position of the pole mass</h4>
+
+    <p>
+      With the pole attached to the cart, the point mass at its end has
+      position
+    </p>
+
+    \[
+    x_p = x + l\sin\theta,
+    \qquad
+    y_p = l\cos\theta.
+    \]
+
+    <p>
+      Differentiating gives its velocity:
+    </p>
+
+    \[
+    \dot{x}_p
+    =
+    \dot{x}
+    +
+    l\dot{\theta}\cos\theta,
+    \qquad
+    \dot{y}_p
+    =
+    -l\dot{\theta}\sin\theta.
+    \]
+  </div>
+
+  <div class="equation-card">
+    <h4>Energy</h4>
+
+    <p>
+      From these velocities, the total kinetic energy is
+    </p>
+
+    \[
+    T
+    =
+    \frac{1}{2}(M+m)\dot{x}^{2}
+    +
+    ml\dot{x}\dot{\theta}\cos\theta
+    +
+    \frac{1}{2}ml^{2}\dot{\theta}^{2},
+    \]
+
+    <p>
+      while the gravitational potential energy is
+    </p>
+
+    \[
+    V = mgl\cos\theta.
+    \]
+
+    <p>
+      I then used the Lagrangian \(L = T - V\) and the
+      Euler–Lagrange equations to obtain the equations of motion.
+    </p>
+  </div>
+
+  <div class="equation-card">
+    <h4>Equations of motion</h4>
+
+    \[
+    (M+m)\ddot{x}
+    +
+    ml\ddot{\theta}\cos\theta
+    -
+    ml\dot{\theta}^{2}\sin\theta
+    =
+    u
+    \]
+
+    \[
+    \ddot{x}\cos\theta
+    +
+    l\ddot{\theta}
+    -
+    g\sin\theta
+    =
+    0.
+    \]
+
+    <p>
+      These two coupled equations describe how the cart and pole influence
+      one another. Solving them for the accelerations gives the form I
+      actually use in the simulation.
+    </p>
+  </div>
+
+  <div class="equation-card">
+    <h4>The form used in the simulation</h4>
+
+    \[
+    \ddot{x}
+    =
+    \frac{
+      u
+      +
+      ml\dot{\theta}^{2}\sin\theta
+      -
+      mg\sin\theta\cos\theta
+    }{
+      M + m\sin^{2}\theta
+    }
+    \]
+
+    \[
+    \ddot{\theta}
+    =
+    \frac{
+      g\sin\theta
+      -
+      \ddot{x}\cos\theta
+    }{l}.
+    \]
+
+    <p>
+      Given the current state and control force, these equations give the
+      two accelerations. Together with
+      \(\dot{x}\) and \(\dot{\theta}\), they define the nonlinear
+      state dynamics that I integrate numerically.
+    </p>
+
+    \[
+    \dot{\mathbf{z}}
+    =
+    \begin{bmatrix}
+      \dot{x} \\
+      \ddot{x} \\
+      \dot{\theta} \\
+      \ddot{\theta}
+    \end{bmatrix}
+    =
+    f(\mathbf{z},u)
+    \]
   </div>
 
 </details>
