@@ -16,7 +16,7 @@ Below you can see without any control input and with intila condition strating t
   <div class="artifact-video">
     <video controls preload="metadata">
       <source
-        src="/assets/videos/phd_env.mp4"
+        src="/assets/videos/unstable_animation.mp4"
         type="video/mp4"
       >
 
@@ -27,33 +27,43 @@ Below you can see without any control input and with intila condition strating t
 
   The goal is to stabilize this system and keep the pole upright by designing controllers. I was curious to compare ...
 
+  <div class="artifact-video">
+    <video controls preload="metadata">
+      <source
+        src="/assets/videos/controller_comparison.mp4"
+        type="video/mp4"
+      >
+
+      Your browser does not support the video element.
+    </video>
+
+  </div>
+
   <section class="artifacts">
 
   <!-- <h2>Artifacts from this exploration</h2> -->
 
   <div class="artifact-figure">
     <img
-      src="/assets/images/learned_weekly_allocation.png"
+      src="/assets/images/force.png"
       alt="Learned weekly allocation"
     >
 
     <p class="artifact-caption">
-      <strong>Learned weekly allocation.</strong>
-      The policy gradually shifts effort among literature review,
-      implementation, communication, and recovery over the simulated year.
+      <strong>...</strong>
+      ...
     </p>
   </div>
 
   <div class="artifact-figure">
     <img
-      src="/assets/images/state_evolution.png"
+      src="/assets/images/recovery.png"
       alt="State evolution"
     >
 
     <p class="artifact-caption">
-      <strong>State evolution.</strong>
-      Evolution of capacity, deadline pressure, support, knowledge,
-      and visible progress under the learned policy.
+      <strong>...</strong>
+      ...
     </p>
   </div>
 
