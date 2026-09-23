@@ -8,10 +8,46 @@ linkedin_url: "https://www.linkedin.com/in/sepideh-fouladzadeh/"
 permalink: /research/control-optimization/
 ---
 
-As usual, I started off with one of the simplest systems to first establish the foundation for exploring different concepts in control and optimization. :)
-It's the same cartpole system in the previous exploration on Rrinforecemnet learning, but this time I implemented the dynamics manually rarher than a default environment from any package. so it's the same reverse pendulum dynamics, with the only control input as pushing the cart left or right on the x axis.
+<p>
+  As usual, I started with one of the simplest systems I could find to
+  establish a foundation before exploring the connections between control,
+  dynamical systems, and optimization. :)
+</p>
 
-Below you can see without any control input and with intila condition strating the pendulum from 5 degrees to the right of the upright position, gravity makes it fall.
+<p>
+  This is the same cart-pole system from my previous exploration of
+  reinforcement learning, but this time I implemented the dynamics myself
+  instead of relying on a prebuilt environment from a package.
+</p>
+
+<p>
+  The setup is simple: an inverted pendulum is attached to a cart that can
+  move along the x-axis. The only control input is a horizontal force that
+  pushes the cart left or right.
+</p>
+
+<p>
+  First, I wanted to see what the system does on its own. Starting the pole
+  just 5 degrees to the right of the unstable upright equilibrium, with no
+  control input, gravity quickly takes over:
+</p>
+
+<details class="dynamics-card">
+  <summary> Getting to know the Dynamics</summary>
+
+  <p>
+    ...
+  </p>
+
+  <div class="equation-card">
+    
+  </div>
+
+  <div class="equation-card">
+    
+  </div>
+
+</details>
 
   <div class="artifact-video">
     <video controls preload="metadata">
@@ -25,7 +61,14 @@ Below you can see without any control input and with intila condition strating t
 
   </div>
 
-  The goal is to stabilize this system and keep the pole upright by designing controllers. I was curious to compare ...
+  <p>
+  The control problem is straightforward: To apply forces to
+  the cart so that the pole returns to and remains near the upright position.
+  </p>
+ <p>
+  I was curious to see how different approaches would solve the same problem,
+  so I compared pole placement, LQR, saturated LQR, and MPC:
+  </p>
 
   <div class="artifact-video">
     <video controls preload="metadata">
@@ -46,24 +89,24 @@ Below you can see without any control input and with intila condition strating t
   <div class="artifact-figure">
     <img
       src="/assets/images/force.png"
-      alt="Learned weekly allocation"
+      alt="Comparison of pole angle, cart position, and control force for pole placement, LQR, saturated LQR, and MPC"
     >
 
     <p class="artifact-caption">
-      <strong>...</strong>
-      ...
+      <strong>Same system, different controllers.</strong>
+      Intereting to see that stabilization is only part of the story. Different controllers, different transient behavior, and different amounts of control effort.
     </p>
   </div>
 
   <div class="artifact-figure">
     <img
       src="/assets/images/recovery.png"
-      alt="State evolution"
+      alt="Controller recovery success as the initial pole angle increases"
     >
-
     <p class="artifact-caption">
-      <strong>...</strong>
-      ...
+      <!-- <strong>How far can I push them?</strong> -->
+      Increasing the initial 5 degrees angle to probe where each controller stops being able
+      to recover (Stabilize) the system under the conditions I tested.
     </p>
   </div>
 
@@ -77,43 +120,46 @@ Below you can see without any control input and with intila condition strating t
 
   <div class="artifact-card">
   <img src="/assets/images/Eigenvalues.png"
-     alt="Ranked variance of protein responses across experimental conditions">
-    <h4>...</h4>
+     alt="Eigenvalues of the cart-pole system linearized around the upright equilibrium">
+    <h4>Why does the pole fall in the first place?</h4>
 
       <p>
-        ...
+        Linearizing the nonlinear dynamics around the upright equilibrium
+        gives a local linear model with eigenvalues revealing an unstable mode, explaning why the uncontrolled pole falls/is unstable.
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/region_of_attraction.png"
-     alt="Ranked variance of protein responses across experimental conditions">
-    <h4>...</h4>
+     alt="Numerical recovery region for saturated LQR over initial pole angle and angular velocity">
+    <h4>An empirical 2D slice of the recovery region of saturated LQR</h4>
 
       <p>
-        ...
+        Not a mathematical proof of the full region of attraction, but varying both the initial pole angle and angular velocity and recording
+        whether it recovers the system.
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/linear_vs_nonlinear.png"
-     alt="Ranked variance of protein responses across experimental conditions">
-    <h4>...</h4>
+     alt="Comparison between nonlinear cart-pole dynamics and the linearized model">
+    <h4>Linear approximation</h4>
 
       <p>
-        ...
+        Simply showing that linearized and nonlinear models closely agree near the upright equilibrium. That's why it makes sense to design linear controllers around an inherently nonlinear physical system.
       </p>
   </div>
 
   <div class="artifact-card">
   <img src="/assets/images/limits.png"
-     alt="Correlation heatmap of highly variable protein responses">
-    <h4>...</h4>
+     alt="Linearization error as the initial pole angle increases">
+    <h4>Local nature of linearization</h4>
 
       <p>
-        ...
+        Breakdown of linearization by moving farther from the upright equilibrium.
       </p>
   </div>
+</div>
 
 </section>
 
