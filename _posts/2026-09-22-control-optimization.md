@@ -25,18 +25,6 @@ Below you can see without any control input and with intila condition strating t
 
   </div>
 
-  <div class="artifact-figure">
-    <img
-      src="/assets/images/Eigenvalues.png"
-      alt="Learned weekly allocation"
-    >
-
-    <p class="artifact-caption">
-      <strong>...</strong>
-      ...
-    </p>
-  </div>
-
   The goal is to stabilize this system and keep the pole upright by designing controllers. I was curious to compare ...
 
   <div class="artifact-video">
@@ -79,47 +67,33 @@ Below you can see without any control input and with intila condition strating t
     </p>
   </div>
 
-  <div class="artifact-figure">
-    <img
-      src="/assets/images/region_of_attraction.png"
-      alt="Learned weekly allocation"
-    >
-
-    <p class="artifact-caption">
-      <strong>...</strong>
-      ...
-    </p>
-  </div>
-
 </section>
-
-  <!-- =========================================================
-       INTERPRETATION
-  ========================================================== -->
-
-<section class="artifact-section">
-
-  <div class="limitations-box">
-    <h4>Interpreting the learned policy</h4>
-    <p>
-      The behavior reflects the transition equations, reward
-      priorities, random disturbances, initial conditions, and state
-      definitions designed for the environment.
-    </p>
-
-    <p>
-      The purpose was to make those assumptions inspectable, not to build a sophisticated model of the research process, which might be an interesting direction to explore next! ;)
-    </p>
-  </div>
-
-</section>
-
 
 <section class="artifacts">
 
-  <!-- <h2>Artifacts from this exploration</h2> -->
+  <h2>Artifacts from this exploration</h2>
 
   <div class="artifact-gallery">
+
+  <div class="artifact-card">
+  <img src="/assets/images/Eigenvalues.png"
+     alt="Ranked variance of protein responses across experimental conditions">
+    <h4>...</h4>
+
+      <p>
+        ...
+      </p>
+  </div>
+
+  <div class="artifact-card">
+  <img src="/assets/images/region_of_attraction.png"
+     alt="Ranked variance of protein responses across experimental conditions">
+    <h4>...</h4>
+
+      <p>
+        ...
+      </p>
+  </div>
 
   <div class="artifact-card">
   <img src="/assets/images/linear_vs_nonlinear.png"
