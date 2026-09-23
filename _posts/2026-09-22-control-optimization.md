@@ -269,7 +269,7 @@ permalink: /research/control-optimization/
 
 <section class="artifacts">
 
-  <h2>Artifacts from this exploration</h2>
+  <!-- <h2>Artifacts from this exploration</h2> -->
 
   <div class="artifact-gallery">
 
