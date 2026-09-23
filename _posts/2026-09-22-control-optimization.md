@@ -11,16 +11,11 @@ permalink: /research/control-optimization/
 <p>
   As usual, I started with one of the simplest systems I could find to
   establish a foundation before exploring the connections between control,
-  dynamical systems, and optimization. :)
+  dynamical systems, and optimization. The same cart-pole system from my previous exploration of
+  reinforcement learning, but this time manually implemented, instead of relying on a prebuilt environment from a package.:)
 </p>
 
-<p>
-  This is the same cart-pole system from my previous exploration of
-  reinforcement learning, but this time I implemented the dynamics myself
-  instead of relying on a prebuilt environment from a package.
-</p>
-
-<p>
+<!-- <p>
   The setup is simple: an inverted pendulum is attached to a cart that can
   move along the x-axis. The only control input is a horizontal force that
   pushes the cart left or right.
@@ -30,20 +25,17 @@ permalink: /research/control-optimization/
   First, I wanted to see what the system does on its own. Starting the pole
   just 5 degrees to the right of the unstable upright equilibrium, with no
   control input, gravity quickly takes over:
-</p>
+</p> -->
 
 <details class="dynamics-card">
   <summary> Getting to know the Dynamics</summary>
   <p>
-    An intentionally simple model. The cart has mass \(M\), the pole
+    The cart has mass \(M\), the pole
     is modeled as a massless rigid rod of length \(l\) with a point mass
     \(m\) at its end, a frictionless track, no damping at the pivot, and the only control input \(u\) is a horizontal force
-    applied to the cart.
-  </p>
-  <p>
-      The upright position is defined as \(\theta = 0\), with positive
+    applied to the cart. The upright position is defined as \(\theta = 0\), with positive
       \(\theta\) corresponding to the pole leaning clockwise / to the right.
-    </p>
+  </p>
 
     <div class="equation-card">
     <h4>The state</h4>
