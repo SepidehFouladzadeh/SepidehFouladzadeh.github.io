@@ -1,7 +1,9 @@
 ---
 layout: exploration
-title: "Building an Intuition for the Connection Between Control and Optimization"
-description: "Inspired by the idea of reframing optimization as feedback control, here's the path I took to build an intuition for the fundamental concepts connecting the two."
+# title: "Building an Intuition for the Connection Between Control and Optimization"
+title: A Recap of the Basics of Feedback Control
+# description: "Inspired by the idea of reframing optimization as feedback control, here's the path I took to build an intuition for the fundamental concepts connecting the two."
+description: "The cart-pole as a playground to revisit some of the basic ideas."
 date: 2026-09-22
 # reading_time: "1 min read"
 linkedin_url: "https://www.linkedin.com/in/sepideh-fouladzadeh/"
@@ -331,7 +333,7 @@ permalink: /research/control-optimization/
         Coming soon.
       </p>
 
-      <a href="/research/rl-vs-control/custom-environment/modeling-research/">
+      <a href="/research/control-optimization/optimization/">
         See my train of thought →
       </a>
     </article>
